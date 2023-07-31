@@ -1,0 +1,8 @@
+{
+  "searchPage": {
+    "txtGoogleSearch": "//*[@name='q']",
+    "btnSubmit": "//*[@name='btnK']"
+  }
+}
+
+
