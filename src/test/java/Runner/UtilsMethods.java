@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ADF {
+public class UtilsMethods {
 
     public static void main(String[] args) throws IOException {
        // String excelFilePath = "input_data.xlsx";
@@ -38,13 +38,14 @@ public class ADF {
     public static List<Map<String, Object>> readExcelData(String sheetName) throws IOException {
         List<Map<String, Object>> data = new ArrayList<>();
         
-        String excelFilePath = "C:\\Users\\gurjara\\IdeaProjects\\KarateDemo\\src\\test\\java\\Data\\Worksheet.xlsx";
+        String path = System.getProperty("user.dir");
+        String excelFilePath = path + "\\src\\test\\java\\Data\\Worksheet.xlsx";
 
         try (FileInputStream inputStream = new FileInputStream(excelFilePath);
              Workbook workbook = new XSSFWorkbook(inputStream)) {
-        	Sheet sheet1 = workbook.getSheet(sheetName);
+        	Sheet sheet = workbook.getSheet(sheetName);
             // Assuming the data is in the first sheet (index 0)
-            Sheet sheet = workbook.getSheetAt(0);
+           // Sheet sheet = workbook.getSheetAt(0);
 
             // Read the header row to get the column names
             Row headerRow = sheet.getRow(0);
@@ -74,9 +75,9 @@ public class ADF {
     }
 
     public static Object getCellValue(Cell cell) {
-       // if (cell == null) {
-        //    return null;
-        //}
+        if (cell == null) {
+           return null;
+        }
 
         CellType cellType = cell.getCellType();
         switch (cellType) {
@@ -100,8 +101,9 @@ public class ADF {
     public static JsonNode readJsonTemplate() throws IOException {
         // Create an instance of the ObjectMapper from Jackson
         ObjectMapper objectMapper = new ObjectMapper();
-        String filePath = "C:\\Users\\gurjara\\IdeaProjects\\KarateDemo\\src\\test\\java\\Data\\templete.json";
-        // Read the JSON template file into a JsonNode object
+        String path = System.getProperty("user.dir");
+        String filePath = path + "\\src\\test\\java\\Data\\templete.json";
+
         FileInputStream fileInputStream = new FileInputStream(filePath);
         return objectMapper.readTree(fileInputStream);
     }
@@ -146,10 +148,10 @@ public static String createJsonTemplate1(JsonNode jsonTemplate, List<Map<String,
     
     String jsonTemplateString = jsonTemplate.toString();
 
-    // Use a placeholder map to store column names and their corresponding values
+   
     Map<String, String> placeholderMap = new HashMap<>();
 
-    // Replace placeholders in the JSON template with values from the Excel data
+   
     int rowIndex = 0;
     for (Map<String, Object> rowData : excelData) {
         for (Map.Entry<String, Object> entry : rowData.entrySet()) {
@@ -159,7 +161,7 @@ public static String createJsonTemplate1(JsonNode jsonTemplate, List<Map<String,
             placeholderMap.put(placeholder, actualValue);
         }
 
-        // For each row, replace the placeholders in the JSON template
+       
         String jsonDataForRow = jsonTemplateString;
         for (Map.Entry<String, String> entry : placeholderMap.entrySet()) {
             jsonDataForRow = jsonDataForRow.replace(entry.getKey(), entry.getValue());
@@ -194,7 +196,7 @@ public static List<String> createJsonTemplate2(JsonNode jsonTemplate, List<Map<S
             placeholderMap.put(placeholder, actualValue);
         }
 
-        // For each row, replace the placeholders in the JSON template
+      
         String jsonDataForRow = jsonTemplateString;
         for (Map.Entry<String, String> entry : placeholderMap.entrySet()) {
             jsonDataForRow = jsonDataForRow.replace(entry.getKey(), entry.getValue());
@@ -202,10 +204,10 @@ public static List<String> createJsonTemplate2(JsonNode jsonTemplate, List<Map<S
 
         jsonList.add(jsonDataForRow);
 
-        // Clear the placeholderMap for the next row of data
+        
         placeholderMap.clear();
 
-        // Increment rowIndex for the next row of data
+       
         rowIndex++;
     }
 

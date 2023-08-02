@@ -1,7 +1,7 @@
 Feature: DATA-DRIVEN TESTING
 
   Background: 
-    * def testData = Java.type('Runner.ADF')
+    * def testData = Java.type('Runner.UtilsMethods')
     * def payload = testData.readExcelData("Sheet1")
     * print payload[rowindex]
     * def json = testData.readJsonTemplate()
