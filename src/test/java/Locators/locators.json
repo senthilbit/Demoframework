@@ -2,6 +2,28 @@
   "searchPage": {
     "txtGoogleSearch": "//*[@name='q']",
     "btnSubmit": "//*[@name='btnK']"
+  },
+  "Parabank" : {
+    "register_link": "//*[@id='loginPanel']/p[2]/a",
+    "register_title" : "/html/head/title",
+    "firstname" : "//*[@id='customer.firstName']",
+    "lastname" : "//*[@id='customer.lastName']",
+    "address" : "//*[@id='customer.address.street']",
+    "city": "//*[@id='customer.address.city']",
+    "state": "//*[@id='customer.address.state']",
+    "zipcode": "//*[@name='customer.address.zipCode']",
+    "phone": "//*[@id='customer.phoneNumber']",
+    "ssn": "//*[@id='customer.ssn']",
+    "username": "//*[@id='customer.username']",
+    "password": "//*[@id='customer.password']",
+    "confirm_password": "//*[@id='repeatedPassword']",
+    "register_button" : "//*[@id='customerForm']/table/tbody/tr[13]/td[2]/input",
+
+    "login_username" : "//*[@id='loginPanel']/form/div[1]/input",
+    "login_password" : "//*[@id='loginPanel']/form/div[2]/input",
+    "login" : "//*[@id='loginPanel']/form/div[3]/input",
+    "loggedin_user" : "//*[@id='leftPanel']/p"
+
   }
 }
 

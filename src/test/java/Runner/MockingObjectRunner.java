@@ -97,7 +97,7 @@ public class MockingObjectRunner {
 					
 					stubbing();
 				
-					return Karate.run("Features/Wire").relativeTo(getClass());
+					return Karate.run("classpath:Features/Wire.feature").relativeTo(getClass());
 }
 	}
 
