@@ -1,28 +1,26 @@
 Feature:  Open New Account Fuctionality
 
 Background:
-#Reading locators from Json
-* def locators = read('classpath:Locators/locators.json')
+ #Reading locators from Json
+ * def locators = read('classpath:Locators/locators.json')
 
-#Reading data from Excel
-* def data = Java.type("Utils.ReadExcel")
-* def path = "D:\\DemoTCBProject\\Demoframework\\src\\test\\java\\Data\\ShoppingCartTestdata.xlsx"
-* def Login = data.readExcelData("Login", path)
-* def CheckOut = data.readExcelData("CheckOut", path)
-* print CheckOut
-* configure driver = { type: 'chrome', addOptions: ["--remote-allow-origins=*", "--disable-save-password-bubble", "--incognito" ] }
+ #Reading data from Excel
+ * def data = Java.type("Utils.ReadExcel")
+ * def path = "D:\\DemoTCBProject\\Demoframework\\src\\test\\java\\Data\\ShoppingCartTestdata.xlsx"
+ * def excelData = data.readExcelData(path)
+ * print CheckOut
+ * configure driver = { type: 'chrome', addOptions: ["--remote-allow-origins=*", "--disable-save-password-bubble", "--incognito" ] }
 
-#* def logIn = call read('Login.feature@Login')
+ #* def logIn = call read('Login.feature@Login')
 
-* def userName = Login[0].UserName
-* def password = Login[0].password
-* def firstName = CheckOut[0].FirstName
- * print firstName
-* def lastName = CheckOut[0].LastName
-* def zipCode = CheckOut[0].ZipCode
-* def Tax = CheckOut[0].Tax
-* def Cost = CheckOut[0].Cost
-* def Total = CheckOut[0].Total
+ * def userName = excelData[0].UserName
+ * def password = excelData[0].password
+ * def firstName = excelData[1].FirstName
+ * def lastName = excelData[1].LastName
+ * def zipCode = excelData[1].ZipCode
+ * def Tax = excelData[1].Tax
+ * def Cost = excelData[1].Cost
+ * def Total = excelData[1].Total
 
 Scenario: Add To Cart End to End Flow
  Given driver 'https://www.saucedemo.com/'

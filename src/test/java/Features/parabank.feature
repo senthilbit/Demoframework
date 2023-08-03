@@ -5,7 +5,7 @@ Feature: Parabank Register
     * def data = Java.type("Utils.ExcelUtility")
     #Read Excel Data
     * def path = "D:\\KARATE_UI_Automation\\karate_ui_automation\\src\\test\\java\\Resources\\parabank_register.xlsx"
-    * def payload = data.readExcelData("users", path)
+    * def payload = data.readExcelData(path)
     * print payload
     * def address = payload[0]['Address']
     * def firstname = payload[0]['First Name']
