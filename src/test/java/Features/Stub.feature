@@ -2,10 +2,12 @@ Feature: DATA-DRIVEN TESTING
 
   Background: 
     * def testData = Java.type('Runner.UtilsMethods')
-    * def payload = testData.readExcelData("Sheet1")
+    * def excelfilepath = ".\\src\\test\\java\\Data\\Worksheet.xlsx"
+    * def payload = testData.readExcelData("Sheet1",excelfilepath)
     * print payload[rowindex]
-    * def json = testData.readJsonTemplate()
-    * def dataholder = testData.createJsonTemplate2(json, payload)
+    * def jsonpath = ".\\src\\test\\java\\Data\\templete.json"
+    * def json = testData.readJsonTemplate(jsonpath)
+    * def dataholder = testData.createJsonTemplate(json, payload)
     * print dataholder
     * print json
     * print payload
