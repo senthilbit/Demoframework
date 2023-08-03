@@ -24,7 +24,41 @@
     "login" : "//*[@id='loginPanel']/form/div[3]/input",
     "loggedin_user" : "//*[@id='leftPanel']/p"
 
-  }
+  },
+  "login":
+	
+	{
+		"userNameField": "#user-name",
+		"passwordField": "#password",
+		"logInButton": "//*[@id='login-button']"
+	},	
+	"logout":	
+	{
+		"SandwitchButton": "//*[@id='react-burger-menu-btn']",
+		"logOutButton": "//*[@id='logout_sidebar_link']"
+	},	
+	"AddToCart":
+	{
+		"AddToCart":"#add-to-cart-sauce-labs-backpack",
+		"CartClick":"//*[@id='shopping_cart_container']/a",
+		"productText":"//*[@id='item_4_title_link']/div"		
+		
+	},
+	"CheckOut":
+	{
+		"CheckOutproductText":"//*[@id='item_4_title_link']/div",
+		"CheckOut"  :"#checkout",
+		"UserFirstName":"//*[@id='first-name']",
+		"UserLastName":"#last-name",
+		"ZipCode":"#postal-code",
+		"ContinueButton":"#continue",
+		"FinishButton":"#finish",
+		"Tax": "//*[@class='summary_tax_label']",
+		"inventoryPrice": "//*[@class='inventory_item_price']",
+		"totalLabel":  "//*[@class='summary_info_label summary_total_label']",
+		"FinishedText":"//*[@id='checkout_complete_container']/h2",	
+		"BackHomeButton":"#back-to-products"
+	}
 }
 
 
