@@ -4,7 +4,7 @@ Feature: Test google search page
     * configure driver = { type: 'chrome',  addOptions: ["--remote-allow-origins=*"]}
     * call read '../Locators/locators.json'
 
-  @google
+  @UI_Automation
   Scenario: Test google search using UI automation
     Given driver 'https://www.google.com/'
     * driver.maximize()

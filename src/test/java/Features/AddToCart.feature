@@ -6,7 +6,7 @@ Background:
 
  #Reading data from Excel
  * def data = Java.type("Utils.ReadExcel")
- * def path = "D:\\DemoTCBProject\\Demoframework\\src\\test\\java\\Data\\ShoppingCartTestdata.xlsx"
+ * def path = ".\\src\\test\\java\\Data\\ShoppingCartTestdata.xlsx"
  * def excelData = data.readExcelData(path)
  * print CheckOut
  * configure driver = { type: 'chrome', addOptions: ["--remote-allow-origins=*", "--disable-save-password-bubble", "--incognito" ] }
