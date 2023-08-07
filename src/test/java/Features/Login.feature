@@ -1,23 +1,25 @@
 Feature: Login Fuctionality
 
-Background: 
+Background:
 
-* def utils = Java.type('TestFeatureFiles.ReadExcel')
-* def dataMap = utils.readExcelData("Login")
-* print dataMap
-* def userName = dataMap[0].UserName
-* def password = dataMap[0].password
+   * def data = Java.type("Utils.ExcelUtility")
+   * def path = "D:\\DemoTCBProject\\Demoframework\\src\\test\\java\\Data\\Cart.xlsx"
+   * def excelData = data.readExcelData(path)
+   * print excelData
+* def userName = excelData[0].UserName
+* def password = excelData[0].password
 * configure driver = { type: 'chrome', addOptions: ["--remote-allow-origins=*", "--disable-save-password-bubble", "--incognito" ] }
-* def locators = read('locators.json')
+   * call read '../Locators/locators.json'
+   * print baseUrl
 
 @Login
 Scenario: Successful login
 
    Given driver 'https://www.saucedemo.com/'
    * driver.maximize()
-   And input(locators.login.userNameField,userName)
-   And input(locators.login.passwordField,password)
-   When click(locators.login.logInButton) 
+   And input(login.userNameField,userName)
+   And input(login.passwordField,password)
+   When click(login.logInButton)
    Then waitForUrl('https://www.saucedemo.com/inventory.html')   
 
    

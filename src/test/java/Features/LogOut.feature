@@ -1,7 +1,7 @@
-  Feature: LogOut Fuctionality
+  Feature: LogOut Functionality
    @LogOut
    Scenario: Successful logout
-   When click(locators.logout.SandwitchButton)
-   Then click(locators.logout.logOutButton)
+   When click(logout.SandwitchButton)
+   Then click(logout.logOutButton)
    Then waitForUrl('https://www.saucedemo.com/')
    * driver.close()

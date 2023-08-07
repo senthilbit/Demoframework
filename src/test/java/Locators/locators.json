@@ -41,8 +41,8 @@
 	{
 		"AddToCart":"#add-to-cart-sauce-labs-backpack",
 		"CartClick":"//*[@id='shopping_cart_container']/a",
-		"productText":"//*[@id='item_4_title_link']/div"		
-		
+		"productText":"//*[@id='item_4_title_link']/div"
+
 	},
 	"CheckOut":
 	{
@@ -50,7 +50,7 @@
 		"CheckOut"  :"#checkout",
 		"UserFirstName":"//*[@id='first-name']",
 		"UserLastName":"#last-name",
-		"ZipCode":"#postal-code",
+		"PostalCode":"//*[@id='postal-code']",
 		"ContinueButton":"#continue",
 		"FinishButton":"#finish",
 		"Tax": "//*[@class='summary_tax_label']",
