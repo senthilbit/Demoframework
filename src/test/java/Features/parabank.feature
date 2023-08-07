@@ -20,7 +20,9 @@ Feature: Parabank Register
     * def password = payload[0]['Password']
     * def confirm_password = payload[0]['Confirm']
     * def sleep = function(pause){ java.lang.Thread.sleep(pause*1000) }
-
+    * print zipcode
+    * print phone
+    * print ssn
   @UI_Automation
   Scenario: Register to Parabank
     Given driver 'https://parabank.parasoft.com/parabank/index.htm'
@@ -34,9 +36,9 @@ Feature: Parabank Register
     And input(Parabank.city, city)
     And input(Parabank.state, state)
     And input(Parabank.address, address)
-    And input(Parabank.zipcode, "411057")
-    And input(Parabank.phone, "1234567890")
-    And input(Parabank.ssn, "123456789")
+    And input(Parabank.zipcode, zipcode)
+    And input(Parabank.phone, phone)
+    And input(Parabank.ssn, ssn)
     And input(Parabank.username, username)
     And input(Parabank.password, password)
     And input(Parabank.confirm_password, confirm_password)
