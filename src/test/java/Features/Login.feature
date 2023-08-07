@@ -3,7 +3,7 @@ Feature: Login Fuctionality
 Background:
 
    * def data = Java.type("Utils.ExcelUtility")
-   * def path = "D:\\DemoTCBProject\\Demoframework\\src\\test\\java\\Data\\Cart.xlsx"
+   * def path = ".\\src\\test\\java\\Data\\Cart.xlsx"
    * def excelData = data.readExcelData(path)
    * print excelData
 * def userName = excelData[0].UserName
