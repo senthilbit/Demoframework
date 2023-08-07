@@ -17,22 +17,22 @@ Feature: Test demo API
     * print responseStatus
     * print responseHeaders
     * print responseCookies
-    # 1. Absolute match by using "==" to strictly existence of check all keys
+    
     * def page = 2
     * match response.page == '#(page)'
-    # 2. contains: match existence of some keys
+   
     * match response contains {per_page:'#notnull', total_pages: '#ignore', data:'#array', support: '##object'}
-    # 3. !contains: assert that specified key does not exists
+   
     * def available_ids = karate.jsonPath(response,"$..['id']")
     * print available_ids
     * match available_ids !contains [2]
-    # 4. contains only: assert that all array elements are present but in any order
+    
     * match available_ids contains only [10,9,7,8,12,11]
-    # 5. contains any: assert any of the given array elements are present
+   
     * match available_ids contains any [10,9,7,8]
-    # 6. match each: Iterate over all elements in a JSON array using the each modifier
+   
     * match each response.data[*] == {id:'#number? _ > 0', email:'#regex .+@reqres.in', first_name:'#string', last_name:'#string', avatar: '#string'}
-    # 7. contains deep: is an alternative of "match contains" as it supports matching of nested nested lists or objects i.e. match some values in the various "trees" of data
+   
     * def nested_data = karate.jsonPath(response,"$..['id','first_name']")
     * print nested_data
     * match response.data contains deep
