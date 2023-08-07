@@ -1,4 +1,4 @@
-package com.demo.features;
+package Runner;
 
 import org.junit.Rule;
 import com.intuit.karate.junit5.Karate;

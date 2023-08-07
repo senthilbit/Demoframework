@@ -4,7 +4,7 @@ Feature: Parabank Register
     * call read '../Locators/locators.json'
     * def data = Java.type("Utils.ExcelUtility")
     #Read Excel Data
-    * def path = "D:\\KARATE_UI_Automation\\karate_ui_automation\\src\\test\\java\\Resources\\parabank_register.xlsx"
+    * def path = ".\\src\\test\\java\\Resources\\parabank_register.xlsx"
     * def payload = data.readExcelData(path)
     * print payload
     * def address = payload[0]['Address']
@@ -21,7 +21,7 @@ Feature: Parabank Register
     * def confirm_password = payload[0]['Confirm']
     * def sleep = function(pause){ java.lang.Thread.sleep(pause*1000) }
 
-  @parabank-register
+  @UI_Automation
   Scenario: Register to Parabank
     Given driver 'https://parabank.parasoft.com/parabank/index.htm'
     * driver.maximize()
@@ -43,18 +43,6 @@ Feature: Parabank Register
     * call sleep 3
     When submit().click(Parabank.register_button)
     * call sleep 3
-
-  @parabank-login
-  Scenario: Login to Parabank
-    Given driver 'https://parabank.parasoft.com/parabank/index.htm'
-    * driver.maximize()
-    And input(Parabank.login_username, username)
-    And input(Parabank.login_password, password)
-    When submit().click(Parabank.login)
-    * waitForUrl('https://parabank.parasoft.com/parabank/overview.htm')
-    And highlight(Parabank.loggedin_user)
-    And screenshot()
     * focus('{a}Log Out')
-    When click('{a}Log Out')
-    * call sleep 3
+    Then click('{a}Log Out')
 

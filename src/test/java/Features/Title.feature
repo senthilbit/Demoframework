@@ -2,7 +2,8 @@ Feature: Excel Data
 
  Background:
     * def excelclass = Java.type('Runner.ExcelUtils')
-    * def payload = excelclass.readExcelData("Sheet1")
+    * def path = ".\\src\\test\\java\\Data\\title2.xlsx"
+    * def payload = excelclass.readExcelData("Sheet1",path)
     * def rowCount = payload.length - 1
     * def repay = payload[tag]
     * print repay
