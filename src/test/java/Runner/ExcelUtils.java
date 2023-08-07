@@ -14,8 +14,9 @@ import java.util.Map;
 
 public class ExcelUtils {
 
-    public static List<Map<String, String>> readExcelData( String sheetName) throws IOException {
-    	String filePath = "C:\\Users\\gurjara\\IdeaProjects\\KarateDemo\\src\\test\\java\\Data\\title2.xlsx";
+    public static List<Map<String, String>> readExcelData( String sheetName, String filePath) throws IOException {
+    	
+    	
         FileInputStream fileInputStream = new FileInputStream(filePath);
         Workbook workbook = new XSSFWorkbook(fileInputStream);
         Sheet sheet = workbook.getSheet(sheetName);
