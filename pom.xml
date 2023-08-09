@@ -87,7 +87,11 @@
             <version>2.12.5</version>
         </dependency>
 
-
+ <dependency>
+            <groupId>net.datafaker</groupId>
+            <artifactId>datafaker</artifactId>
+            <version>1.8.0</version>
+        </dependency>
     </dependencies>
 
 

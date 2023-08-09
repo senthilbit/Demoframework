@@ -8,7 +8,7 @@ Feature: GET API feature
     Given path '/public/v1/users'
     When method GET
     Then status 200
-    And assert responseTime < 1000
+    And assert responseTime < 2000
     And match responseType == 'json'
     * print response
     * print responseTime

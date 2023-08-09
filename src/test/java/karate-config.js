@@ -23,8 +23,7 @@ function fn(){
 		config.baseUrl = "https://gorest.co.in"
 	}
 
-	karate.configure('connectTimeout', 6000);
-	karate.configure('readTimeout', 6000);
+	
 	
 	return config;
 }

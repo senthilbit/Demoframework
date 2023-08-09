@@ -1,5 +1,9 @@
 package Runner;
 
+
+import com.github.tomakehurst.wiremock.WireMockServer;
+import com.github.tomakehurst.wiremock.client.WireMock;
+import org.junit.BeforeClass;
 import org.junit.Rule;
 import com.intuit.karate.junit5.Karate;
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
@@ -7,31 +11,34 @@ import com.github.tomakehurst.wiremock.junit.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 
 public class MockingObjectRunner {
-	
+
+	private static final String HOST = "localhost";
+	private static final int port = 8080;
+private static WireMockServer server = new WireMockServer(port);
 
 
-	@Rule
-	public WireMockRule wireMockRule = new WireMockRule();
 	
 	
-	@Before
-	public void setup() {
-		wireMockRule.start();
+	@BeforeAll
+	public static void setup() {
+		server.start();
+		WireMock.configureFor(HOST,port);
 		stubbing();
 	}
 	
 	
 	
 	@After
-	public void setup1() {
-		wireMockRule.stop();;
+	public static void tear() {
+	server.stop();;
 		
 	}
-	
+
 	public static void stubbing() {
 		stubFor(get(urlEqualTo("/whatssup")).willReturn(aResponse().withStatus(200)
 				.withHeader("ContenType", "application/json").withBody("{\r\n"
@@ -97,9 +104,10 @@ public class MockingObjectRunner {
 					
 					stubbing();
 				
-					return Karate.run("classpath:Features/Wire.feature").relativeTo(getClass());
+					return Karate.run("classpath:Features/WireMock.feature").relativeTo(getClass());
 }
 	}
 
+				
 				
 	
