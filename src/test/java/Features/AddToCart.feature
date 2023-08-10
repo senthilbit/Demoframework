@@ -8,17 +8,13 @@ Background:
  * def data = Java.type("Utils.ExcelUtility")
  * def path = ".\\src\\test\\java\\Data\\Cart.xlsx"
  * def excelData = data.readExcelData(path)
+
+* configure driver = { type: 'chrome', addOptions: ["--remote-allow-origins=*", "--disable-save-password-bubble", "--incognito" ] }
  * print excelData
- * configure driver = { type: 'chrome', addOptions: ["--remote-allow-origins=*", "--disable-save-password-bubble", "--incognito" ] }
-
- #* def logIn = call read('Login.feature@Login')
-
  * def userName = excelData[0].UserName
  * def password = excelData[0].password
  * def firstName = excelData[1].FirstName
  * def lastName = excelData[1].LastName
- * def zipCode = Math.round(excelData[1].ZipCode)
- * print zipCode
  * def zipCodeNum = '12345'
  * def Tax = excelData[1].Tax
  * def Cost = excelData[1].Cost
@@ -30,7 +26,8 @@ Scenario: Add To Cart End to End Flow
  When input(login.userNameField,userName)
  And input(login.passwordField,password)
  Then click(login.logInButton)
- And click(AddToCart.AddToCart)
+ Then waitForUrl('https://www.saucedemo.com/inventory.html')
+ * click(AddToCart.AddToCart)
  # Assert Correct product added
  * def expectedProduct = text(AddToCart.productText)
  Then click(AddToCart.CartClick)
@@ -54,4 +51,7 @@ And input(CheckOut.PostalCode,zipCodeNum)
  Then click(CheckOut.FinishButton)
  And match text(CheckOut.FinishedText) == 'Thank you for your order!'
  And click(CheckOut.BackHomeButton)
- * def logOut = call read('LogOut.feature@LogOut')
+ When click(logout.SandwitchButton)
+ Then click(logout.logOutButton)
+ Then waitForUrl('https://www.saucedemo.com/')
+ * driver.close()

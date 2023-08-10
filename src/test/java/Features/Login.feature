@@ -1,5 +1,5 @@
 Feature: Login Fuctionality
-
+@ignore
 Background:
 
    * def data = Java.type("Utils.ExcelUtility")
