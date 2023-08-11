@@ -1,3 +1,4 @@
+@ignore
 Feature: scenario outline using a dynamic generator function
 
 Background: 

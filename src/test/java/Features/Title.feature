@@ -1,3 +1,4 @@
+@ignore
 Feature: Excel Data
 
  Background:

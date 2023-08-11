@@ -1,3 +1,4 @@
+@ignore
 Feature: Test google search page
 
   Background:

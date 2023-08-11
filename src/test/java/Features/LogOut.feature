@@ -1,5 +1,6 @@
+@ignore
   Feature: LogOut Functionality
-     @ignore
+     
      @LogOut
    Scenario: Successful logout
    When click(logout.SandwitchButton)

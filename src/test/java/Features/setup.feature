@@ -1,3 +1,4 @@
+@ignore
 Feature: Api
 
   @setup

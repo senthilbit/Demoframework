@@ -1,5 +1,6 @@
-Feature: Login Fuctionality
 @ignore
+Feature: Login Fuctionality
+
 Background:
 
    * def data = Java.type("Utils.ExcelUtility")
@@ -21,5 +22,7 @@ Scenario: Successful login
    And input(login.passwordField,password)
    When click(login.logInButton)
    Then waitForUrl('https://www.saucedemo.com/inventory.html')   
+
+   
 
    
