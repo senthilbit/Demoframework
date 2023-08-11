@@ -11,4 +11,9 @@ public class TestRunnerShoppingCart
         return Karate.run("classpath:Features/SwaggerCall.feature").relativeTo(getClass());
     }
 
+    @Karate.Test
+    Karate SwaggerPostCall() {
+        return Karate.run("classpath:Features/SwaggerPostCall.feature").relativeTo(getClass());
+    }
+
 }
