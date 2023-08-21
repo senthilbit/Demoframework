@@ -1,4 +1,4 @@
-@ignore
+@UI
 Feature: Parabank Register
   Background:
     * configure driver = { type: 'chrome',  addOptions: ["--remote-allow-origins=*"]}

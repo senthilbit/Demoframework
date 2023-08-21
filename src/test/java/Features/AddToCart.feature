@@ -1,3 +1,4 @@
+@UI
 Feature:  Add cart Functionality
 
 Background:

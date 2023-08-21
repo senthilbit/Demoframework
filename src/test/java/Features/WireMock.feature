@@ -1,3 +1,4 @@
+@Mocking
 Feature: Test demo API
 
   Scenario: Run a sample Get API

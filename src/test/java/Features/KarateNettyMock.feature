@@ -1,3 +1,4 @@
+@Mocking
 Feature: Title of your feature
 
 

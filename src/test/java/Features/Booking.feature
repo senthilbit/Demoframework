@@ -1,3 +1,4 @@
+@API
 Feature: Test demo API
 
 Background: 
