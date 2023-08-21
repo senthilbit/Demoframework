@@ -5,7 +5,7 @@ Feature: Parabank Register
     * call read '../Locators/locators.json'
     * def data = Java.type("Utils.ExcelUtility")
     #Read Excel Data
-    * def path = ".\\src\\test\\java\\Resources\\parabank_register.xlsx"
+    * def path = ".\\src\\test\\java\\Data\\parabank_register.xlsx"
     * def payload = data.readExcelData(path)
     * print payload
     * def address = payload[0]['Address']

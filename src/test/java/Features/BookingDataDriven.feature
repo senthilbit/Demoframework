@@ -3,7 +3,7 @@ Feature: Test demo API
 
   Background: 
     * url 'https://restful-booker.herokuapp.com'
-    * def testData = Java.type('Runner.UtilsMethods')
+    * def testData = Java.type('Utils.UtilsMethods')
         
     * def excelFilePath =  ".\\src\\test\\java\\Data\\Worksheet.xlsx";
     * def payload = testData.readExcelData("Sheet2", excelFilePath)
