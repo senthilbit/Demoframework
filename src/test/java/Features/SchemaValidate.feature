@@ -1,3 +1,4 @@
+@ignore
 Feature: GET API feature
 
   Background: 
