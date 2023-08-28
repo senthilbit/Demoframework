@@ -103,6 +103,11 @@
             <artifactId>swagger-coverage-commons</artifactId>
             <version>1.5.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-robot</artifactId>
+            <version>${karate.version}</version>
+        </dependency>
 
     </dependencies>
 
