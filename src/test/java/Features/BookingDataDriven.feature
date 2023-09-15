@@ -11,11 +11,23 @@ Feature: Test demo API
     * def load = testData.createJsonTemplate(payl,payload)
     * print payl
     * print load
-    * print load[rowindex]
-    * def lo = load[rowindex]
+   # * print load[rowindex]
+    #* def lo = load[rowindex]
     * print payload
 
+
+  @setup
+  Scenario:
+    * def data =
+    """
+    function(i){
+      if (i == 5) return null;
+      return { rowindex: i };
+    }
+    """
+
   Scenario Outline: Run a sample Get API
+    * print rowindex
     * def booking =
       """
       {
@@ -36,18 +48,12 @@ Feature: Test demo API
     * print token
     * path '/booking'
     * headers head
-    * request lo
+    * request load[rowindex]
     * method POST
     * status 200
     * print response
 
-    Examples: 
-      | rowindex |
-      |        0 |
-      |        1 |
-      |        2 |
-      |        3 |
-      |        4 |
-      |        5 |
+    Examples:
+      | karate.setup().data |
 
 
