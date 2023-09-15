@@ -89,3 +89,14 @@ Scenario: Replace Value
   | two   | 'good'  |
 
 * match text == 'hello cruel world good bye'
+
+
+  Scenario: Random Num
+
+    * def random_num =
+"""
+function(max){ return Math.floor( max) }
+
+"""
+    * def temp = random_num(10)
+    * print temp

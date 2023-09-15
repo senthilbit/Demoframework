@@ -19,69 +19,84 @@ import java.util.regex.Pattern;
 public class UtilsMethods {
 
    
+	public static List<Map<String, Object>> readExcelData(String sheetName, String excelFilePath) throws IOException {
+		List<Map<String, Object>> testDataList = new ArrayList<>();
+		//String filePath = "C:\\Users\\gurjara\\eclipse-workspace\\WireMock\\src\\test\\java\\Stubbing\\title3.xlsx";
 
-	 public static List<Map<String, Object>> readExcelData(String sheetName, String excelFilePath) throws IOException {
-	        List<Map<String, Object>> data = new ArrayList<>();
-	        
-	       // String path = System.getProperty("user.dir");
-	       // String excelFilePath = path + "\\src\\test\\java\\Data\\Worksheet.xlsx";
+		try (FileInputStream fis = new FileInputStream(new File(excelFilePath));
+			 Workbook workbook = new XSSFWorkbook(fis)) {
+			Sheet sheet1 = workbook.getSheet(sheetName);
 
-	        try (FileInputStream inputStream = new FileInputStream(excelFilePath);
-	             Workbook workbook = new XSSFWorkbook(inputStream)) {
-	        	Sheet sheet = workbook.getSheet(sheetName);
-	            // Assuming the data is in the first sheet (index 0)
-	           // Sheet sheet = workbook.getSheetAt(0);
 
-	            // Read the header row to get the column names
-	            Row headerRow = sheet.getRow(0);
-	            int numColumns = headerRow.getPhysicalNumberOfCells();
-	            String[] columnNames = new String[numColumns];
-	            for (int i = 0; i < numColumns; i++) {
-	                columnNames[i] = headerRow.getCell(i).getStringCellValue();
-	            }
+			Sheet sheet = workbook.getSheet(sheetName);
+			int rowCount = sheet.getLastRowNum();
 
-	            // Convert data rows into a list of maps
-	            for (int rowIndex = 1; rowIndex <= sheet.getLastRowNum(); rowIndex++) {
-	                Row row = sheet.getRow(rowIndex);
-	                Map<String, Object> rowData = new HashMap<>();
+			// Find the column index of the "Run" header
+			Row headerRow = sheet.getRow(0);
+			int runColumnIndex = -1;
+			for (int i = 0; i <= headerRow.getLastCellNum(); i++) {
+				Cell cell = headerRow.getCell(i);
+				if (cell != null && cell.getStringCellValue().equalsIgnoreCase("Run")) {
+					runColumnIndex = i;
+					break;
+				}
+			}
 
-	                for (int colIndex = 0; colIndex < columnNames.length; colIndex++) {
-	                    Cell cell = row.getCell(colIndex);
-	                    String columnName = columnNames[colIndex];
-	                    Object cellValue = getCellValue(cell);
-	                    rowData.put(columnName, cellValue);
-	                }
+			if (runColumnIndex == -1) {
+				System.out.println("Header 'Run' not found in the Excel sheet.");
+				return testDataList;
+			}
 
-	                data.add(rowData);
-	            }
-	        }
+			for (int rowNumber = 1; rowNumber <= rowCount; rowNumber++) {
+				Row row = sheet.getRow(rowNumber);
 
-	        return data;
-	    }
+				// Check if the "Run" column has the value "yes" to start reading
+				Cell runCell = row.getCell(runColumnIndex);
+				if (runCell != null && runCell.getStringCellValue().equalsIgnoreCase("yes")) {
+					// Start reading the data from this row
+					Map<String, Object> testData = new HashMap<>();
+					for (int colNumber = 1; colNumber < row.getLastCellNum(); colNumber++) {
+						Cell dataCell = row.getCell(colNumber);
+						if (dataCell != null) {
+							String header = headerRow.getCell(colNumber).getStringCellValue();
+							Object value = getStringCellValue(dataCell);
+							testData.put(header, value);
+						}
+					}
+					testDataList.add(testData);
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-	    public static Object getCellValue(Cell cell) {
-	        if (cell == null) {
-	           return null;
-	        }
+		return testDataList;
+	}
 
-	        CellType cellType = cell.getCellType();
-	        switch (cellType) {
-	            case STRING:
-	                return cell.getStringCellValue();
-	            case NUMERIC:
-	                if (DateUtil.isCellDateFormatted(cell)) {
-	                    return cell.getDateCellValue();
-	                } else {
-	                    return cell.getNumericCellValue();
-	                }
-	            case BOOLEAN:
-	                return cell.getBooleanCellValue();
-	            case FORMULA:
-	                return cell.getCellFormula();
-	            default:
-	                return null;
-	        }
-	    }
+	public static Object getStringCellValue(Cell cell) {
+		if (cell == null) {
+			return null;
+		}
+
+		CellType cellType = cell.getCellType();
+		switch (cellType) {
+			case STRING:
+				return cell.getStringCellValue();
+			case NUMERIC:
+				if (DateUtil.isCellDateFormatted(cell)) {
+					return cell.getDateCellValue();
+				} else {
+					return cell.getNumericCellValue();
+				}
+			case BOOLEAN:
+				return cell.getBooleanCellValue();
+			case FORMULA:
+				return cell.getCellFormula();
+			default:
+				return null;
+		}
+	}
+
 
 	    public static JsonNode readJsonTemplate(String filePath) throws IOException {
 	        // Create an instance of the ObjectMapper from Jackson
@@ -139,7 +154,6 @@ public static List<String> createJsonTemplate(JsonNode jsonTemplate, List<Map<St
 
 
 }
-
 
 
 

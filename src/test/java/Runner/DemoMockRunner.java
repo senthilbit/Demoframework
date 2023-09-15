@@ -11,26 +11,25 @@ package Runner;
 
         public class DemoMockRunner {
 
-    static MockServer server;
+        	 static MockServer server;
 
-    @BeforeAll
-   public static void beforeAll() {
-        server = MockServer.feature("classpath:Features/KarateNettyMock.feature").http(8080).build();
-    }
+        	    @BeforeAll
+        	   public static void beforeAll() {
+        	        server = MockServer.feature("classpath:Features/KarateNettyMock.feature").http(8080).build();
+        	    }
 
-    @AfterAll
-  public static void afterAll() {
-       server.stop();
-   }
+        	   @AfterAll
+        	  public static void afterAll() {
+        	     server.stop();
+        	   }
 
-    @Test
-    void testParallel() {
-        Results results = Runner.path("classpath:Features/KarateNettyMock.feature")
-                .systemProperty("demo.server.port", server.getPort() + "")
-                .systemProperty("demo.server.http", "false")
-                .parallel(1);
-        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
-    }
+        	    @Test
+        	    void testParallel() {
+        	        Results results = Runner.path("classpath:Features/KarateNetty.feature")
+        	                .systemProperty("demo.server.port", server.getPort() + "")
+        	                .systemProperty("demo.server.http", "true")
+        	                .parallel(1);
+        	        assertTrue(results.getFailCount() == 0, results.getErrorMessages());
+        	    }
 
-}
-
+        	}
