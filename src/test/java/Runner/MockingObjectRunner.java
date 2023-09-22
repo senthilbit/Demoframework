@@ -3,7 +3,6 @@ package Runner;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.client.WireMock;
-import org.junit.BeforeClass;
 import org.junit.Rule;
 import com.intuit.karate.junit5.Karate;
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
@@ -11,6 +10,7 @@ import com.github.tomakehurst.wiremock.junit.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -72,3 +72,4 @@ public class MockingObjectRunner {
 }
 
 				
+	

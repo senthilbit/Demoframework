@@ -150,7 +150,7 @@
                 <configuration>
                     <simulationsFolder>src/test/java</simulationsFolder>
                     <includes>
-                        <include>Runner.ScalaClass</include>
+                        <include>Runner.CatsSimulation</include>
                     </includes>
                 </configuration>
                 <executions>

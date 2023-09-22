@@ -5,7 +5,7 @@ Feature: cats crud
   * def port = callonce startMockServer
   * url 'http://localhost:' + port + '/cats'
 
-
+  @perf
   Scenario: create, get and update cat
     Given request { name: 'Billi' }
     When method post
