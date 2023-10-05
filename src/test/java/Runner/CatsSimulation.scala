@@ -9,11 +9,11 @@ import scala.language.postfixOps
 
 class CatsSimulation extends Simulation {
 
-   MockUtils.startServer(0)
+  MockUtils.startServer(0)
 
   val protocol = karateProtocol(
-    "/cats/{id}" -> Nil,
-    "/cats" -> pauseFor("get" -> 15, "post" -> 25)
+
+
   )
 
   protocol.nameResolver = (req, ctx) => req.getHeader("karate-name")
@@ -59,7 +59,7 @@ class CatsSimulation extends Simulation {
   ).assertions(
     global.responseTime.max.between(100, 5000),
     global.failedRequests.percent.between(0,90),
-    global.successfulRequests.percent.gt(80)
-  ).maxDuration(2 minutes) // Configuring the maximum duration of your simulation. It is useful when we need to bound the duration the simulation when we can’t predict it.
+    global.successfulRequests.percent.gt(80),
+  ).maxDuration(2 minutes) // Configuring the maximum duration of your simulation. It is useful when we need to bound the duration the simulation when we canâ€™t predict it.
 
 }
