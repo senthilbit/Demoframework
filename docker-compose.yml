@@ -13,6 +13,7 @@ services:
     ports:
      - "9108:9108"
      - "9109:9109"
+
   prometheus:
     image: prom/prometheus:v2.47.2
     ports:
@@ -27,3 +28,5 @@ services:
       - ./grafana/provisioning/:/etc/grafana/provisioning/datasources/
       - ./grafana/dashboards-config/:/etc/grafana/provisioning/dashboards/
       - ./grafana/dashboards-json/:/etc/dashboards/
+
+
