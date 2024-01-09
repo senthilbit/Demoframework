@@ -8,6 +8,9 @@ function fn(){
 	
 	var env = karate.env
 	karate.log('The value of env is : ', env);
+
+	 if (!env) env = 'dev';
+      var config = { env: env }
 	
 	if(env == 'qa'){
 		

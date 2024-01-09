@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.1:61]","start":1704791079529,"end":1704791080753,"title":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.1:61] 14:34:39.529-14:34:40.753 Insert WorkBook"},{"id":2,"group":1,"content":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.2:61]","start":1704791080773,"end":1704791080995,"title":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.2:61] 14:34:40.773-14:34:40.995 Insert WorkBook"},{"id":3,"group":1,"content":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.3:61]","start":1704791081003,"end":1704791081179,"title":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.3:61] 14:34:41.003-14:34:41.179 Insert WorkBook"},{"id":4,"group":1,"content":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.4:61]","start":1704791081186,"end":1704791081454,"title":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.4:61] 14:34:41.186-14:34:41.454 Insert WorkBook"},{"id":5,"group":1,"content":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.5:61]","start":1704791081464,"end":1704791081736,"title":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.5:61] 14:34:41.464-14:34:41.736 Insert WorkBook"},{"id":6,"group":1,"content":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.6:61]","start":1704791081744,"end":1704791081976,"title":"src\/test\/java\/Features\/TDG_UKAF_Input_Data_From_Csv[1.6:61] 14:34:41.744-14:34:41.976 Insert WorkBook"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

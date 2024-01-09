@@ -1,5 +1,6 @@
 Feature:  Add cart Functionality
 
+ # @author Akshay
 Background:
  #Reading locators from Json
  * call read '../Locators/locators.json'
@@ -40,6 +41,7 @@ Scenario: Add To Cart End to End Flow
  And input(CheckOut.UserLastName,lastName)
 And input(CheckOut.PostalCode,zipCodeNum)
  Then click(CheckOut.ContinueButton)
+ * screenshot()
 
  # validate text from UI from cart
  * def temp = text(CheckOut.Tax)
@@ -54,4 +56,5 @@ And input(CheckOut.PostalCode,zipCodeNum)
  Then click(CheckOut.FinishButton)
  And match text(CheckOut.FinishedText) == 'Thank you for your order!'
  And click(CheckOut.BackHomeButton)
+ * screenshot()
  * def logOut = call read('LogOut.feature@LogOut')

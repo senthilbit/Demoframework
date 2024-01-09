@@ -9,6 +9,10 @@ import scala.concurrent.duration._
 import scala.language.postfixOps
 import io.gatling.core.structure.ScenarioBuilder
 
+/**
+ *
+ * @author Akshay
+ */
 class TDG_UKAF_MVN_Parameterization extends Simulation {
 
 

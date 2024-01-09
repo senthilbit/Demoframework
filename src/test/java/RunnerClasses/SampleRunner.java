@@ -12,6 +12,11 @@ import com.intuit.karate.junit5.Karate;
 public class SampleRunner {
 
 	@Karate.Test
+	Karate Database() {
+		return Karate.run("classpath:Features/TDG_UKAF_DatabaseConection.feature").relativeTo(getClass());
+	}
+
+	@Karate.Test
 	Karate Excel() {
 		return Karate.run("classpath:Features/TDG_UKAF_Input_Data_From_Excel.feature").relativeTo(getClass());
 	}

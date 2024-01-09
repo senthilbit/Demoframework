@@ -6,6 +6,12 @@ import io.gatling.core.Predef.{constantUsersPerSec, _}
 import scala.concurrent.duration._
 import scala.language.postfixOps
 import io.gatling.core.structure.ScenarioBuilder
+
+
+/**
+ *
+ * @author Akshay
+ */
 class TDG_UKAF_Feeder extends Simulation {
 
   val csvFile =  csv("./Data/DataCsv.csv")
