@@ -14,6 +14,10 @@ import io.gatling.core.structure.ScenarioBuilder
  */
 class TDG_UKAF_Feeder extends Simulation {
 
+  before {
+    println("Performance tests started")
+  }
+
   val csvFile =  csv("./Data/DataCsv.csv")
 
   val FeederToKarate = scenario("FeederToKarate").feed(csv("./Data/DataCsv.csv").circular).exec(karateSet("username", session => session("username").as[String]))
@@ -23,8 +27,12 @@ class TDG_UKAF_Feeder extends Simulation {
 
   setUp(
     FeederToKarate.inject(
-      constantUsersPerSec(5).during(5 minutes)
+     // constantUsersPerSec(5).during(5 minutes)
 
-      //atOnceUsers(5)
+      atOnceUsers(5)
   ))
+
+  after {
+    println("Performance tests ended")
+  }
 }

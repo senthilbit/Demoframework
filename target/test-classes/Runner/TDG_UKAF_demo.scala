@@ -14,6 +14,10 @@ import io.gatling.core.structure.ScenarioBuilder
  */
 class TDG_UKAF_demo extends Simulation{
 
+  before {
+    println("Performance tests started")
+  }
+
 
   var ServiceTest: ScenarioBuilder = scenario("ServiceTest").exec(karateFeature("classpath:Features/TDG_UKAF_Chainning.feature@Perf"))
 
@@ -28,6 +32,9 @@ class TDG_UKAF_demo extends Simulation{
      // .eachLevelLasting(60)
      // .separatedByRampsLasting(15)
     //  .startingFrom(5) // Int
-   // )
+   //
   )
+  after {
+    println("Performance tests ended")
+  }
 }

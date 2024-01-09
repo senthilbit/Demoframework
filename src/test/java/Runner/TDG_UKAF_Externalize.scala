@@ -15,6 +15,10 @@ import io.gatling.core.structure.ScenarioBuilder
  */
 class TDG_UKAF_Externalize extends Simulation {
 
+  before {
+    println("Performance tests started")
+  }
+
   val config = ConfigFactory.load("external.conf")
 
   val users = config.getInt("load.users")
@@ -32,6 +36,10 @@ class TDG_UKAF_Externalize extends Simulation {
 
 
   )
+
+  after {
+    println("Performance tests ended")
+  }
 
 
 }

@@ -1,0 +1,239 @@
+{
+  "type": "GROUP",
+"name": "Global Information",
+"path": "",
+"pathFormatted": "group_missing-name-b06d1",
+"stats": {
+    "name": "Global Information",
+    "numberOfRequests": {
+        "total": 2926,
+        "ok": 1426,
+        "ko": 1500
+    },
+    "minResponseTime": {
+        "total": 8,
+        "ok": 11,
+        "ko": 8
+    },
+    "maxResponseTime": {
+        "total": 428,
+        "ok": 428,
+        "ko": 120
+    },
+    "meanResponseTime": {
+        "total": 20,
+        "ok": 23,
+        "ko": 16
+    },
+    "standardDeviation": {
+        "total": 17,
+        "ok": 21,
+        "ko": 10
+    },
+    "percentiles1": {
+        "total": 15,
+        "ok": 17,
+        "ko": 12
+    },
+    "percentiles2": {
+        "total": 21,
+        "ok": 24,
+        "ko": 17
+    },
+    "percentiles3": {
+        "total": 42,
+        "ok": 46,
+        "ko": 36
+    },
+    "percentiles4": {
+        "total": 71,
+        "ok": 139,
+        "ko": 60
+    },
+    "group1": {
+    "name": "t < 500 ms",
+    "count": 1426,
+    "percentage": 49
+},
+    "group2": {
+    "name": "500 ms < t < 1800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t > 1800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "count": 1500,
+    "percentage": 51
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 9.753333333333334,
+        "ok": 4.753333333333333,
+        "ko": 5.0
+    }
+},
+"contents": {
+"req_post--auth-gett-9285e": {
+        "type": "REQUEST",
+        "name": "POST /auth/getToken",
+"path": "POST /auth/getToken",
+"pathFormatted": "req_post--auth-gett-9285e",
+"stats": {
+    "name": "POST /auth/getToken",
+    "numberOfRequests": {
+        "total": 1500,
+        "ok": 1426,
+        "ko": 74
+    },
+    "minResponseTime": {
+        "total": 10,
+        "ok": 11,
+        "ko": 10
+    },
+    "maxResponseTime": {
+        "total": 428,
+        "ok": 428,
+        "ko": 38
+    },
+    "meanResponseTime": {
+        "total": 23,
+        "ok": 23,
+        "ko": 15
+    },
+    "standardDeviation": {
+        "total": 21,
+        "ok": 21,
+        "ko": 5
+    },
+    "percentiles1": {
+        "total": 17,
+        "ok": 17,
+        "ko": 13
+    },
+    "percentiles2": {
+        "total": 24,
+        "ok": 24,
+        "ko": 16
+    },
+    "percentiles3": {
+        "total": 45,
+        "ok": 46,
+        "ko": 27
+    },
+    "percentiles4": {
+        "total": 137,
+        "ok": 139,
+        "ko": 36
+    },
+    "group1": {
+    "name": "t < 500 ms",
+    "count": 1426,
+    "percentage": 95
+},
+    "group2": {
+    "name": "500 ms < t < 1800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t > 1800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "count": 74,
+    "percentage": 5
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 5.0,
+        "ok": 4.753333333333333,
+        "ko": 0.24666666666666667
+    }
+}
+    },"req_post--elasticse-abb9b": {
+        "type": "REQUEST",
+        "name": "POST /elasticsearch/insertDoc",
+"path": "POST /elasticsearch/insertDoc",
+"pathFormatted": "req_post--elasticse-abb9b",
+"stats": {
+    "name": "POST /elasticsearch/insertDoc",
+    "numberOfRequests": {
+        "total": 1426,
+        "ok": 0,
+        "ko": 1426
+    },
+    "minResponseTime": {
+        "total": 8,
+        "ok": 0,
+        "ko": 8
+    },
+    "maxResponseTime": {
+        "total": 120,
+        "ok": 0,
+        "ko": 120
+    },
+    "meanResponseTime": {
+        "total": 16,
+        "ok": 0,
+        "ko": 16
+    },
+    "standardDeviation": {
+        "total": 11,
+        "ok": 0,
+        "ko": 11
+    },
+    "percentiles1": {
+        "total": 12,
+        "ok": 0,
+        "ko": 12
+    },
+    "percentiles2": {
+        "total": 18,
+        "ok": 0,
+        "ko": 18
+    },
+    "percentiles3": {
+        "total": 37,
+        "ok": 0,
+        "ko": 37
+    },
+    "percentiles4": {
+        "total": 61,
+        "ok": 0,
+        "ko": 61
+    },
+    "group1": {
+    "name": "t < 500 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group2": {
+    "name": "500 ms < t < 1800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group3": {
+    "name": "t > 1800 ms",
+    "count": 0,
+    "percentage": 0
+},
+    "group4": {
+    "name": "failed",
+    "count": 1426,
+    "percentage": 100
+},
+    "meanNumberOfRequestsPerSecond": {
+        "total": 4.753333333333333,
+        "ok": 0,
+        "ko": 4.753333333333333
+    }
+}
+    }
+}
+
+}

@@ -33,6 +33,7 @@ public class DbUtils {
     }
 
     public Object readValue(String query) {
+
         return jdbc.queryForObject(query, Object.class);
     }
 
@@ -41,10 +42,12 @@ public class DbUtils {
     }
 
     public List<Map<String, Object>> readRows(String query) {
+
         return jdbc.queryForList(query);
     }
 
     public int updateRow(String query) {
+
         return jdbc.update(query);
     }
 

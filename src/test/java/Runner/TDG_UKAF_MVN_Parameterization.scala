@@ -15,6 +15,10 @@ import io.gatling.core.structure.ScenarioBuilder
  */
 class TDG_UKAF_MVN_Parameterization extends Simulation {
 
+  before {
+    println("Performance tests started")
+  }
+
 
   val myramp = java.lang.Long.getLong("ramp")
   val t_concurrency = Integer.getInteger("users", 10)
@@ -35,5 +39,9 @@ class TDG_UKAF_MVN_Parameterization extends Simulation {
 
   setUp(
     getuser.inject(inject_rampup))
+
+  after {
+    println("Performance tests ended")
+  }
 
 }
