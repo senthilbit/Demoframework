@@ -23,18 +23,18 @@ class TDG_UKAF_Externalize extends Simulation {
 
   val users = config.getInt("load.users")
   val SteadyDuration = config.getInt("load.SteadyDuration")
+  val featurepath = config.getString("load.featureclasspath")
+
+  val scenarioname = config.getString("load.scenarioName")
 
 
-  val getuser = scenario("getuser").exec(karateFeature("classpath:Features/TDG_UKAF_Chainning.feature@Perf"))
+  val getuser = scenario(scenarioname).exec(karateFeature(featurepath))
+
+  val rampup =  constantUsersPerSec(users).during(SteadyDuration)
 
 
   setUp(
-    getuser.inject( // 0
-
-      //rampUsers(users).during(rampduration))
-      constantUsersPerSec(users).during(SteadyDuration))
-
-
+    getuser.inject(rampup)
   )
 
   after {
