@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Externalize.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Externalize.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/external.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/external.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatling/tdg-ukaf-externalize-20240115111702127/simulation.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatling/tdg-ukaf-externalize-20240115111702127/simulation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inc_compile.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/inc_compile.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Xray/SetExecutionXrayForKarate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Xray/SetExecutionXrayForKarate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/external.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/external.conf" afterDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
