@@ -18,9 +18,10 @@ class TDG_UKAF_Feeder extends Simulation {
     println("Performance tests started")
   }
 
-  val csvFile =  csv("./Data/DataCsv.csv")
+  val csvFile =  feed(csv("./Data/DataCsv.csv")).exec(karateSet("username", session => session("username").as[String]))
 
-  val FeederToKarate = scenario("FeederToKarate").feed(csv("./Data/DataCsv.csv").circular).exec(karateSet("username", session => session("username").as[String]))
+  val FeederToKarate = scenario("FeederToKarate").feed(csv("./Data/DataCsv.csv").circular)
+    .exec(karateSet("username", session => session("username").as[String]))
     .exec(karateSet("password", session => session("password").as[String]))
     .exec(karateFeature("classpath:Features/TDG_UKAF_Input_Data_From_Feeder.feature"))
 

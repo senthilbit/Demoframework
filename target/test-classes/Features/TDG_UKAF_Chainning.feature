@@ -2,7 +2,7 @@ Feature: Xspace test
 # @author Akshay
 
   Background:
-  #  * url 'https://dev-xtables.thedigitalgroup.com'
+   # * url 'https://dev-xtables.thedigitalgroup.com'
     * url baseUrl
     * configure ssl = true
     * def result = { "username":"aman.chauhan@thedigitalgroup.com", "password":"tcb@1234" }

@@ -6,15 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Externalize.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Externalize.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Chainning.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Chainning.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Feeder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Feeder.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_MVN_Parameterization.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_MVN_Parameterization.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/DbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/External/DbUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/karate-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karate-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inc_compile.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/inc_compile.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/DbUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/DbUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.TDG_UKAF_Chainning.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.TDG_UKAF_Chainning.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.TDG_UKAF_Input_Data_From_Excel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.TDG_UKAF_Input_Data_From_Excel.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.Features.TDG_UKAF_Chainning.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/src.test.java.Features.TDG_UKAF_Chainning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.Features.TDG_UKAF_Chainning.karate-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/src.test.java.Features.TDG_UKAF_Chainning.karate-json.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/TDG_UKAF_Chainning.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/TDG_UKAF_Chainning.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_Externalize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_Feeder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_MVN_Parameterization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/karate-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/karate-config.js" afterDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Karate" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,7 +67,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Framework/karate config.png&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Framework/karate config.png&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -76,7 +88,7 @@
       <recent name="Utils.Internal" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SampleRunner.Chaining">
+  <component name="RunManager" selected="Karate Feature.TDG_UKAF_Chainning.feature: TDG_UKAF_Chainning.feature">
     <configuration name="SampleRunner.Chaining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KarateDemo" />
       <extension name="coverage">
@@ -88,6 +100,22 @@
       <option name="PACKAGE_NAME" value="RunnerClasses" />
       <option name="MAIN_CLASS_NAME" value="RunnerClasses.SampleRunner" />
       <option name="METHOD_NAME" value="Chaining" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleRunner.Database" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KarateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RunnerClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RunnerClasses" />
+      <option name="MAIN_CLASS_NAME" value="RunnerClasses.SampleRunner" />
+      <option name="METHOD_NAME" value="Database" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,22 +149,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TDG_UKAF_DatabaseConection.feature: TDG_UKAF_DatabaseConection.feature" type="karate" temporary="true">
+    <configuration name="TDG_UKAF_DatabaseConection.feature: Line 5" type="karate" temporary="true">
       <option name="karateSearchPaths">
         <list>
-          <option value="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_DatabaseConection.feature" />
-        </list>
-      </option>
-      <module name="KarateDemo" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TDG_UKAF_Input_Data_From_Csv.feature: TDG_UKAF_Input_Data_From_Csv.feature" type="karate" temporary="true">
-      <option name="karateSearchPaths">
-        <list>
-          <option value="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Input_Data_From_Csv.feature" />
+          <option value="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_DatabaseConection.feature:5" />
         </list>
       </option>
       <module name="KarateDemo" />
@@ -147,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SampleRunner.Chaining" />
-        <item itemvalue="JUnit.SampleRunner.Excel" />
         <item itemvalue="Karate Feature.TDG_UKAF_Chainning.feature: TDG_UKAF_Chainning.feature" />
-        <item itemvalue="Karate Feature.TDG_UKAF_Input_Data_From_Csv.feature: TDG_UKAF_Input_Data_From_Csv.feature" />
-        <item itemvalue="Karate Feature.TDG_UKAF_DatabaseConection.feature: TDG_UKAF_DatabaseConection.feature" />
+        <item itemvalue="JUnit.SampleRunner.Chaining" />
+        <item itemvalue="JUnit.SampleRunner.Database" />
+        <item itemvalue="Karate Feature.TDG_UKAF_DatabaseConection.feature: Line 5" />
+        <item itemvalue="JUnit.SampleRunner.Excel" />
       </list>
     </recent_temporary>
   </component>

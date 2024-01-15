@@ -6,7 +6,7 @@ function fn() {
 
   var config = {
 
-  		baseUrl : "https://dev-xtables.thedigitalgroup.com"
+  		baseUrl : "https://dev-xspaces.thedigitalgroup.com"
 
   	};
 
@@ -39,14 +39,14 @@ function fn() {
       var config = { env: env }
 	if(env == 'qa'){
 
-		config.baseUrl = "https://dev-xtables.thedigitalgroup.com"
+		config.baseUrl = "https://dev-xspaces.thedigitalgroup.com"
 
 	} else if(env == 'dev')
 	{
-		config.baseUrl = "https://dev-xtables.thedigitalgroup.com"
+		config.baseUrl = "https://dev-xspaces.thedigitalgroup.com"
 	}else
 	{
-		config.baseUrl = "https://dev-xtables.thedigitalgroup.com"
+		config.baseUrl = "https://dev-xspaces.thedigitalgroup.com"
 	}
 
     config["android"] = android
