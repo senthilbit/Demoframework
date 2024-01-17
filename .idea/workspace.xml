@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Xray/SetExecutionXrayForKarate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Xray/SetExecutionXrayForKarate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gatling/lastRun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatling/lastRun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gatling/tdg-ukaf-externalize-20240115111702127/simulation.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatling/tdg-ukaf-externalize-20240115111702127/simulation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gatling/tdg-ukaf-externalize-20240115112809878/simulation.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatling/tdg-ukaf-externalize-20240115112809878/simulation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inc_compile.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/inc_compile.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/external.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/external.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatling/tdg-ukaf-demo-20240117080327425/simulation.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatling/tdg-ukaf-demo-20240117080327425/simulation.log" afterDir="false" />
     </list>
-    <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" afterDir="false" />
-    </list>
+    <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,20 +23,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala">
-      <ranges>
-        <range start1="8" end1="8" start2="8" end2="9" changelist="4a3acfea-9501-4bfe-9f07-224a759c60d3" />
-        <range start1="14" end1="15" start2="15" end2="16" changelist="4a3acfea-9501-4bfe-9f07-224a759c60d3" />
-        <range start1="18" end1="18" start2="19" end2="20" changelist="4a3acfea-9501-4bfe-9f07-224a759c60d3" />
-        <range start1="20" end1="20" start2="22" end2="38" changelist="113b9f4d-e287-4383-8a89-dd291cdb35ca" />
-        <range start1="21" end1="22" start2="39" end2="42" changelist="113b9f4d-e287-4383-8a89-dd291cdb35ca" />
-        <range start1="23" end1="28" start2="43" end2="45" changelist="4a3acfea-9501-4bfe-9f07-224a759c60d3" />
-        <range start1="29" end1="38" start2="46" end2="51" changelist="4a3acfea-9501-4bfe-9f07-224a759c60d3" />
-        <range start1="39" end1="40" start2="52" end2="53" changelist="4a3acfea-9501-4bfe-9f07-224a759c60d3" />
-      </ranges>
-    </file>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">

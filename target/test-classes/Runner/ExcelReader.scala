@@ -4,7 +4,7 @@ import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 
 object ExcelReader {
   def main(args: Array[String]): Unit = {
-    val excelFilePath = "D:/New folder/Demoframework/src/test/java/Data/Load_config.xlsx"
+    val excelFilePath = "./src/test/java/Data/Load_config.xlsx"
     val sheetName = "Sheet1"
     val targetRow = 1
     val targetColumn = 3

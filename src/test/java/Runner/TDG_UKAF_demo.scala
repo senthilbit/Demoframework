@@ -21,7 +21,7 @@ class TDG_UKAF_demo extends Simulation {
   }
 
   //val excel = new ExcelReader()
-  val excelFilePath = "D:/New folder/Demoframework/src/test/java/Data/Load_config.xlsx"
+  val excelFilePath = "./src/test/java/Data/Load_config.xlsx"
   val sheetName = "Sheet1"
 
 
