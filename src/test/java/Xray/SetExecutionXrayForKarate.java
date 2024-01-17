@@ -43,7 +43,8 @@ public class SetExecutionXrayForKarate {
     }
 
     public static void main(String[] args) throws IOException {
-        Gson formatter = (new GsonBuilder()).setPrettyPrinting().create(); Gson gson = new Gson();
+        Gson formatter = (new GsonBuilder()).setPrettyPrinting().create();
+        Gson gson = new Gson();
         JsonArray originJson = null;
         JsonArray report = null;
         JsonElement addedJson = null;
@@ -56,13 +57,13 @@ public class SetExecutionXrayForKarate {
             System.err.println("Failed to create directory!" + e.getMessage());
         }
             try {
-                addedJson = (JsonElement) gson.fromJson(new FileReader (dir + "/target/cucumber" ), JsonElement.class);
+                addedJson = (JsonElement) gson.fromJson(new FileReader (dir + "/target/gatling/" ), JsonElement.class);
                 }
                 catch (FileNotFoundException e) {
                 System.out.println("Not found file: added.json");
                 e.printStackTrace();
             }
-                String folder = dir + "/target/surefire-reports";
+                String folder = dir + "/target/gatling/";
                 File directoryPath = new File(folder);
 //List of all files and directories
         String contents[] = directoryPath.list();

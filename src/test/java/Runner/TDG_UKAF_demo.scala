@@ -6,35 +6,47 @@ import io.gatling.core.Predef.{constantUsersPerSec, _}
 import scala.concurrent.duration._
 import scala.language.postfixOps
 import io.gatling.core.structure.ScenarioBuilder
+import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 
 
 /**
  *
  * @author Akshay
  */
-class TDG_UKAF_demo extends Simulation{
+class TDG_UKAF_demo extends Simulation {
 
   before {
     println("Performance tests started")
+
   }
 
+  //val excel = new ExcelReader()
+  val excelFilePath = "D:/New folder/Demoframework/src/test/java/Data/Load_config.xlsx"
+  val sheetName = "Sheet1"
 
-  var ServiceTest: ScenarioBuilder = scenario("ServiceTest").exec(karateFeature("classpath:Features/TDG_UKAF_Chainning.feature@Perf"))
 
-  setUp(
-    ServiceTest.inject(
-      //constantConcurrentUsers (1).during(5 minutes))
-     // constantConcurrentUsers(100).during(1 minutes)),
-      constantUsersPerSec(100).during(1 minute))
+  //val extractedValue = excel.readExcelCell(excelFilePath, sheetName, 1, 1)
+  val extractedValue = ExcelReader.readExcelCell(excelFilePath, sheetName, 1, 1)
 
-    //  incrementConcurrentUsers (5)
-    //  .times(3)
-     // .eachLevelLasting(60)
-     // .separatedByRampsLasting(15)
-    //  .startingFrom(5) // Int
-   //
-  )
-  after {
-    println("Performance tests ended")
+
+  //val extractedclasspath = excel.readExcelCell(excelFilePath, sheetName, 2, 1)
+  val extractedclasspath = ExcelReader.readExcelCell(excelFilePath, sheetName, 1, 2)
+
+  //val stimulation = ExcelReader.readExcelCell(excelFilePath, sheetName, 1, 3)
+
+
+   // var serviceTest = scenario(extractedValue).exec(karateFeature("classpath:Features/TDG_UKAF_Chainning.feature@Perf"))
+
+  var serviceTest = scenario(extractedValue).exec(karateFeature(extractedclasspath))
+
+  val rampup = constantUsersPerSec(100).during(1 minute)
+
+    setUp(
+      serviceTest.inject(rampup)
+
+
+    )
+    after {
+      println("Performance tests ended")
+    }
   }
-}

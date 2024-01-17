@@ -1,0 +1,10 @@
+{
+  "simulation": "Runner.TDG_UKAF_Externalize",
+  "simulationId": "tdg-ukaf-externalize",
+  "start": 1705400469914,
+  "description": "",
+  "scenarios": ["Xspace"],
+  "assertions": [
+
+  ]
+}
