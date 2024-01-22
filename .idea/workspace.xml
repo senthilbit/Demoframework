@@ -5,54 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Data/DataCsv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Data/DataCsv.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Chainning.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Chainning.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Input_Data_From_Csv.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Input_Data_From_Csv.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Input_Data_From_DataJson.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Input_Data_From_DataJson.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Input_Data_From_DataTables.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Input_Data_From_DataTables.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Input_Data_From_Excel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Input_Data_From_Excel.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/ExcelReader.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/ExcelReader.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Externalize.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Externalize.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Feeder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Feeder.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_MVN_Parameterization.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_MVN_Parameterization.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/DbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/External/DbUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Xray/SetExecutionXrayForKarate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Xray/SetExecutionXrayForKarate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gatling/lastRun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatling/lastRun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gatling/tdg-ukaf-demo-20240117081139944/simulation.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatling/tdg-ukaf-demo-20240117081139944/simulation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inc_compile.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/inc_compile.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.Features.TDG_UKAF_Chainning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.Features.TDG_UKAF_Chainning.karate-json.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/TDG_UKAF_Chainning.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/TDG_UKAF_Chainning.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/TDG_UKAF_Input_Data_From_Csv.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Features/TDG_UKAF_Input_Data_From_Csv.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/ExcelReader$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/ExcelReader$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/ExcelReader.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/ExcelReader.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_Externalize.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_Externalize.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_Feeder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_Feeder.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_MVN_Parameterization.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_MVN_Parameterization.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/TDG_UKAF_demo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RunnerClasses/ParallelFeatureRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RunnerClasses/ParallelFeatureRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RunnerClasses/SampleRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RunnerClasses/SampleRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RunnerClasses/TestRunnerShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RunnerClasses/TestRunnerShoppingCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/DbUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/DbUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/ExcelUtility$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/ExcelUtility$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/ExcelUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/ExcelUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/SchemaUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/SchemaUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/UtilsMethods$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/UtilsMethods$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/UtilsMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/UtilsMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/Internal/RandomDataUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/Internal/RandomDataUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Xray/SetExecutionXrayForKarate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Xray/SetExecutionXrayForKarate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/ExcelValueReader.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/ExcelValueReader.scala" afterDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />

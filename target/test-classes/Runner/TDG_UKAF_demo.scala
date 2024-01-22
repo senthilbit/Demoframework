@@ -22,10 +22,9 @@ class TDG_UKAF_demo extends Simulation {
   }
   val excelFilePath = "./src/test/java/Data/Load_config.xlsx"
   val sheetName = "Sheet1"
-  val desiredClassName1 = "TDG_UKAF_demo"
+  val desiredClassName = "TDG_UKAF_demo"
 
-  val TDG_UKAF_demo = new TDG_UKAF_demo()
-  val desiredClassName = TDG_UKAF_demo.toString
+
 
   val matchingRows = readRowsByClassName(excelFilePath, sheetName, desiredClassName  )
 

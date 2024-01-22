@@ -64,8 +64,7 @@ object ExcelValueReader {
     val sheetName = "Sheet1"
     val desiredClassName = "TDG_UKAF_Externalize"    // "TDG_UKAF_Externalize"
 
-    val myObject = new MyClass()
-    myObject.printClassName()
+
 
 
     val matchingRows = readRowsByClassName(filePath,sheetName, desiredClassName)
