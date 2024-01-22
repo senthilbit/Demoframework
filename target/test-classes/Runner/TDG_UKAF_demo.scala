@@ -1,17 +1,18 @@
 package Runner
 
+import Runner.ExcelValueReader.readRowsByClassName
 import com.intuit.karate.gatling.PreDef._
 import io.gatling.core.Predef.{constantUsersPerSec, _}
 
 import scala.concurrent.duration._
 import scala.language.postfixOps
 import io.gatling.core.structure.ScenarioBuilder
-import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
+import org.apache.poi.ss.usermodel.{DataFormatter, WorkbookFactory}
 
 
 /**
  *
- * @author Akshay
+ *
  */
 class TDG_UKAF_demo extends Simulation {
 
@@ -19,34 +20,31 @@ class TDG_UKAF_demo extends Simulation {
     println("Performance tests started")
 
   }
-
-  //val excel = new ExcelReader()
   val excelFilePath = "./src/test/java/Data/Load_config.xlsx"
   val sheetName = "Sheet1"
+  val desiredClassName1 = "TDG_UKAF_demo"
+
+  val TDG_UKAF_demo = new TDG_UKAF_demo()
+  val desiredClassName = TDG_UKAF_demo.toString
+
+  val matchingRows = readRowsByClassName(excelFilePath, sheetName, desiredClassName  )
+
+  val scenarioname = matchingRows.apply(1)
+  val extractedclasspath = matchingRows.apply(2)
+
+  var serviceTest = scenario(scenarioname).exec(karateFeature(extractedclasspath))
+
+  val rampup = constantUsersPerSec(10).during(10)
+
+  setUp(
+    serviceTest.inject(rampup)
 
 
-  //val extractedValue = excel.readExcelCell(excelFilePath, sheetName, 1, 1)
-  val extractedValue = ExcelReader.readExcelCell(excelFilePath, sheetName, 1, 1)
-
-
-  //val extractedclasspath = excel.readExcelCell(excelFilePath, sheetName, 2, 1)
-  val extractedclasspath = ExcelReader.readExcelCell(excelFilePath, sheetName, 1, 2)
-
-  //val stimulation = ExcelReader.readExcelCell(excelFilePath, sheetName, 1, 3)
-
-
-   // var serviceTest = scenario(extractedValue).exec(karateFeature("classpath:Features/TDG_UKAF_Chainning.feature@Perf"))
-
-  var serviceTest = scenario(extractedValue).exec(karateFeature(extractedclasspath))
-
-  val rampup = constantUsersPerSec(100).during(1 minute)
-
-    setUp(
-      serviceTest.inject(rampup)
-
-
-    )
-    after {
-      println("Performance tests ended")
-    }
+  )
+  after {
+    println("Performance tests ended")
   }
+}
+
+
+

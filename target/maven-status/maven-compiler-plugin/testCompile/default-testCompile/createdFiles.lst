@@ -1,6 +1,6 @@
 Xray\SetExecutionXrayForKarate.class
+Utils\Internal\RandomDataUtility.class
 Utils\External\UtilsMethods.class
 Utils\External\UtilsMethods$1.class
 RunnerClasses\SampleRunner.class
-Utils\Internal\RandomDataUtility.class
 RunnerClasses\ParallelFeatureRunner.class

@@ -2,12 +2,19 @@ package Runner
 import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 
+/**
+ *
+ * @author Akshay
+ */
+
+
+
 object ExcelReader {
   def main(args: Array[String]): Unit = {
     val excelFilePath = "./src/test/java/Data/Load_config.xlsx"
     val sheetName = "Sheet1"
     val targetRow = 1
-    val targetColumn = 3
+    val targetColumn = 2
 
     val extractedValue = readExcelCell(excelFilePath, sheetName, targetRow, targetColumn)
     println(s"The extracted value is: $extractedValue")

@@ -10,7 +10,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 /**
  *
- * @author Akshay
+ *
  */
 public class DbUtils {
 

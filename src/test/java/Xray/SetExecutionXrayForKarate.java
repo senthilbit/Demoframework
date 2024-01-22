@@ -57,7 +57,7 @@ public class SetExecutionXrayForKarate {
             System.err.println("Failed to create directory!" + e.getMessage());
         }
             try {
-                addedJson = (JsonElement) gson.fromJson(new FileReader (dir + "/target/gatling/" ), JsonElement.class);
+                addedJson = (JsonElement) gson.fromJson(new FileReader (dir + "\\target\\gatling" ), JsonElement.class);
                 }
                 catch (FileNotFoundException e) {
                 System.out.println("Not found file: added.json");
@@ -72,9 +72,9 @@ public class SetExecutionXrayForKarate {
 
             for (File file: files) {
                 if (validateFileMatchRegex(file.getName())) {
-                    System.out.println("File name: "+ file.getName());
-                    System.out.println("File getParent: " + file.getParent());
-                    System.out.println("File path: " + file.getPath());
+                    System.out.println("File.sh name: "+ file.getName());
+                    System.out.println("File.sh getParent: " + file.getParent());
+                    System.out.println("File.sh path: " + file.getPath());
                     try{
                     originJson = (JsonArray) gson.fromJson(new FileReader(file.getPath()), JsonArray.class);
 

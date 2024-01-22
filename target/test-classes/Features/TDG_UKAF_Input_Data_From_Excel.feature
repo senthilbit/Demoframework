@@ -73,5 +73,3 @@ Feature: Test demo API
 
     Examples:
       | karate.setup().data |
-
-
