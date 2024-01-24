@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Xray/JsonExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Xray/JsonExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gatling/tdg-ukaf-externalize-20240115111702127/simulation.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/gatling/tdg-ukaf-externalize-20240115111702127/simulation.log" afterDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +72,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.JsonExtractor">
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Xray.A" />
+      <module name="KarateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Xray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JsonExtractor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Xray.JsonExtractor" />
       <module name="KarateDemo" />
@@ -96,8 +111,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KoRequestExtracter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Xray.KoRequestExtracter" />
+    <configuration name="JsonExtractor1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Xray.JsonExtractor1" />
+      <module name="KarateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Xray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonExtractor1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Xray.JsonExtractor1" />
       <module name="KarateDemo" />
       <extension name="coverage">
         <pattern>
@@ -138,10 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JsonExtractor" />
+        <item itemvalue="Application.A" />
+        <item itemvalue="Application.JsonExtractor1" />
         <item itemvalue="Application.JsonExtractor1" />
         <item itemvalue="Application.ReadSpecificLine" />
-        <item itemvalue="Application.KoRequestExtracter" />
-        <item itemvalue="Application.SetExecutionXrayForKarate" />
       </list>
     </recent_temporary>
   </component>
