@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Karate" />
         <option value="Class" />
+        <option value="Karate" />
       </list>
     </option>
   </component>
@@ -71,7 +71,7 @@
       <recent name="Utils.Internal" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JsonExtractor">
+  <component name="RunManager" selected="Application.LogFileToJira">
     <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Xray.A" />
       <module name="KarateDemo" />
@@ -137,8 +137,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadSpecificLine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Xray.ReadSpecificLine" />
+    <configuration name="LogFileToJira" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Xray.LogFileToJira" />
       <module name="KarateDemo" />
       <extension name="coverage">
         <pattern>
@@ -165,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LogFileToJira" />
         <item itemvalue="Application.JsonExtractor" />
         <item itemvalue="Application.A" />
         <item itemvalue="Application.JsonExtractor1" />
         <item itemvalue="Application.JsonExtractor1" />
-        <item itemvalue="Application.ReadSpecificLine" />
       </list>
     </recent_temporary>
   </component>

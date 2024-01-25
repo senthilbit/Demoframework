@@ -38,7 +38,7 @@ public class JsonExtractor {
                     int value = numberOfRequestsNode.get(desiredKey).asInt();
 
 
-                    String testCaseStatus = (value > threshold) ? "failed" : "Passed, " +desiredKey +" value is within the threshold and is = "+value;
+                    String testCaseStatus = (value > threshold) ? "failed" : "Passed, " +desiredKey +" value is within the threshold and ko value is = "+value;
 
 
                     System.out.println("Test case status: " + testCaseStatus);
