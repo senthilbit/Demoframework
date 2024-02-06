@@ -9,10 +9,10 @@ import io.gatling.core.structure.ScenarioBuilder
 
 
 /**
- *
+ * @ Feeder with using csv file to feed the username and password
  *
  */
-class TDG_UKAF_Feeder extends Simulation {
+class TDG_UKAF_Feeder extends Simulation{
 
   before {
     println("Performance tests started")

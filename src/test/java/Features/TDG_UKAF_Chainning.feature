@@ -23,7 +23,7 @@ Feature: Xspace test
     * status 201
     * print response
     * def testCooke = response.replace('"','').replace('"','')
-      * karate.pause(20)
+
 
       #Workbook
       Given path '/elasticsearch/workbook'

@@ -10,8 +10,8 @@ import scala.language.postfixOps
 import io.gatling.core.structure.ScenarioBuilder
 
 /**
- *
- *
+ * @ Parameterization to load stimulation using maven runtime variables
+ * @Akshay
  */
 class TDG_UKAF_MVN_Parameterization extends Simulation {
 
@@ -33,6 +33,7 @@ class TDG_UKAF_MVN_Parameterization extends Simulation {
 
 
   val getuser = scenario("getuser").exec(karateFeature("classpath:Features/TDG_UKAF_Chainning.feature@Perf"))
+
 
 
 

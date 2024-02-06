@@ -18,7 +18,7 @@ public class JsonExtractor {
 
         String desiredKey = "ko";
 
-        int threshold = 10000;
+        int threshold = 1000;
 
 
         extractAndCheck(jsonFile, desiredKey, threshold);

@@ -10,7 +10,8 @@ import scala.language.postfixOps
 import io.gatling.core.structure.ScenarioBuilder
 
 /**
- *
+ * @ Externalization of scala variables through external config files.
+ * @Akshay
  *
  */
 class TDG_UKAF_Externalize extends Simulation {

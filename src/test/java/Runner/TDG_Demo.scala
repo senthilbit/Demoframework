@@ -1,6 +1,7 @@
 package Runner
 
-import Runner.ExcelValueReader.readRowsByClassName
+import Utils.External.ExcelReader
+import Utils.External.ExcelValueReader.readRowsByClassName
 import com.intuit.karate.gatling.PreDef._
 import io.gatling.core.Predef._
 

@@ -1,6 +1,15 @@
-Xray\SetExecutionXrayForKarate.class
+Utils\External\ExcelUtility.class
+Utils\External\ExcelUtility$1.class
+Xray\LogFileToJira.class
+RunnerClasses\TestRunnerShoppingCart.class
+Xray\FileReader.class
 Utils\Internal\RandomDataUtility.class
+Xray\JsonExtractor.class
+Xray\AttachReportToJira.class
+Xray\LatestFolderFinder.class
 Utils\External\UtilsMethods.class
 Utils\External\UtilsMethods$1.class
 RunnerClasses\SampleRunner.class
+Utils\External\DbUtils.class
+Utils\External\SchemaUtils.class
 RunnerClasses\ParallelFeatureRunner.class

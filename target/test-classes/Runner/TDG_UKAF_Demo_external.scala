@@ -1,8 +1,6 @@
 package Runner
 
-
-import Runner.ExcelDataReader.readExcel
-import Runner.ExcelValueReader.readRowsByClassName
+import Utils.External.ExcelValueReader.readRowsByClassName
 import com.intuit.karate.gatling.PreDef._
 import io.gatling.core.Predef._
 
@@ -10,6 +8,13 @@ import scala.concurrent.duration._
 import scala.language.postfixOps
 import io.gatling.core.structure.ScenarioBuilder
 import org.apache.poi.ss.usermodel.{DataFormatter, WorkbookFactory}
+
+
+/**
+ * @ Externalization of scala variables through excel sheet.
+ * @Akshay
+ *
+ */
 
 class TDG_UKAF_Demo_external extends Simulation {
   before {
