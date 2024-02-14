@@ -32,7 +32,7 @@ Feature: Xspace test
     Then status 201
     And print response
       #Workbook
-    Given path '/elasticsearch/workbook'
+    Given path '/elasticsearch/search'
     * header Accept = 'application/json'
     * header Cookie =  testCooke
     And request {"index":"workbook","field":"user_id","value":"amandeep.chauhan@thedigitalgroup.com"}

@@ -8,11 +8,11 @@ import java.io.File
 object Engine extends App {
 
   val props = new GatlingPropertiesBuilder
-  props.simulationClass("Runner.TDG_UKAF_demo")
+  props.simulationClass("Runner.Demo3")
   Gatling.fromMap(props.build)
 
 
-  //extractAndCheck(jsonFile,desiredKey,threshold,jiraBaseUrl,jiraUsername,jiraPassword, jiraIssueKey)
+  extractAndCheck(jsonFile,desiredKey,threshold,jiraBaseUrl,jiraUsername,jiraPassword, jiraIssueKey)
 
 
 }

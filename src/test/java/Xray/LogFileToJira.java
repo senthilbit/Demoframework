@@ -2,6 +2,25 @@ package Xray;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpDelete;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Base64;
+import java.util.List;
+
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -11,6 +30,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Base64;
+import java.util.List;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -27,14 +47,14 @@ public class LogFileToJira {
     public static String folderName = "gatling";
     public static File latestFolder = findLatestFolder(targetPath, folderName);
     public static String mostRecentFolder = latestFolder.getName();
-    public static int threshold = 1;
+    public static int threshold = 0;
 
 
     public static String jiraIssueKey = "UKAF-2";
     public static String desiredKey = "percentage";
     public static String jiraBaseUrl = "https://tdgteams-ukaf.atlassian.net/";
     public static String jiraUsername = "akshay.gurjar@thedigitalgroup.com";
-    public static String jiraPassword = "ATATT3xFfGF0j9m5AAWUEv8iLeyLGiAEVGnfAgUxkv0-0K8DSHviv_e5Qvsf9REAOV4zKBmgVaZm0qEG1cYwlpioNI4lRlgU6iXfZ1nwbVOmRCe2T7CLP3xzfN0tXGu7MKUWdtLVNdzh0M2MxmzmAql8quCNcGGxbBAQJ-N3cLx90lGWebgINB8=852B1F85"; // Replace with your Jira password
+    public static String jiraPassword = "ATATT3xFfGF0ns_Q3gnyHm-VoR_BmyG7PoxMlntmiL9nOKH981odbqxPKyDT6nyVtFU0FnLkOrtkFkLgjxamrmMBaT16EHpA95mY6IUVClGzZ0AsL-giIxqpnZrzMyZQeZjRxDOS7Tq7losKyFDf5HXr_t1QS21EvKuxWTJxwKA5BvVazeSKiZA=7DE24E85"; // Replace with your Jira password
 
     public static File jsonFile = new File("./target/gatling/"+mostRecentFolder+"/js/global_stats.json");
     public static String SUMMARY_LOG_FILE = "./target/gatling/"+mostRecentFolder+"/simulation.log";
@@ -42,7 +62,7 @@ public class LogFileToJira {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
 
         if (mostRecentFolder != null) {
@@ -54,6 +74,8 @@ public class LogFileToJira {
         } else {
             System.out.println("No folders found in the target/gatling directory.");
         }
+
+        // addOrOverrideAttachmentToJira(jiraBaseUrl, jiraIssueKey,jiraUsername, jiraPassword, globalStat);
     }
 
 
@@ -91,7 +113,7 @@ public class LogFileToJira {
 
 
     public static void extractAndCheck(File jsonFile, String desiredKey, int threshold,
-                                        String jiraBaseUrl, String jiraUsername, String jiraPassword, String jiraIssueKey) {
+                                       String jiraBaseUrl, String jiraUsername, String jiraPassword, String jiraIssueKey) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode rootNode = objectMapper.readTree(jsonFile);
@@ -115,12 +137,15 @@ public class LogFileToJira {
                         String koValueMessage = "Failed due to the 'ko' value exceeded the threshold: " + value;
                         writeSummaryLog(koValueMessage);
 
+
                     }
 
 
                     String comment = "Test case status: " + testCaseStatus;
                     addStatusToJira(jiraBaseUrl, jiraUsername, jiraPassword, jiraIssueKey, comment);
-                    addAttachmentToJira(jiraBaseUrl,jiraIssueKey, jiraUsername, jiraPassword,  SUMMARY_LOG_FILE);
+                    // addOrOverrideAttachmentToJira(jiraBaseUrl, jiraIssueKey,jiraUsername, jiraPassword, globalStat);
+                    addOrOverrideAttachmentToJira(jiraBaseUrl, jiraIssueKey,jiraUsername, jiraPassword, SUMMARY_LOG_FILE);
+                    // addAttachmentToJira(jiraBaseUrl,jiraIssueKey, jiraUsername, jiraPassword,  SUMMARY_LOG_FILE);
                     addAttachmentToJira(jiraBaseUrl,jiraIssueKey, jiraUsername, jiraPassword,  globalStat);
 
                 } else {
@@ -148,10 +173,10 @@ public class LogFileToJira {
 
 
     public static void addStatusToJira(String jiraBaseUrl, String jiraUsername, String jiraPassword,
-                                        String jiraIssueKey, String comment) {
+                                       String jiraIssueKey, String comment) {
         try {
 
-            String jiraApiEndpoint = jiraBaseUrl + "/rest/api/2/issue/{issueKey}/comment";
+            String jiraApiEndpoint = jiraBaseUrl + "rest/api/2/issue/{issueKey}/comment";
 
             URL url = new URL(jiraApiEndpoint.replace("{issueKey}", jiraIssueKey));
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -199,7 +224,7 @@ public class LogFileToJira {
 
 
             httpPost.setHeader("Authorization", "Basic " + Base64.getEncoder().encodeToString((username + ":" + password).getBytes()));
-             httpPost.setHeader("X-Atlassian-Token","no-check");
+            httpPost.setHeader("X-Atlassian-Token","no-check");
 
             MultipartEntityBuilder builder = MultipartEntityBuilder.create();
             builder.addBinaryBody("file", new File(filePath), ContentType.APPLICATION_OCTET_STREAM, "file");
@@ -231,16 +256,78 @@ public class LogFileToJira {
 
 
     }
+
+    public static void addOrOverrideAttachmentToJira(String jiraUrl, String issueKey, String username, String password, String filePath) throws IOException {
+        HttpClient httpClient = HttpClients.createDefault();
+
+        try {
+
+            List<String> existingAttachments = getExistingAttachments(jiraUrl, issueKey, username, password);
+
+
+            for (String attachmentId : existingAttachments) {
+                deleteAttachment(jiraUrl, attachmentId, username, password);
+            }
+
+
+            addAttachmentToJira(jiraUrl, issueKey, username, password, filePath);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static List<String> getExistingAttachments(String jiraUrl, String issueKey, String username, String password) throws IOException {
+        List<String> attachmentIds = new ArrayList<>();
+        HttpClient httpClient = HttpClients.createDefault();
+
+        // try {
+        HttpGet httpGet = new HttpGet(jiraUrl + "rest/api/3/issue/" + issueKey + "?fields=attachment");
+        httpGet.setHeader("Authorization", "Basic " + Base64.getEncoder().encodeToString((username + ":" + password).getBytes()));
+
+        HttpResponse response = httpClient.execute(httpGet);
+        int statusCode = response.getStatusLine().getStatusCode();
+
+        if (statusCode == 200) {
+            HttpEntity responseEntity = response.getEntity();
+            String responseBody = EntityUtils.toString(responseEntity);
+
+            JSONObject json = new JSONObject(responseBody);
+            JSONArray attachments = json.getJSONObject("fields").getJSONArray("attachment");
+
+            for (int i = 0; i < attachments.length(); i++) {
+                attachmentIds.add(attachments.getJSONObject(i).getString("id"));
+            }
+        } else {
+            System.out.println("Failed to get existing attachments. Status code: " + statusCode);
+        }
+
+
+        return attachmentIds;
+    }
+
+    private static void deleteAttachment(String jiraUrl, String attachmentId, String username, String password) throws IOException {
+        HttpClient httpClient = HttpClients.createDefault();
+
+
+        HttpDelete httpDelete = new HttpDelete(jiraUrl + "rest/api/3/attachment/" + attachmentId);
+        httpDelete.setHeader("Authorization", "Basic " + Base64.getEncoder().encodeToString((username + ":" + password).getBytes()));
+
+        HttpResponse response = httpClient.execute(httpDelete);
+        int statusCode = response.getStatusLine().getStatusCode();
+
+        if (statusCode == 204) {
+            System.out.println("Attachment deleted successfully: " + attachmentId);
+        } else {
+            System.out.println("Failed to delete attachment. Status code: " + statusCode);
+        }
+
     }
 
 
 
 
 
-
-
-
-
-
+}
 
 
