@@ -54,7 +54,7 @@ public class LogFileToJira {
     public static String desiredKey = "percentage";
     public static String jiraBaseUrl = "https://tdgteams-ukaf.atlassian.net/";
     public static String jiraUsername = "akshay.gurjar@thedigitalgroup.com";
-    public static String jiraPassword = "ATATT3xFfGF0ns_Q3gnyHm-VoR_BmyG7PoxMlntmiL9nOKH981odbqxPKyDT6nyVtFU0FnLkOrtkFkLgjxamrmMBaT16EHpA95mY6IUVClGzZ0AsL-giIxqpnZrzMyZQeZjRxDOS7Tq7losKyFDf5HXr_t1QS21EvKuxWTJxwKA5BvVazeSKiZA=7DE24E85"; // Replace with your Jira password
+    public static String jiraPassword = "ATATT3xFfGF0OMovtr5wWjnMvM9mLQYJQAgYq_rA08ciVhoJf1XCu1QkgKqoaTc8CLfd5TwkCTQjNq9nCeRemBEDfUP_wQauiYYhuh7tnvuN9e11V9cOkNajRsgbBt1f98lG4baOjm9ONO8He6fI5TiaeSPj_VqQDsjjmyafeaIula5Owj3cFFo=B112322F"; // Replace with your Jira password
 
     public static File jsonFile = new File("./target/gatling/"+mostRecentFolder+"/js/global_stats.json");
     public static String SUMMARY_LOG_FILE = "./target/gatling/"+mostRecentFolder+"/simulation.log";
@@ -62,7 +62,7 @@ public class LogFileToJira {
 
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
 
 
         if (mostRecentFolder != null) {
@@ -329,5 +329,15 @@ public class LogFileToJira {
 
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
