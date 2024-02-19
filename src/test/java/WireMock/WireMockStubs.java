@@ -75,7 +75,7 @@ public class WireMockStubs {
                         .withHeader("Accept", "application/json")
                         .withHeader("Cookie", "$Cookie").withBody("{\n" +
                                 "  \"_index\": \"workbook\",\n" +
-                                "  \"_id\": \"GavY6IwB7szs8maWXH9s\",\n" +
+                                "  \"_id\": \"1PdNwI0B7szs8maW0Bmb\",\n" +
                                 "  \"_version\": 1,\n" +
                                 "  \"result\": \"created\",\n" +
                                 "  \"_shards\": {\n" +
@@ -83,7 +83,7 @@ public class WireMockStubs {
                                 "    \"successful\": 1,\n" +
                                 "    \"failed\": 0\n" +
                                 "  },\n" +
-                                "  \"_seq_no\": 675347,\n" +
+                                "  \"_seq_no\": 1056528,\n" +
                                 "  \"_primary_term\": 4\n" +
                                 "}"
                         )));

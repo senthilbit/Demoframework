@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/Engine.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/Engine.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.Features.InsertWorkbook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.Features.InsertWorkbook.karate-json.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
@@ -46,15 +49,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/FrameworkFiles/Demoframework/src/test/java/Runner",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/FrameworkFiles/Demoframework/src/test/java/Runner&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\FrameworkFiles\Demoframework\src\test\java\Runner" />
@@ -74,35 +77,27 @@
       <recent name="Utils.Internal" />
     </key>
   </component>
-  <component name="RunManager" selected="Karate Feature.InsertWorkbook.feature: InsertWorkbook.feature">
-    <configuration name="02_InsertWorkbook.feature: 02_InsertWorkbook.feature" type="karate" temporary="true">
-      <option name="karateSearchPaths">
-        <list>
-          <option value="$PROJECT_DIR$/src/test/java/Features/02_InsertWorkbook.feature" />
-        </list>
-      </option>
+  <component name="RunManager" selected="Karate Feature.TDG_UKAF_Api_Mock_Test.feature: TDG_UKAF_Api_Mock_Test.feature">
+    <configuration name="WireMockStubs.json" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KarateDemo" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WireMock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WireMock" />
+      <option name="MAIN_CLASS_NAME" value="WireMock.WireMockStubs" />
+      <option name="METHOD_NAME" value="json" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="03_UpdateWorkbook.feature: 03_UpdateWorkbook.feature" type="karate" temporary="true">
+    <configuration name="Assertions.feature: Assertions.feature" type="karate" temporary="true">
       <option name="karateSearchPaths">
         <list>
-          <option value="$PROJECT_DIR$/src/test/java/Features/03_UpdateWorkbook.feature" />
-        </list>
-      </option>
-      <module name="KarateDemo" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="06_DeleteWorkbook.feature: 06_DeleteWorkbook.feature" type="karate" temporary="true">
-      <option name="karateSearchPaths">
-        <list>
-          <option value="$PROJECT_DIR$/src/test/java/Features/06_DeleteWorkbook.feature" />
+          <option value="$PROJECT_DIR$/src/test/java/Features/Assertions.feature" />
         </list>
       </option>
       <module name="KarateDemo" />
@@ -123,10 +118,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TDG_UKAF_Chainning.feature: TDG_UKAF_Chainning.feature" type="karate" temporary="true">
+    <configuration name="TDG_UKAF_Api_Mock_Test.feature: TDG_UKAF_Api_Mock_Test.feature" type="karate" temporary="true">
       <option name="karateSearchPaths">
         <list>
-          <option value="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_Chainning.feature" />
+          <option value="$PROJECT_DIR$/src/test/java/KarateMocks/TDG_UKAF_Api_Mock_Test.feature" />
+        </list>
+      </option>
+      <module name="KarateDemo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wiremock.feature: wiremock.feature" type="karate" temporary="true">
+      <option name="karateSearchPaths">
+        <list>
+          <option value="$PROJECT_DIR$/src/test/java/WireMock/wiremock.feature" />
         </list>
       </option>
       <module name="KarateDemo" />
@@ -137,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Karate Feature.TDG_UKAF_Api_Mock_Test.feature: TDG_UKAF_Api_Mock_Test.feature" />
+        <item itemvalue="Karate Feature.wiremock.feature: wiremock.feature" />
+        <item itemvalue="JUnit.WireMockStubs.json" />
         <item itemvalue="Karate Feature.InsertWorkbook.feature: InsertWorkbook.feature" />
-        <item itemvalue="Karate Feature.06_DeleteWorkbook.feature: 06_DeleteWorkbook.feature" />
-        <item itemvalue="Karate Feature.03_UpdateWorkbook.feature: 03_UpdateWorkbook.feature" />
-        <item itemvalue="Karate Feature.02_InsertWorkbook.feature: 02_InsertWorkbook.feature" />
-        <item itemvalue="Karate Feature.TDG_UKAF_Chainning.feature: TDG_UKAF_Chainning.feature" />
+        <item itemvalue="Karate Feature.Assertions.feature: Assertions.feature" />
       </list>
     </recent_temporary>
   </component>

@@ -32,10 +32,9 @@ Feature: Mocking Api  using WireMock Mock for Xspace application
     * def Id = response._id
     * print Id
 
-    * def stub = st.stubForPatchRequest()
     #Update workbook
 
-    Given url 'http://localhost:8080/elasticsearch/update'
+    Given url 'https://dev-xspaces.thedigitalgroup.com/elasticsearch/update'
     * header Accept = 'application/json'
     * header Cookie =  testCooke
     And request {"index":"workbook","id":"#(Id)","doc":{"name":"#(randomName)"}}
@@ -43,11 +42,4 @@ Feature: Mocking Api  using WireMock Mock for Xspace application
     Then status 200
     And print response
 
-    # Delete Workbook
-    Given url 'https://dev-xspaces.thedigitalgroup.com/elasticsearch/workbook/delete'
-    * header Accept = 'application/json'
-    * header Cookie =  testCooke
-    And request {"id":"#(Id)"}
-    When method PATCH
-    Then status 200
-    And print response
+

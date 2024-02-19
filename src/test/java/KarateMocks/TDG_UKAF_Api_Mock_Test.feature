@@ -38,20 +38,15 @@ Feature: Mocking Api  using Karate Mock for Xspace application
 
 
     #Update workbook
-    Given path '/elasticsearch/update'
+    Given url 'https://dev-xspaces.thedigitalgroup.com/elasticsearch/update'
+    * header Accept = 'application/json'
+    * header Cookie =  testCooke
     And request {"index":"workbook","id":"#(Id)","doc":{"name":"#(randomName)"}}
     When method PATCH
     Then status 200
     And print response
 
-   #Delete Workbook
-    Given url 'https://dev-xspaces.thedigitalgroup.com/elasticsearch/workbook/delete'
-    * header Accept = 'application/json'
-    * header Cookie =  testCooke
-    And request {"id":"#(Id)"}
-    When method PATCH
-    Then status 200
-    And print response
+
 
 
 
