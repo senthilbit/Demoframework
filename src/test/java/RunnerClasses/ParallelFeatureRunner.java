@@ -23,11 +23,13 @@ public class ParallelFeatureRunner {
         Results results = Runner.path("classpath:Features")
                 .outputCucumberJson(true)
                 .parallel(3);
-        generateReport(results.getReportDir());
+       // generateReport(results.getReportDir());
 
         Map<String,Object> report = new HashMap<>();
         report.put("Total Failed", results.getFailCount());
         report.put("TotaL Time Taken", results.getTimeTakenMillis());
+        report.put("Total Feature", results.getFeaturesPassed());
+        generateReport(results.getReportDir());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
     public static void generateReport(String karateOutputPath) {
