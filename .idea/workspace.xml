@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/AddColumnAndValues.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/ExtractFeaturesPassedFromFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/ExtractFeaturesPassedFromFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/ExtractPackageQualifiedNameFromFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/FeatureSummaryExtractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/FeatureSummaryExtractor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/FeatureSummaryExtractor1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Utils/External/FeatureSummaryExtractor1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/StorePackageQualifiedNamesInDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Utils/External/StorePackageQualifiedNamesInDatabase1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/CheakDbConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor1.java" beforeDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,11 +76,11 @@
   </component>
   <component name="RunManager" selected="Application.FeatureSummaryExtractor1">
     <configuration name="CheakDbConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.External.CheakDbConnection" />
+      <option name="MAIN_CLASS_NAME" value="Utils.Internal.CheakDbConnection" />
       <module name="KarateDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.External.*" />
+          <option name="PATTERN" value="Utils.Internal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,7 +93,7 @@
       <module name="KarateDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.External.*" />
+          <option name="PATTERN" value="Utils.Internal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,7 +106,7 @@
       <module name="KarateDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.External.*" />
+          <option name="PATTERN" value="Utils.Internal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +115,11 @@
       </method>
     </configuration>
     <configuration name="FeatureSummaryExtractor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.External.FeatureSummaryExtractor" />
+      <option name="MAIN_CLASS_NAME" value="Utils.Internal.FeatureSummaryExtractor" />
       <module name="KarateDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.External.*" />
+          <option name="PATTERN" value="Utils.Internal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +128,11 @@
       </method>
     </configuration>
     <configuration name="FeatureSummaryExtractor1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.External.FeatureSummaryExtractor1" />
+      <option name="MAIN_CLASS_NAME" value="Utils.Internal.FeatureSummaryExtractor1" />
       <module name="KarateDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.External.*" />
+          <option name="PATTERN" value="Utils.Internal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
