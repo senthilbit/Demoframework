@@ -21,9 +21,9 @@ public class FeatureSummaryExtractor1 {
     public static void main(String[] args) throws IOException, SQLException {
 
         String filePath = "./target/karate-reports/karate-summary-json.txt";
-        String tableName = "demo";
+        String tableName = "UKAF_ATReport";
 
-        String jdbcUrl = "jdbc:mysql://localhost:3307/demo_xspace";
+        String jdbcUrl = "jdbc:mysql://localhost:3307/UKAFDB";
         String username = "root";
         String password = "M@gnet$151";
 
@@ -38,7 +38,7 @@ public class FeatureSummaryExtractor1 {
 
         try (Connection connection = getDatabaseConnection()) {
 
-            iterateAndStoreFeatureSummary(connection, featureSummaryArray, tableName, filePath);
+           iterateAndStoreFeatureSummary(connection, featureSummaryArray, tableName, filePath);
 
         }
 
@@ -55,7 +55,7 @@ public class FeatureSummaryExtractor1 {
 
     private static Connection getDatabaseConnection() throws SQLException {
 
-        String jdbcUrl = "jdbc:mysql://localhost:3307/demo_xspace";
+        String jdbcUrl = "jdbc:mysql://localhost:3307/UKAFDB";
         String username = "root";
         String password = "M@gnet$151";
         return DriverManager.getConnection(jdbcUrl, username, password);

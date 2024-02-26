@@ -29,9 +29,9 @@ public class FeatureSummaryExtractor {
     public static void main(String[] args) throws IOException, SQLException {
 
         String filePath = "./target/karate-reports/karate-summary-json.txt";
-        String jdbcUrl = "jdbc:mysql://localhost:3306/UKAFDB";
+        String jdbcUrl = "jdbc:mysql://localhost:3307/UKAFDB";
         String username = "root";
-        String password = "admin";
+        String password = "M@gnet$151";
 
         //AddTableAndColumns in Database
         // addTableAndColumn(jdbcUrl, username, password, tableName);
@@ -61,9 +61,9 @@ public class FeatureSummaryExtractor {
 
     private static Connection getDatabaseConnection() throws SQLException {
 
-        String jdbcUrl = "jdbc:mysql://localhost:3306/UKAFDB";
+        String jdbcUrl = "jdbc:mysql://localhost:3307/UKAFDB";
         String username = "root";
-        String password = "admin";
+        String password = "M@gnet$151";
         return DriverManager.getConnection(jdbcUrl, username, password);
     }
 
@@ -76,24 +76,34 @@ public class FeatureSummaryExtractor {
     private static void iterateAndStoreFeatureSummary(Connection connection, JsonArray featureSummaryArray, String filePath)
             throws SQLException, IOException {
 
-        String insertQuery = "INSERT INTO UKAF_ATReport( FeatureName, Date, " +
-                "TotalScenarios, Passed, Failed, Duration) " +
-                "VALUES (?, ?, ?, ?, ?, ?)";
 
+        String insertQuery = "INSERT INTO UKAF_ATReport( FeatureName, Date ,TimeStamp,ScenarioCount,PassedCount,FailedCount, " +
+                "FailedStatus, Name, Description, DurationMillis) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
             for (int i = 0; i < featureSummaryArray.size(); i++) {
                 JsonObject featureSummary = featureSummaryArray.get(i).getAsJsonObject();
+
+
                 preparedStatement.setString(1, featureSummary.get("packageQualifiedName").getAsString().substring(9).trim());
                 String resultDate = extractresultDatefromJson(filePath);
                 String[] DateAndTime = separateDateAndTime(resultDate);
                 String Date = DateAndTime[0];
                 String Time = DateAndTime[1];
                 preparedStatement.setString(2, Date);
-                preparedStatement.setInt(3, featureSummary.get("scenarioCount").getAsInt());
-                preparedStatement.setInt(4, featureSummary.get("passedCount").getAsInt());
-                preparedStatement.setInt(5, featureSummary.get("failedCount").getAsInt());
-                preparedStatement.setDouble(6, featureSummary.get("durationMillis").getAsDouble());
+                preparedStatement.setString(3, resultDate);
+                preparedStatement.setInt(4, featureSummary.get("scenarioCount").getAsInt());
+                preparedStatement.setInt(5, featureSummary.get("passedCount").getAsInt());
+                preparedStatement.setInt(6, featureSummary.get("failedCount").getAsInt());
+                preparedStatement.setBoolean(7, featureSummary.get("failed").getAsBoolean());
+                // preparedStatement.setString(3, featureSummary.get("relativePath").getAsString());
+                preparedStatement.setString(8, featureSummary.get("name").getAsString());
+                preparedStatement.setString(9, featureSummary.get("description").getAsString());
+                preparedStatement.setDouble(10, featureSummary.get("durationMillis").getAsDouble());
+
+
+
                 preparedStatement.executeUpdate();
 
 

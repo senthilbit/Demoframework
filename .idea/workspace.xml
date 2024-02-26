@@ -7,13 +7,7 @@
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.KarateMocks.TDG_UKAF_Api_Mock_Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.KarateMocks.TDG_UKAF_Api_Mock_Test.karate-json.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor1.java" afterDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,13 +73,13 @@
       <recent name="Utils.Internal" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Utils.External.FeatureSummaryExtractor1">
-    <configuration name="FeatureSummaryExtractor1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.Internal.FeatureSummaryExtractor1" />
+  <component name="RunManager" selected="Application.FeatureSummaryExtractor">
+    <configuration name="FeatureSummaryExtractor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Utils.External.FeatureSummaryExtractor" />
       <module name="KarateDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.Internal.*" />
+          <option name="PATTERN" value="Utils.External.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FeatureSummaryExtractor" />
         <item itemvalue="Application.Utils.External.FeatureSummaryExtractor1" />
         <item itemvalue="JUnit.ParallelFeatureRunner" />
         <item itemvalue="Karate Feature.TDG_UKAF_Api_Mock_Test.feature: TDG_UKAF_Api_Mock_Test.feature" />
         <item itemvalue="Karate Feature.wiremock.feature: wiremock.feature" />
-        <item itemvalue="Application.FeatureSummaryExtractor1" />
       </list>
     </recent_temporary>
   </component>
