@@ -19,7 +19,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_summary",{distinct_id:"482a91bf-2e9c-4e1f-8b3c-d00aeb5dec8c",karate_version:"1.4.0",karate_meta:"intellij:1.7.7.361-211"});
+    posthog.capture("report_summary",{distinct_id:"482a91bf-2e9c-4e1f-8b3c-d00aeb5dec8c",karate_version:"1.4.0",karate_meta:null});
   }
 });
 </script>
@@ -36,8 +36,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">10</div>
+      <div id="nav-fail" class="bg-danger">5</div>
     </div>
   </div>
   <div id="nav-env">
@@ -47,7 +47,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Features</div>
   </div>
   <div id="nav-date">
-    <div>2024-02-19 01:15:37 PM</div>
+    <div>2024-02-26 02:04:20 PM</div>
   </div>
 </div>
 
@@ -71,13 +71,153 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <tbody>
             <tr class="passed">
               <td>
-                <a href="src.test.java.KarateMocks.TDG_UKAF_Api_Mock_Test.html">src/test/java/KarateMocks/TDG_UKAF_Api_Mock_Test.feature</a>
+                <a href="Features.01_HomePage.html">Features/01_HomePage.feature</a>
               </td>
-              <td>Mocking Api  using Karate Mock for Xspace application</td>
+              <td>Xspace test</td>
               <td class="num">1</td>
               <td class="num">0</td>
               <td class="num">1</td>
-              <td class="num">2152</td>
+              <td class="num">3489</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.02_InsertWorkbook.html">Features/02_InsertWorkbook.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">4212</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.03_UpdateWorkbook.html">Features/03_UpdateWorkbook.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">2179</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.04_UpdateSheet.html">Features/04_UpdateSheet.feature</a>
+              </td>
+              <td></td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">2987</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.05_DeleteSheet.html">Features/05_DeleteSheet.feature</a>
+              </td>
+              <td></td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">2750</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.06_DeleteWorkbook.html">Features/06_DeleteWorkbook.feature</a>
+              </td>
+              <td></td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">286</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.Assertions.html">Features/Assertions.feature</a>
+              </td>
+              <td>Test demo API</td>
+              <td class="num">9</td>
+              <td class="num">0</td>
+              <td class="num">9</td>
+              <td class="num">8087</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.InsertWorkbook.html">Features/InsertWorkbook.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">150</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.TDG_UKAF_Chainning.html">Features/TDG_UKAF_Chainning.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">3606</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="Features.TDG_UKAF_DatabaseConection.html">Features/TDG_UKAF_DatabaseConection.feature</a>
+              </td>
+              <td>dogs end-point that uses jdbc as part of the test</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">22805</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="Features.TDG_UKAF_Input_Data_From_Csv.html">Features/TDG_UKAF_Input_Data_From_Csv.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">0</td>
+              <td class="num">6</td>
+              <td class="num">6</td>
+              <td class="num">36704</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="Features.TDG_UKAF_Input_Data_From_DataJson.html">Features/TDG_UKAF_Input_Data_From_DataJson.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">0</td>
+              <td class="num">6</td>
+              <td class="num">6</td>
+              <td class="num">36522</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="Features.TDG_UKAF_Input_Data_From_DataTables.html">Features/TDG_UKAF_Input_Data_From_DataTables.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">0</td>
+              <td class="num">6</td>
+              <td class="num">6</td>
+              <td class="num">36446</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.TDG_UKAF_Input_Data_From_Excel.html">Features/TDG_UKAF_Input_Data_From_Excel.feature</a>
+              </td>
+              <td>Test demo API</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">1844</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="Features.TDG_UKAF_Input_Data_From_Feeder.html">Features/TDG_UKAF_Input_Data_From_Feeder.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">4</td>
             </tr>
           </tbody>
         </table>

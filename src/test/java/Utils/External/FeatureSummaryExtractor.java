@@ -17,6 +17,13 @@ import java.util.Date;
 
 import static Utils.External.FeatureSummaryExtractor.separateDateAndTime;
 
+
+
+/**
+ * @Akshay To push reportstat to Database.
+ *
+ */
+
 public class FeatureSummaryExtractor {
 
     public static void main(String[] args) throws IOException, SQLException {

@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/CheakDbConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.KarateMocks.TDG_UKAF_Api_Mock_Test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.KarateMocks.TDG_UKAF_Api_Mock_Test.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,59 +79,7 @@
       <recent name="Utils.Internal" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FeatureSummaryExtractor1">
-    <configuration name="CheakDbConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.Internal.CheakDbConnection" />
-      <module name="KarateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Utils.Internal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtractFeaturesPassedFromFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.External.ExtractFeaturesPassedFromFile" />
-      <module name="KarateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Utils.Internal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtractPackageQualifiedNameFromFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.External.ExtractPackageQualifiedNameFromFile" />
-      <module name="KarateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Utils.Internal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FeatureSummaryExtractor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.Internal.FeatureSummaryExtractor" />
-      <module name="KarateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Utils.Internal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Utils.External.FeatureSummaryExtractor1">
     <configuration name="FeatureSummaryExtractor1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Utils.Internal.FeatureSummaryExtractor1" />
       <module name="KarateDemo" />
@@ -140,13 +93,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Utils.External.FeatureSummaryExtractor1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Utils.External.FeatureSummaryExtractor1" />
+      <module name="KarateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Utils.External.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelFeatureRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KarateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RunnerClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RunnerClasses" />
+      <option name="MAIN_CLASS_NAME" value="RunnerClasses.ParallelFeatureRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TDG_UKAF_Api_Mock_Test.feature: TDG_UKAF_Api_Mock_Test.feature" type="karate" temporary="true">
+      <option name="karateSearchPaths">
+        <list>
+          <option value="$PROJECT_DIR$/src/test/java/KarateMocks/TDG_UKAF_Api_Mock_Test.feature" />
+        </list>
+      </option>
+      <module name="KarateDemo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wiremock.feature: wiremock.feature" type="karate" temporary="true">
+      <option name="karateSearchPaths">
+        <list>
+          <option value="$PROJECT_DIR$/src/test/java/WireMock/wiremock.feature" />
+        </list>
+      </option>
+      <module name="KarateDemo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Utils.External.FeatureSummaryExtractor1" />
+        <item itemvalue="JUnit.ParallelFeatureRunner" />
+        <item itemvalue="Karate Feature.TDG_UKAF_Api_Mock_Test.feature: TDG_UKAF_Api_Mock_Test.feature" />
+        <item itemvalue="Karate Feature.wiremock.feature: wiremock.feature" />
         <item itemvalue="Application.FeatureSummaryExtractor1" />
-        <item itemvalue="Application.CheakDbConnection" />
-        <item itemvalue="Application.FeatureSummaryExtractor" />
-        <item itemvalue="Application.ExtractFeaturesPassedFromFile" />
-        <item itemvalue="Application.ExtractPackageQualifiedNameFromFile" />
       </list>
     </recent_temporary>
   </component>
