@@ -259,11 +259,11 @@
             <plugin>
                 <groupId>io.gatling</groupId>
                 <artifactId>gatling-maven-plugin</artifactId>
-                <version>4.8.1</version>
+                <version>3.1.1</version>
                 <configuration>
                     <simulationsFolder>src/test/java</simulationsFolder>
                     <includes>
-                        <include>Runner.TDG_UKAF_demo</include>
+                        <include>Runner.Test1</include>
                     </includes>
                 </configuration>
             </plugin>
