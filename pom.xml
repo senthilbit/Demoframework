@@ -263,7 +263,7 @@
                 <configuration>
                     <simulationsFolder>src/test/java</simulationsFolder>
                     <includes>
-                        <include>Runner.Test1</include>
+                        <include>Runner.TDG_UKAF_demo</include>
                     </includes>
                 </configuration>
             </plugin>
