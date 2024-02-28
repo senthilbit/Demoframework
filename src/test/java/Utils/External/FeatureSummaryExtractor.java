@@ -17,9 +17,6 @@ import java.util.Date;
 
 import static Utils.External.FeatureSummaryExtractor.separateDateAndTime;
 
-
-
-
 public class FeatureSummaryExtractor {
 
     public static void main(String[] args) throws IOException, SQLException {
@@ -29,6 +26,15 @@ public class FeatureSummaryExtractor {
         String username = "root";
         String password = "Re6chsky#";
         String tableName = "ATReports";
+
+ /**
+ *
+ * Enable the below function only when creating the new table and make sure we already have a database created and in use
+ *  Create Database use "CREATE DATABASE databasename;"
+ *  Use database use "use databasename;"
+ *  Finally enable this function for table creation by changing the 'tableName' in line 28
+ *  Disbale the function 'addTableAndColumn' once table created
+ */
         //AddTableAndColumns in Database
          //addTableAndColumn(jdbcUrl, username, password, tableName);
 
