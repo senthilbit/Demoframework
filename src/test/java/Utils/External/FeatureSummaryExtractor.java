@@ -18,28 +18,34 @@ import java.util.Date;
 import static Utils.External.FeatureSummaryExtractor.separateDateAndTime;
 
 
+
+/**
+ * @Akshay To push reportstat to Database.
+ *
+ */
+
 public class FeatureSummaryExtractor {
 
     public static void main(String[] args) throws IOException, SQLException {
 
         String filePath = "./target/karate-reports/karate-summary-json.txt";
-        String jdbcUrl = "jdbc:mysql://localhost:3306/UKAF";
+        String jdbcUrl = "jdbc:mysql://localhost:3307/UKAFDB";
         String username = "root";
-        String password = "Re6chsky#";
-        String tableName = "ATReports";
-        
-        
+        String password = "M@gnet$151";
+
+
 /**
  *
  * Enable the below function only when creating the new table and make sure we already have a database created and in use
  *  Create Database use "CREATE DATABASE databasename;"
  *  Use database use "use databasename;"
  *  Finally enable this function for table creation by changing the 'tableName' in line 29
- *  Disbale the function 'addTableAndColumn' once table created 
+ *  Disbale the function 'addTableAndColumn' once table created
 
  */
-        
-         //addTableAndColumn(jdbcUrl, username, password, tableName);
+
+        //AddTableAndColumns in Database
+        // addTableAndColumn(jdbcUrl, username, password, tableName);
 
 
         String jsonString = readJsonFromFile(filePath);
@@ -49,7 +55,7 @@ public class FeatureSummaryExtractor {
 
         try (Connection connection = getDatabaseConnection()) {
 
-            iterateAndStoreFeatureSummary(connection, featureSummaryArray, filePath, tableName);
+            iterateAndStoreFeatureSummary(connection, featureSummaryArray, filePath);
 
         }
 
@@ -66,9 +72,9 @@ public class FeatureSummaryExtractor {
 
     private static Connection getDatabaseConnection() throws SQLException {
 
-        String jdbcUrl = "jdbc:mysql://localhost:3306/UKAF";
+        String jdbcUrl = "jdbc:mysql://localhost:3307/UKAFDB";
         String username = "root";
-        String password = "Re6chsky#";
+        String password = "M@gnet$151";
         return DriverManager.getConnection(jdbcUrl, username, password);
     }
 
@@ -78,11 +84,11 @@ public class FeatureSummaryExtractor {
         return jsonObject.getAsJsonArray("featureSummary");
     }
 
-    private static void iterateAndStoreFeatureSummary(Connection connection, JsonArray featureSummaryArray, String filePath,String table)
+    private static void iterateAndStoreFeatureSummary(Connection connection, JsonArray featureSummaryArray, String filePath)
             throws SQLException, IOException {
 
 
-        String insertQuery = "INSERT INTO "+table+"( FeatureName, Date ,TimeStamp,ScenarioCount,PassedCount,FailedCount, " +
+        String insertQuery = "INSERT INTO UKAF_ATReport( FeatureName, Date ,TimeStamp,ScenarioCount,PassedCount,FailedCount, " +
                 "FailedStatus, Name, Description, DurationMillis) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -102,9 +108,13 @@ public class FeatureSummaryExtractor {
                 preparedStatement.setInt(5, featureSummary.get("passedCount").getAsInt());
                 preparedStatement.setInt(6, featureSummary.get("failedCount").getAsInt());
                 preparedStatement.setBoolean(7, featureSummary.get("failed").getAsBoolean());
+                // preparedStatement.setString(3, featureSummary.get("relativePath").getAsString());
                 preparedStatement.setString(8, featureSummary.get("name").getAsString());
                 preparedStatement.setString(9, featureSummary.get("description").getAsString());
                 preparedStatement.setDouble(10, featureSummary.get("durationMillis").getAsDouble());
+
+
+
                 preparedStatement.executeUpdate();
 
 
@@ -151,15 +161,15 @@ public class FeatureSummaryExtractor {
         String addColumnQuery = "CREATE TABLE " + tableName + "("
                 + "Id INT AUTO_INCREMENT PRIMARY KEY ,"
                 + "FeatureName VARCHAR(255) ,"
-                + "Date VARCHAR(255) ,"
-                + "TimeStamp VARCHAR(255) ,"
-                + "ScenarioCount INT ,"
-                + "PassedCount INT ,"
-                + "FailedCount INT ,"
-                + "FailedStatus TINYINT(1) ,"
+                + "FailedCount INT  ,"
+                + "ScenarioCount INT  ,"
                 + "Name VARCHAR(255) ,"
                 + "Description VARCHAR(255) ,"
-                + "DurationMillis INT"
+                + "DurationMillis INT ,"
+                + "PassedCount INT,"
+                + "Failed INT,"
+                + "Date VARCHAR(255),"
+                + "Time VARCHAR(255)"
                 + ");";
 
         Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
