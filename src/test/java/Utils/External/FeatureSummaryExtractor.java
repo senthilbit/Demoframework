@@ -27,7 +27,18 @@ public class FeatureSummaryExtractor {
         String username = "root";
         String password = "Re6chsky#";
         String tableName = "ATReports";
-        //AddTableAndColumns in Database
+        
+        
+/**
+ *
+ * Enable the below function only when creating the new table and make sure we already have a database created and in use
+ *  Create Database use "CREATE DATABASE databasename;"
+ *  Use database use "use databasename;"
+ *  Finally enable this function for table creation by changing the 'tableName' in line 29
+ *  Disbale the function 'addTableAndColumn' once table created 
+
+ */
+        
          //addTableAndColumn(jdbcUrl, username, password, tableName);
 
 
