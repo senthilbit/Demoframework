@@ -13,7 +13,7 @@ public class SampleRunner {
 
 	@Karate.Test
 	Karate Database() {
-		return Karate.run("classpath:Features/TDG_UKAF_DatabaseConection.feature").relativeTo(getClass());
+		return Karate.run("classpath:Features/06_DeleteWorkbook.feature").relativeTo(getClass());
 	}
 
 	@Karate.Test

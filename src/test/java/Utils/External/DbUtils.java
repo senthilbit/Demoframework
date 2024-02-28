@@ -1,5 +1,9 @@
 package Utils.External;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 import org.slf4j.Logger;
@@ -66,4 +70,21 @@ public class DbUtils {
         return result.get(value).toString();
     }
 
+
+    public static <T> void addTableAndColumn(String jdbcUrl, String username, String password,
+                                             String tableName) throws SQLException {
+
+        String addColumnQuery = "CREATE TABLE " + tableName + "("
+                + "id INT  ,"
+                + "email VARCHAR(255) ,"
+                + "first_name VARCHAR(255)  ,"
+                + "last_name VARCHAR(255)  ,"
+                + "avatar VARCHAR(255) "
+                + ");";
+
+        Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
+        PreparedStatement addColumnStatement = connection.prepareStatement(addColumnQuery);
+        addColumnStatement.execute();
+
+    }
 }

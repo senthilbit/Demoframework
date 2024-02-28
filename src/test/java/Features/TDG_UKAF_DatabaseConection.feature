@@ -1,25 +1,20 @@
 Feature: dogs end-point that uses jdbc as part of the test
 
-
-
-  Scenario:
-
+  Background:
 # use jdbc to validate
-    * def config = { username: 'sql12343737', password: 'tZWFWH628v', url: 'jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12343737', driverClassName: 'com.mysql.cj.jdbc.Driver' }
+    * def config = { username: 'root', password: 'M@gnet$151', url: 'jdbc:mysql://localhost:3307/karate_demo', driverClassName: 'com.mysql.cj.jdbc.Driver' }
     * def DbUtils = Java.type('Utils.External.DbUtils')
     * def db = new DbUtils(config)
+    * def jsonResponseFromDB = db.readRows('SELECT * FROM demo')
+    Then print jsonResponseFromDB
 
-# since the DbUtils returns a Java List (of Map-s), it becomes normal JSON here !
-# which means that you can use the full power of Karate's 'match' syntax
-    * def empolyees = db.readRows('Select * from office')
-    Then print empolyees
+  Scenario: Run a sample Get API
+    Given url  'https://reqres.in/api/users?'
+    And param page = 2
+    When method GET
+    Then status 200
+    And print response
+    * def dataArray = response.data
+    * match dataArray == jsonResponseFromDB
 
-    * def dogs = db.readRows('SELECT * FROM DOGS')
-    * match dogs contains { ID: '#(id)', NAME: 'Scooby' }
-
-    * def dog = db.readRow('SELECT * FROM DOGS D WHERE D.ID = ' + id)
-    * match dog.NAME == 'Scooby'
-
-    * def test = db.readValue('SELECT ID FROM DOGS D WHERE D.ID = ' + id)
-    * match test == id
 

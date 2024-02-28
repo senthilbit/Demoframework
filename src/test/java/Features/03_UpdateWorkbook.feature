@@ -20,4 +20,10 @@ Feature: Xspace test
     And request {"index":"workbook","id":"#(c_Id1)","doc":{"name":"#(randomName)"}}
     When method PATCH
     Then status 200
-    And print response
+    And match response._id == '#(c_Id1)'
+    And match response._index == '#present'
+    And match response._version == '#present'
+    And match response.result == 'updated'
+    And match response._seq_no == '#number'
+
+

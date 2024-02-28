@@ -11,7 +11,6 @@ Feature: Xspace test
     * request result
     * method POST
     * status 201
-    * print response
     * def testCooke = response.replace('"','').replace('"','')
 
   Scenario: HomePage
@@ -22,7 +21,6 @@ Feature: Xspace test
     And request {"recipient_id":"amandeep.chauhan@thedigitalgroup.com"}
     When method POST
     Then status 201
-    And print response
     #GetNotifications
     Given path '/access/getAccessInfo/'
     * header Accept = 'application/json'
@@ -30,7 +28,6 @@ Feature: Xspace test
     And request {"recipient_id":"amandeep.chauhan@thedigitalgroup.com"}
     When method POST
     Then status 201
-    And print response
       #Workbook
     Given path '/elasticsearch/search'
     * header Accept = 'application/json'
@@ -38,7 +35,6 @@ Feature: Xspace test
     And request {"index":"workbook","field":"user_id","value":"amandeep.chauhan@thedigitalgroup.com"}
     When method POST
     Then status 201
-    And print response
     * def c_workbookid = response[0]._id
     * print c_workbookid
     #SearchByWorkbookId
@@ -48,5 +44,11 @@ Feature: Xspace test
     And request {"index":"sheet","workbook_id":"#(c_workbookid)"}
     When method POST
     Then status 201
-    And print response
+    And match response[0]._source.workbook_id == '#(c_workbookid)'
+    And match response[0]._index == '#string'
+    And match response[0]._source.user_email == '#string'
+    And match response[0]._source.user_id == '#string'
+    And match response[0]._source.description == "A new sheet's description"
+    And match response[0]._source.title == 'Random title'
+
 

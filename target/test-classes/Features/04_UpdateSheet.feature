@@ -8,6 +8,12 @@ Feature:
     * def workbook =  call read('InsertWorkbook.feature')
     * def c_Id1 = workbook.Id
     * def testcookie = workbook.testCooke
+    * def utility = Java.type('Utils.Internal.RandomDataUtility')
+    * def randomName = utility.getRandomFirstName()
+    * def randomNumber = utility.getRandomNumber(2)
+    * print randomNumber
+    * def random = "Workbook" + (randomNumber)
+    * def randomSheetName = "Sheet" + (randomNumber)
 
 
   Scenario:Update Sheet
