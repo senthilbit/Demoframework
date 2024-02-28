@@ -263,10 +263,15 @@
                 <configuration>
                     <simulationsFolder>src/test/java</simulationsFolder>
                     <includes>
-                        <include>Runner.TDG_UKAF_demo</include>
+                        <include>Runner.Test1</include>
                     </includes>
                 </configuration>
             </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-archetype-plugin</artifactId>
+             <version>3.2.1</version>
+         </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
