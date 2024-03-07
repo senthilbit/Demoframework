@@ -3,6 +3,7 @@ package RunnerClasses;
 
 
 import Utils.External.FeatureSummaryExtractor;
+import Utils.External.MyFeatureSummaryExtractor;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import com.intuit.karate.junit5.Karate;
 import org.junit.jupiter.api.AfterAll;
@@ -22,7 +23,7 @@ public class SampleRunner {
 	public static void setup() throws SQLException, IOException {
 
 		String[] args = new String[0];
-		FeatureSummaryExtractor.main(args);
+		MyFeatureSummaryExtractor.main(args);
 
 
 	}

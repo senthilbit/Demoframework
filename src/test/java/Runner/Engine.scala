@@ -8,7 +8,7 @@ import java.io.File
 object Engine extends App {
 
   val props = new GatlingPropertiesBuilder
-  props.simulationClass("Runner.TDG_UKAF_demo")
+  props.simulationClass("Runner.Test1")    //TDG_UKAF_demo
   Gatling.fromMap(props.build)
 
 

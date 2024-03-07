@@ -16,7 +16,7 @@
         <maven.surefire.version>2.22.2</maven.surefire.version>
 
         <slf4j.version>1.7.7</slf4j.version>
-        <karate.version>1.5.0.RC3</karate.version>
+        <karate.version>1.4.0</karate.version>
         <junit5.version>5.9.1</junit5.version>
         <assertj.version>3.6.2</assertj.version>
         <scala-maven-plugin.version>4.8.1</scala-maven-plugin.version>
@@ -26,17 +26,22 @@
     <dependencies>
 
         <dependency>
-            <groupId>io.karatelabs</groupId>
-            <artifactId>karate-core</artifactId>
-            <version>1.5.0.RC3</version>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-apache</artifactId>
+            <version>0.9.6</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>io.karatelabs</groupId>
+            <groupId>com.intuit.karate</groupId>
             <artifactId>karate-junit5</artifactId>
             <version>${karate.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-junit4</artifactId>
+            <version>1.3.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
@@ -55,16 +60,8 @@
             <version>5.7.5</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-          <groupId>org.apache.httpcomponents</groupId>
-          <artifactId>httpclient</artifactId>
-          <version>4.5.13</version>
-        </dependency>
-       <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpmime</artifactId>
-        <version>4.5.13</version>
-      </dependency>
+
+
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
@@ -91,7 +88,7 @@
             <version>20201115</version>
         </dependency>
         <dependency>
-            <groupId>io.karatelabs</groupId>
+            <groupId>com.intuit.karate</groupId>
             <artifactId>karate-gatling</artifactId>
             <version>${karate.version}</version>
         </dependency>
@@ -125,15 +122,11 @@
         </dependency>
 
         <dependency>
-            <groupId>io.karatelabs</groupId>
+            <groupId>com.intuit.karate</groupId>
             <artifactId>karate-core</artifactId>
             <version>${karate.version}</version>
         </dependency>
-        <dependency>
-            <groupId>io.karatelabs</groupId>
-            <artifactId>karate-playwright</artifactId>
-            <version>${karate.version}</version>
-        </dependency>
+
 
         <dependency>
             <groupId>org.apache.poi</groupId>
