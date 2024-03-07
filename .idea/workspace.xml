@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Data/Load_config_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Data/Load_config_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/Engine.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/Engine.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunnerClasses/SampleRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunnerClasses/SampleRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
