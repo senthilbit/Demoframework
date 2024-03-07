@@ -1,0 +1,2615 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: Features/09_UploadNotesSheet.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate</td>
+      <td>29 Feb 2024, 14:01</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Features/09_UploadNotesSheet.feature</td>
+          <td      class="passed"    >73</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">73</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1517770900">1.517</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Features/09_UploadNotesSheet.feature</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.188</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>14:01:03.786 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def workbook =  call read('InsertWorkbook.feature')</span>
+
+  <span class="lead-duration duration">0.095</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">Features/InsertWorkbook.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>14:01:03.793 [print] 27 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>14:01:03.793 [print] Workbook27 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>14:01:03.793 [print] Gonzalo 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.043</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>14:01:03.794 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+14:01:03.837 response time in milliseconds: 42
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 29 Feb 2024 08:31:00 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-653et/ONHItMZZNPkyoIz4MwNEA&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCxfiMEi689wgsIInxm/u7sEpr7Vb5XtfHlVpyHR4S8x65wQtHg49bPxnfzZ+otCZaSyqPh9XSTZ3mzit6ATRzvGR+e+u8zZ+lcptkJDk9Js/pboQAYdJo+ktcbrj/S98kN/P4EFR4FDdxC8NR05R51BOSKswgLnnh7nf9O+HXzjm6tlmw50psY40800hbz8oWDzWTDCdZTQ7wDkGQZ581FA==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>14:01:03.837 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCxfiMEi689wgsIInxm/u7sEpr7Vb5XtfHlVpyHR4S8x65wQtHg49bPxnfzZ+otCZaSyqPh9XSTZ3mzit6ATRzvGR+e+u8zZ+lcptkJDk9Js/pboQAYdJo+ktcbrj/S98kN/P4EFR4FDdxC8NR05R51BOSKswgLnnh7nf9O+HXzjm6tlmw50psY40800hbz8oWDzWTDCdZTQ7wDkGQZ581FA==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Insert WorkBook</div>
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/elasticsearch/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header Cookie =  testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;#(random)&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.044</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>14:01:03.839 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCxfiMEi689wgsIInxm/u7sEpr7Vb5XtfHlVpyHR4S8x65wQtHg49bPxnfzZ+otCZaSyqPh9XSTZ3mzit6ATRzvGR+e+u8zZ+lcptkJDk9Js/pboQAYdJo+ktcbrj/S98kN/P4EFR4FDdxC8NR05R51BOSKswgLnnh7nf9O+HXzjm6tlmw50psY40800hbz8oWDzWTDCdZTQ7wDkGQZ581FA==
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 196
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;Workbook27&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}
+
+14:01:03.881 response time in milliseconds: 42
+2 &lt; 201
+2 &lt; Server: nginx
+2 &lt; Date: Thu, 29 Feb 2024 08:31:00 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 166
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+2 &lt; Cache-Control: public, must-revalidate
+2 &lt; ETag: W/&quot;a6-V9/07JjKG/uhYCYQkhJBXsXbDeE&quot;
+2 &lt; Front-End-Https: on
+2 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+{&quot;_index&quot;:&quot;workbook&quot;,&quot;_id&quot;:&quot;-EX9840B7szs8maW3bcu&quot;,&quot;_version&quot;:1,&quot;result&quot;:&quot;created&quot;,&quot;_shards&quot;:{&quot;total&quot;:2,&quot;successful&quot;:1,&quot;failed&quot;:0},&quot;_seq_no&quot;:1065740,&quot;_primary_term&quot;:4}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>14:01:03.883 [print] {
+  &quot;_index&quot;: &quot;workbook&quot;,
+  &quot;_id&quot;: &quot;-EX9840B7szs8maW3bcu&quot;,
+  &quot;_version&quot;: 1,
+  &quot;result&quot;: &quot;created&quot;,
+  &quot;_shards&quot;: {
+    &quot;total&quot;: 2,
+    &quot;successful&quot;: 1,
+    &quot;failed&quot;: 0
+  },
+  &quot;_seq_no&quot;: 1065740,
+  &quot;_primary_term&quot;: 4
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def Id = response._id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print Id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>14:01:03.883 [print] -EX9840B7szs8maW3bcu 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def c_Id1 = workbook.Id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testcookie = workbook.testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber1 = utility.getRandomNumber(1)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>14:01:03.884 [print] 14 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomColumnName = &quot;Column &quot; + (randomNumber1)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>14:01:03.884 [print] Workbook14 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>14:01:03.884 [print] Lai 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.329</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention">#insert Sheet</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/sheet/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testcookie</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;index&quot;:&quot;sheet&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;#(randomSheetName)&quot;,&quot;title&quot;:&quot;Random title&quot;,&quot;workbook_id&quot;:&quot;#(c_Id1)&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;description&quot;:&quot;A new sheet's description&quot;,&quot;notes&quot;:&quot;&quot;,&quot;attachments&quot;:[],&quot;sheetType&quot;:&quot;default&quot;,&quot;sheet_identifier&quot;:&quot;5e712257-93a3-460c-b75c-87fef6205dd8&quot;,&quot;columns&quot;:[{&quot;columnElasticid&quot;:&quot;2c18f8eb-04d2-4592-b835-5bb1b2beb5e4_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;#&quot;,&quot;field&quot;:&quot;#&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;pinned&quot;:&quot;left&quot;,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;rowDrag&quot;:true},{&quot;columnElasticid&quot;:&quot;c3ffc3de-f1ac-4161-afb6-7e2ccc5c0d9a_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;ag-Grid-AutoColumn&quot;,&quot;field&quot;:&quot;primaryCol&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Primary Column&quot;,&quot;suppressMovable&quot;:true,&quot;lockPosition&quot;:true},{&quot;columnElasticid&quot;:&quot;160baf0d-6386-492f-94e1-5098be9bbee3_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 1&quot;,&quot;field&quot;:&quot;Column1&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 1&quot;},{&quot;columnElasticid&quot;:&quot;a515bea4-1e45-48ce-9961-7f721a8223be_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 2&quot;,&quot;field&quot;:&quot;Column2&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 2&quot;},{&quot;columnElasticid&quot;:&quot;cef8c6df-0214-4b85-a76f-e3d9bdb60604_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 3&quot;,&quot;field&quot;:&quot;Column3&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 3&quot;},{&quot;columnElasticid&quot;:&quot;01f818d7-03c5-4cee-823a-f93704753c8f_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 4&quot;,&quot;field&quot;:&quot;Column4&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 4&quot;},{&quot;columnElasticid&quot;:&quot;8011c620-17f0-4040-81f9-51774726df41_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 5&quot;,&quot;field&quot;:&quot;Column5&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 5&quot;}],&quot;Rows&quot;:{&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;remote_datasource&quot;:&quot;Elastic&quot;,&quot;attachments&quot;:[],&quot;notes&quot;:&quot;Notes example&quot;}}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">1.119</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>14:01:03.886 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+1 &gt; Accept: application/json
+1 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCxfiMEi689wgsIInxm/u7sEpr7Vb5XtfHlVpyHR4S8x65wQtHg49bPxnfzZ+otCZaSyqPh9XSTZ3mzit6ATRzvGR+e+u8zZ+lcptkJDk9Js/pboQAYdJo+ktcbrj/S98kN/P4EFR4FDdxC8NR05R51BOSKswgLnnh7nf9O+HXzjm6tlmw50psY40800hbz8oWDzWTDCdZTQ7wDkGQZ581FA==
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 3941
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;sheet&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;Sheet14&quot;,&quot;title&quot;:&quot;Random title&quot;,&quot;workbook_id&quot;:&quot;-EX9840B7szs8maW3bcu&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;description&quot;:&quot;A new sheet's description&quot;,&quot;notes&quot;:&quot;&quot;,&quot;attachments&quot;:[],&quot;sheetType&quot;:&quot;default&quot;,&quot;sheet_identifier&quot;:&quot;5e712257-93a3-460c-b75c-87fef6205dd8&quot;,&quot;columns&quot;:[{&quot;columnElasticid&quot;:&quot;2c18f8eb-04d2-4592-b835-5bb1b2beb5e4_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;#&quot;,&quot;field&quot;:&quot;#&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;pinned&quot;:&quot;left&quot;,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;rowDrag&quot;:true},{&quot;columnElasticid&quot;:&quot;c3ffc3de-f1ac-4161-afb6-7e2ccc5c0d9a_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;ag-Grid-AutoColumn&quot;,&quot;field&quot;:&quot;primaryCol&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Primary Column&quot;,&quot;suppressMovable&quot;:true,&quot;lockPosition&quot;:true},{&quot;columnElasticid&quot;:&quot;160baf0d-6386-492f-94e1-5098be9bbee3_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 1&quot;,&quot;field&quot;:&quot;Column1&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 1&quot;},{&quot;columnElasticid&quot;:&quot;a515bea4-1e45-48ce-9961-7f721a8223be_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 2&quot;,&quot;field&quot;:&quot;Column2&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 2&quot;},{&quot;columnElasticid&quot;:&quot;cef8c6df-0214-4b85-a76f-e3d9bdb60604_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 3&quot;,&quot;field&quot;:&quot;Column3&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 3&quot;},{&quot;columnElasticid&quot;:&quot;01f818d7-03c5-4cee-823a-f93704753c8f_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 4&quot;,&quot;field&quot;:&quot;Column4&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 4&quot;},{&quot;columnElasticid&quot;:&quot;8011c620-17f0-4040-81f9-51774726df41_es&quot;,&quot;width&quot;:&quot;300&quot;,&quot;description&quot;:&quot;A new column's description updated&quot;,&quot;colId&quot;:&quot;Column 5&quot;,&quot;field&quot;:&quot;Column5&quot;,&quot;enableValue&quot;:true,&quot;enableRowGroup&quot;:true,&quot;groupDefaultExpanded&quot;:1,&quot;filter&quot;:true,&quot;editable&quot;:true,&quot;wrapText&quot;:true,&quot;resizable&quot;:true,&quot;autoHeaderHeight&quot;:true,&quot;wrapHeaderText&quot;:true,&quot;rowGroup&quot;:false,&quot;rowGroupIndex&quot;:null,&quot;pivot&quot;:false,&quot;pivotIndex&quot;:null,&quot;aggFunc&quot;:null,&quot;sort&quot;:null,&quot;sortIndex&quot;:null,&quot;headerName&quot;:&quot;Column 5&quot;}],&quot;Rows&quot;:{&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;remote_datasource&quot;:&quot;Elastic&quot;,&quot;attachments&quot;:[],&quot;notes&quot;:&quot;Notes example&quot;}}}
+
+14:01:05.004 response time in milliseconds: 1117
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 29 Feb 2024 08:31:01 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 178
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;b2-w2WV9798XDxwN325m1dhR9n48j4&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+{&quot;_index&quot;:&quot;sheet&quot;,&quot;_id&quot;:&quot;38bec379-f9d9-4d2e-94b0-88fa0814c5a8&quot;,&quot;_version&quot;:1,&quot;result&quot;:&quot;created&quot;,&quot;_shards&quot;:{&quot;total&quot;:2,&quot;successful&quot;:1,&quot;failed&quot;:0},&quot;_seq_no&quot;:569111,&quot;_primary_term&quot;:1}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._index == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._version == '#number'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.result == 'created'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._seq_no == '#number'</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def SheetID = response._id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#uploadNotesToSheet</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'elasticsearch/sheet/uploadNotesToSheet'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testcookie</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request { note: &quot;[{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;id\&quot;:\&quot;1937b575-6ede-492b-89aa-c05e6135ab19\&quot;,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.403Z\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:08.403Z\&quot;,\&quot;depth\&quot;:0,\&quot;lid\&quot;:\&quot;1937b575-6ede-492b-89aa-c05e6135ab19\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;asassss\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;id\&quot;:\&quot;5b08b616-b77a-47a1-80b8-134e69659972\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;id\&quot;:\&quot;f3a066b1-fdfb-462b-af34-e4b01fec0b2c\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:13.085Z\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;lid\&quot;:\&quot;f3a066b1-fdfb-462b-af34-e4b01fec0b2c\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;id\&quot;:\&quot;569fb648-b19a-4b44-978a-a1e41e4fbad6\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:13.265Z\&quot;,\&quot;lid\&quot;:\&quot;569fb648-b19a-4b44-978a-a1e41e4fbad6\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}]},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;id\&quot;:\&quot;dd8adf4e-6459-4406-acd7-eaf3c56285da\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:13.465Z\&quot;,\&quot;lid\&quot;:\&quot;dd8adf4e-6459-4406-acd7-eaf3c56285da\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}]},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.504Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12- \&quot;:0,\&quot;created_date\&quot;:\&quot;2023-h\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.508Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.508Z\&quot;,\&quot;id\&quot;:\&quot;12adf1d4-baef-4ced-b745-45aae0ce8af1\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:08.508Z\&quot;}]&quot;,sheetId: &quot;#(SheetID)&quot;}</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.102</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>14:01:05.018 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/uploadNotesToSheet
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCxfiMEi689wgsIInxm/u7sEpr7Vb5XtfHlVpyHR4S8x65wQtHg49bPxnfzZ+otCZaSyqPh9XSTZ3mzit6ATRzvGR+e+u8zZ+lcptkJDk9Js/pboQAYdJo+ktcbrj/S98kN/P4EFR4FDdxC8NR05R51BOSKswgLnnh7nf9O+HXzjm6tlmw50psY40800hbz8oWDzWTDCdZTQ7wDkGQZ581FA==
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 1857
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;note&quot;:&quot;[{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;id\&quot;:\&quot;1937b575-6ede-492b-89aa-c05e6135ab19\&quot;,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.403Z\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:08.403Z\&quot;,\&quot;depth\&quot;:0,\&quot;lid\&quot;:\&quot;1937b575-6ede-492b-89aa-c05e6135ab19\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;asassss\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;id\&quot;:\&quot;5b08b616-b77a-47a1-80b8-134e69659972\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;id\&quot;:\&quot;f3a066b1-fdfb-462b-af34-e4b01fec0b2c\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:13.085Z\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;lid\&quot;:\&quot;f3a066b1-fdfb-462b-af34-e4b01fec0b2c\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;id\&quot;:\&quot;569fb648-b19a-4b44-978a-a1e41e4fbad6\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:13.265Z\&quot;,\&quot;lid\&quot;:\&quot;569fb648-b19a-4b44-978a-a1e41e4fbad6\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}]},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.499Z\&quot;,\&quot;id\&quot;:\&quot;dd8adf4e-6459-4406-acd7-eaf3c56285da\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:13.465Z\&quot;,\&quot;lid\&quot;:\&quot;dd8adf4e-6459-4406-acd7-eaf3c56285da\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}]},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.504Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12- \&quot;:0,\&quot;created_date\&quot;:\&quot;2023-h\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:15:08.508Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:15:08.508Z\&quot;,\&quot;id\&quot;:\&quot;12adf1d4-baef-4ced-b745-45aae0ce8af1\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:15:08.508Z\&quot;}]&quot;,&quot;sheetId&quot;:&quot;38bec379-f9d9-4d2e-94b0-88fa0814c5a8&quot;}
+
+14:01:05.119 response time in milliseconds: 100
+2 &lt; 201
+2 &lt; Server: nginx
+2 &lt; Date: Thu, 29 Feb 2024 08:31:01 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 178
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+2 &lt; Cache-Control: public, must-revalidate
+2 &lt; ETag: W/&quot;b2-iZEimRr/urW6Z8kGMkEPdzvYD9w&quot;
+2 &lt; Front-End-Https: on
+2 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+{&quot;_index&quot;:&quot;sheet&quot;,&quot;_id&quot;:&quot;38bec379-f9d9-4d2e-94b0-88fa0814c5a8&quot;,&quot;_version&quot;:2,&quot;result&quot;:&quot;updated&quot;,&quot;_shards&quot;:{&quot;total&quot;:2,&quot;successful&quot;:1,&quot;failed&quot;:0},&quot;_seq_no&quot;:569112,&quot;_primary_term&quot;:1}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._index == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._version == '#number'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.result == 'updated'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._seq_no == '#number'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Upload xPAD Content</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/sheet/uploadxPadContent'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testcookie</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request { content: &quot;[{\&quot;type\&quot;:\&quot;paragaph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;id\&quot;:\&quot;58e6e126-7a4a-4a66-865c-7d9bd6d4115c\&quot;,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.126Z\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.126Z\&quot;,\&quot;depth\&quot;:0,\&quot;lid\&quot;:\&quot;58e6e126-7a4a-4a66-865c-7d9bd6d4115c\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.176Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.176Z\&quot;,\&quot;id\&quot;:\&quot;cc2ddcdc-1fbe-4dfb-9398-65644018d72b\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;id\&quot;:\&quot;25890dd5-583b-4b31-af29-ee416220fcc9\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;id\&quot;:\&quot;0ff946d4-066f-428c-9a12-bb437bd06313\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;id\&quot;:\&quot;cae1dc11-aa53-4406-8363-da0cc693b4bc\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;id\&quot;:\&quot;d3aefff1-3750-454e-b04b-c1ce4601af28\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.178Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.178Z\&quot;,\&quot;id\&quot;:\&quot;c5cdf18f-92ea-40df-b5a5-1f052c00eed8\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-c2b2561ebfae\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.180Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.180Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.180Z\&quot;,\&quot;id\&quot;:\&quot;7e52743a-3015-44f2-b659-ddda5421b67e\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.180Z\&quot;}]&quot;, sheetId: &quot;#(SheetID)&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method PATCH</span>
+
+  <span class="lead-duration duration">0.093</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>14:01:05.122 request:
+3 &gt; PATCH https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/uploadxPadContent
+3 &gt; Accept: application/json
+3 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCxfiMEi689wgsIInxm/u7sEpr7Vb5XtfHlVpyHR4S8x65wQtHg49bPxnfzZ+otCZaSyqPh9XSTZ3mzit6ATRzvGR+e+u8zZ+lcptkJDk9Js/pboQAYdJo+ktcbrj/S98kN/P4EFR4FDdxC8NR05R51BOSKswgLnnh7nf9O+HXzjm6tlmw50psY40800hbz8oWDzWTDCdZTQ7wDkGQZ581FA==
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 2147
+3 &gt; Host: dev-xspaces.thedigitalgroup.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;content&quot;:&quot;[{\&quot;type\&quot;:\&quot;paragaph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;id\&quot;:\&quot;58e6e126-7a4a-4a66-865c-7d9bd6d4115c\&quot;,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.126Z\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.126Z\&quot;,\&quot;depth\&quot;:0,\&quot;lid\&quot;:\&quot;58e6e126-7a4a-4a66-865c-7d9bd6d4115c\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.176Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.176Z\&quot;,\&quot;id\&quot;:\&quot;cc2ddcdc-1fbe-4dfb-9398-65644018d72b\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;id\&quot;:\&quot;25890dd5-583b-4b31-af29-ee416220fcc9\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;id\&quot;:\&quot;0ff946d4-066f-428c-9a12-bb437bd06313\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;id\&quot;:\&quot;cae1dc11-aa53-4406-8363-da0cc693b4bc\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;,\&quot;id\&quot;:\&quot;d3aefff1-3750-454e-b04b-c1ce4601af28\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.177Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.178Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.178Z\&quot;,\&quot;id\&quot;:\&quot;c5cdf18f-92ea-40df-b5a5-1f052c00eed8\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-c2b2561ebfae\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.180Z\&quot;},{\&quot;type\&quot;:\&quot;paragraph\&quot;,\&quot;children\&quot;:[{\&quot;text\&quot;:\&quot;\&quot;}],\&quot;depth\&quot;:0,\&quot;created_date\&quot;:\&quot;2023-12-01T12:24:05.180Z\&quot;,\&quot;modified_date\&quot;:\&quot;2023-12-01T12:24:05.180Z\&quot;,\&quot;id\&quot;:\&quot;7e52743a-3015-44f2-b659-ddda5421b67e\&quot;,\&quot;updated_date\&quot;:\&quot;2023-12-01T12:24:05.180Z\&quot;}]&quot;,&quot;sheetId&quot;:&quot;38bec379-f9d9-4d2e-94b0-88fa0814c5a8&quot;}
+
+14:01:05.213 response time in milliseconds: 91
+3 &lt; 200
+3 &lt; Server: nginx
+3 &lt; Date: Thu, 29 Feb 2024 08:31:01 GMT
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Content-Length: 178
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+3 &lt; Cache-Control: public, must-revalidate
+3 &lt; ETag: W/&quot;b2-5Xo4izjINg3Ug8GnQrTrylCDykA&quot;
+3 &lt; Front-End-Https: on
+3 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+{&quot;_index&quot;:&quot;sheet&quot;,&quot;_id&quot;:&quot;38bec379-f9d9-4d2e-94b0-88fa0814c5a8&quot;,&quot;_version&quot;:3,&quot;result&quot;:&quot;updated&quot;,&quot;_shards&quot;:{&quot;total&quot;:2,&quot;successful&quot;:1,&quot;failed&quot;:0},&quot;_seq_no&quot;:569113,&quot;_primary_term&quot;:1}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._index == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._version == '#number'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.result == 'updated'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._seq_no == '#number'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/External/FeatureSummaryExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" />
-    </list>
+    <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="" />
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +45,20 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/FrameworkFiles/Demoframework/src/test/java/Data&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/FrameworkFiles/Demoframework/src/test/java/KarateFeatures&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FrameworkFiles\Demoframework\src\test\java\KarateFeatures" />
       <recent name="D:\FrameworkFiles\Demoframework\src\test\java\Data" />
       <recent name="D:\FrameworkFiles\Demoframework\target\karate-reports\res" />
       <recent name="D:\FrameworkFiles\Demoframework\src\test\java\Runner" />
       <recent name="D:\FrameworkFiles\Demoframework\src\test\java" />
-      <recent name="D:\FrameworkFiles\Demoframework\src\test\java\Features" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\FrameworkFiles\Demoframework\src\test\java\KarateFeatures" />
       <recent name="D:\FrameworkFiles\Demoframework\src\test\java\Features" />
       <recent name="D:\FrameworkFiles\Demoframework\target\karate-reports" />
       <recent name="D:\New folder\Demoframework\src\test\java\Utils\Internal" />
@@ -91,6 +88,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="01_HomePage.feature: 01_HomePage.feature" type="karate" temporary="true">
+      <option name="karateSearchPaths">
+        <list>
+          <option value="$PROJECT_DIR$/src/test/java/Features/01_HomePage.feature" />
+        </list>
+      </option>
+      <module name="KarateDemo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="02_InsertWorkbook.feature: 02_InsertWorkbook.feature" type="karate" temporary="true">
+      <option name="karateSearchPaths">
+        <list>
+          <option value="$PROJECT_DIR$/src/test/java/Features/02_InsertWorkbook.feature" />
+        </list>
+      </option>
+      <module name="KarateDemo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="05_DeleteSheet.feature: 05_DeleteSheet.feature" type="karate" temporary="true">
       <option name="karateSearchPaths">
         <list>
@@ -115,37 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="09_UploadNotesSheet.feature: 09_UploadNotesSheet.feature" type="karate" temporary="true">
-      <option name="karateSearchPaths">
-        <list>
-          <option value="$PROJECT_DIR$/src/test/java/Features/09_UploadNotesSheet.feature" />
-        </list>
-      </option>
-      <module name="KarateDemo" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TDG_UKAF_DatabaseConection.feature: TDG_UKAF_DatabaseConection.feature" type="karate" temporary="true">
-      <option name="karateSearchPaths">
-        <list>
-          <option value="$PROJECT_DIR$/src/test/java/Features/TDG_UKAF_DatabaseConection.feature" />
-        </list>
-      </option>
-      <module name="KarateDemo" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SampleRunner.Database" />
-        <item itemvalue="Karate Feature.09_UploadNotesSheet.feature: 09_UploadNotesSheet.feature" />
+        <item itemvalue="Karate Feature.01_HomePage.feature: 01_HomePage.feature" />
+        <item itemvalue="Karate Feature.02_InsertWorkbook.feature: 02_InsertWorkbook.feature" />
         <item itemvalue="Karate Feature.06_DeleteWorkbook.feature: 06_DeleteWorkbook.feature" />
         <item itemvalue="Karate Feature.05_DeleteSheet.feature: 05_DeleteSheet.feature" />
-        <item itemvalue="Karate Feature.TDG_UKAF_DatabaseConection.feature: TDG_UKAF_DatabaseConection.feature" />
       </list>
     </recent_temporary>
   </component>

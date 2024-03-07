@@ -22,7 +22,7 @@ public class ParallelFeatureRunner {
     void testParallel() {
         Results results = Runner.path("classpath:Features")
                 .outputCucumberJson(true)
-                .parallel(3);
+                .parallel(1);
        // generateReport(results.getReportDir());
 
         Map<String,Object> report = new HashMap<>();

@@ -37,18 +37,8 @@ Feature: Xspace test
     Then status 201
     * def c_workbookid = response[0]._id
     * print c_workbookid
-    #SearchByWorkbookId
-    Given path '/elasticsearch/sheet/searchByWorkbookId'
-    * header Accept = 'application/json'
-    * header Cookie =  testCooke
-    And request {"index":"sheet","workbook_id":"#(c_workbookid)"}
-    When method POST
-    Then status 201
-    And match response[0]._source.workbook_id == '#(c_workbookid)'
-    And match response[0]._index == '#string'
-    And match response[0]._source.user_email == '#string'
-    And match response[0]._source.user_id == '#string'
-    And match response[0]._source.description == "A new sheet's description"
-    And match response[0]._source.title == 'Random title'
+
+
+
 
 

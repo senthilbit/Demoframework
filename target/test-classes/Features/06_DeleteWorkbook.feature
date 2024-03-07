@@ -13,7 +13,7 @@ Feature:
     Given path '/elasticsearch/workbook/delete'
     * header Accept = 'application/json'
     * header Cookie =  testcookie
-    And request {"id":"#(c_Id1)","user_email":"amandeep.chauhan@thedigitalgroup.com"}
+    And request {"id":"#(c_Id1)"}
     When method Post
     Then status 201
     And match response._id == '#(c_Id1)'
