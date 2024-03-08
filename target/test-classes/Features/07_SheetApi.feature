@@ -19,7 +19,7 @@ Feature:
     * print random
     * print randomName
 
-
+@SheetApi
 Scenario:
   #insert Sheet
   Given path '/elasticsearch/sheet/insertDoc'

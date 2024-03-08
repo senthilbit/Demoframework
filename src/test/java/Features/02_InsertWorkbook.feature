@@ -10,7 +10,7 @@ Feature: Xspace test
     * def testcookie = workbook.testCooke
 
 
-
+  @InsertWorkBook
   Scenario: Insert WorkBook
 
     Given path '/elasticsearch/sheet/searchByWorkbookId'

@@ -9,7 +9,7 @@ Feature:
     * def testcookie1 = sheet.testcookie
     * def workbookid = sheet.c_Id1
 
-
+  @DeleteSheet
   Scenario: Delete Sheet
     Given path '/elasticsearch/sheet/delete'
     * header Accept = 'application/json'

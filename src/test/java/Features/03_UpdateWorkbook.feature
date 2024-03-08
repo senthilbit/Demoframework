@@ -16,7 +16,7 @@ Feature: Xspace test
     * def randomSheetName = "Sheet" + (randomNumber)
 
 
-
+  @UpdateWorkBook
   Scenario: Update WorkBook
 
       #Update WorkBook

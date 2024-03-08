@@ -8,7 +8,7 @@ Feature:
     * print c_Id1
     * def testcookie = workbook.testCooke
     * print testcookie
-
+ @DeleteWorkbook
   Scenario: Delete Workbook
     Given path '/elasticsearch/workbook/delete'
     * header Accept = 'application/json'

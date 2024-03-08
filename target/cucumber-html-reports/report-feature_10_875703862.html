@@ -1,0 +1,9121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: Features/NegativeScenariosForiInsertWorkbook.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate</td>
+      <td>08 Mar 2024, 15:45</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Features/NegativeScenariosForiInsertWorkbook.feature</td>
+          <td      class="passed"    >233</td>
+          <td      class="failed"    >3</td>
+          <td     class="skipped"   >3</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">239</td>
+
+          <td  class="passed"    >7</td>
+          <td  class="failed"    >3</td>
+          <td class="total">10</td>
+
+          <td class="duration" data-value="19857590000">19.857</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Features/NegativeScenariosForiInsertWorkbook.feature</span>
+
+
+</div>
+
+        <div class="description indention">Xspace test</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.044</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:44:51.283 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>15:44:51.286 [print] 47 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>15:44:51.286 [print] Workbook47 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:44:51.286 [print] Herman 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.041</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:44:51.288 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:44:51.328 response time in milliseconds: 39
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:14:46 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-Bd0YnVeuT9GW2Op4EbxT4klffp4&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCpqcOT2O5iP2HXdm/XnTmJ8syYrEoXG+mxf8uWG/90FxJbIMFsNQwLsXQvuAtEwuAXCwLGpnmU/WcvX4tZrWUYYg98NwN0yJgtnBsDR4uOS5URdZC26t4Z0gQcBblpMXUYOyzUllHngiyiDVbXpesoI9+N3Cm6vmgjoyJdDm+WIXqivYvYSPhXPKWPSbGh19/shcrttss9SFFRzi2gAD14A==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>15:44:51.329 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCpqcOT2O5iP2HXdm/XnTmJ8syYrEoXG+mxf8uWG/90FxJbIMFsNQwLsXQvuAtEwuAXCwLGpnmU/WcvX4tZrWUYYg98NwN0yJgtnBsDR4uOS5URdZC26t4Z0gQcBblpMXUYOyzUllHngiyiDVbXpesoI9+N3Cm6vmgjoyJdDm+WIXqivYvYSPhXPKWPSbGh19/shcrttss9SFFRzi2gAD14A==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.025</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook without token</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/sheet/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;#(random)&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>15:44:51.330 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 196
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;Workbook47&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}
+
+15:44:51.355 response time in milliseconds: 24
+2 &lt; 401
+2 &lt; Server: nginx
+2 &lt; Date: Fri, 08 Mar 2024 10:14:47 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 43
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+2 &lt; ETag: W/&quot;2b-dGnJzt6gv1nJjX6DJ9RztDWptng&quot;
+{&quot;message&quot;:&quot;Unauthorized&quot;,&quot;statusCode&quot;:401}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 401</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.058</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>15:44:51.357 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>15:44:51.359 [print] 48 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>15:44:51.359 [print] Workbook48 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>15:44:51.359 [print] Cameron 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.056</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>15:44:51.360 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:44:51.415 response time in milliseconds: 54
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:14:47 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-iXitDINrE9obdvWbZb0MGTwHmRU&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCyOfnPKMvrUcDQzjkf7mnpFvku/ytap7qhQEM//rakImmlhHFbgSvcxJocs95e7oQIW4QscWvGJMYgLVrtEIrc7FFSkuXaS3Q8Ok0ZIqk8bu5yD9G92oYvVk1zHK/w1xlwPK+562YGUAMKpzFmN0ApigFrLgY/q/gldwqc7uASbap1YYCnUzDRTlPdGTd0N4Rzi6jqJFLDKnzVulRkkBLig==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>15:44:51.416 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCyOfnPKMvrUcDQzjkf7mnpFvku/ytap7qhQEM//rakImmlhHFbgSvcxJocs95e7oQIW4QscWvGJMYgLVrtEIrc7FFSkuXaS3Q8Ok0ZIqk8bu5yD9G92oYvVk1zHK/w1xlwPK+562YGUAMKpzFmN0ApigFrLgY/q/gldwqc7uASbap1YYCnUzDRTlPdGTd0N4Rzi6jqJFLDKnzVulRkkBLig==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.028</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook with invalid Authentication</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/sheet/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  'jhbfhbadhfajf'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;#(random)&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.027</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>15:44:51.417 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Cookie: jhbfhbadhfajf
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 196
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;Workbook48&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}
+
+15:44:51.444 response time in milliseconds: 26
+2 &lt; 401
+2 &lt; Server: nginx
+2 &lt; Date: Fri, 08 Mar 2024 10:14:47 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 43
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+2 &lt; ETag: W/&quot;2b-dGnJzt6gv1nJjX6DJ9RztDWptng&quot;
+{&quot;message&quot;:&quot;Unauthorized&quot;,&quot;statusCode&quot;:401}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 401</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.051</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>15:44:51.448 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>15:44:51.452 [print] 25 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>15:44:51.452 [print] Workbook25 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>15:44:51.453 [print] Loyce 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.046</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>15:44:51.454 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:44:51.499 response time in milliseconds: 44
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:14:47 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-R71DRUb5HS8lkrYoRahg1hzCxpg&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCooPHjOU2EfJdJZL1xJDjuO+4stKgFgCY+ZckHBmPHKVP1QQCq9Cr2yS+UJDBfol+Cgxcij/K6RQXLJSH7Ejehz6AyFtPjeun+qlKp3Twfhix/BshkTHAvQM1eyIXN5tLSoMZtuGg7tMwFx4juKK6OEWyToifNcdIlITNmwo9epa9porRo5JfPREw9RYBn3SC0juU29iHGb8NcQylGw3z/w==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>15:44:51.501 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCooPHjOU2EfJdJZL1xJDjuO+4stKgFgCY+ZckHBmPHKVP1QQCq9Cr2yS+UJDBfol+Cgxcij/K6RQXLJSH7Ejehz6AyFtPjeun+qlKp3Twfhix/BshkTHAvQM1eyIXN5tLSoMZtuGg7tMwFx4juKK6OEWyToifNcdIlITNmwo9epa9porRo5JfPREw9RYBn3SC0juU29iHGb8NcQylGw3z/w==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">6.049</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook with invalid or missing payload</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/sheet/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">6.049</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-33">
+          <a>http</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details  in ">
+        <pre>http call failed after 6048 milliseconds for url: https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+java.net.SocketTimeoutException: Read timed out
+classpath:Features/NegativeScenariosForiInsertWorkbook.feature:46</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>15:44:51.503 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCooPHjOU2EfJdJZL1xJDjuO+4stKgFgCY+ZckHBmPHKVP1QQCq9Cr2yS+UJDBfol+Cgxcij/K6RQXLJSH7Ejehz6AyFtPjeun+qlKp3Twfhix/BshkTHAvQM1eyIXN5tLSoMZtuGg7tMwFx4juKK6OEWyToifNcdIlITNmwo9epa9porRo5JfPREw9RYBn3SC0juU29iHGb8NcQylGw3z/w==
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+15:44:57.550 java.net.SocketTimeoutException: Read timed out, http call failed after 6048 milliseconds for url: https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+15:44:57.551 classpath:Features/NegativeScenariosForiInsertWorkbook.feature:46
+When method post
+http call failed after 6048 milliseconds for url: https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+java.net.SocketTimeoutException: Read timed out
+classpath:Features/NegativeScenariosForiInsertWorkbook.feature:46
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print responseStatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.032</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-35" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-36" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>15:44:57.553 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>15:44:57.555 [print] 20 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>15:44:57.555 [print] Workbook20 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>15:44:57.555 [print] Hilton 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.030</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>15:44:57.556 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:44:57.586 response time in milliseconds: 29
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:14:53 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-6SaN77+Jo0UAfDDW6sIHtdMPJfA&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCVus5pP9NEoeqkRhGcJ8dT4/22s2on37TGY9kLSRXa/7yib7kWtqTvWCXgLmyAc9mVmPHl0OoSiufZGr/hjFU5srYkvxapSFoPn31xGzzzyLrmQ5vjJq5RPA+oq5ms/0URwbDK+BxxFZHBhHFZe1+MWVqGESYU+bR6DOlKhFnQt1Xktir6b0Gyz8Uo9Z1rjuoltxT2PtCYQeru0rQCrsVcA==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>15:44:57.586 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCVus5pP9NEoeqkRhGcJ8dT4/22s2on37TGY9kLSRXa/7yib7kWtqTvWCXgLmyAc9mVmPHl0OoSiufZGr/hjFU5srYkvxapSFoPn31xGzzzyLrmQ5vjJq5RPA+oq5ms/0URwbDK+BxxFZHBhHFZe1+MWVqGESYU+bR6DOlKhFnQt1Xktir6b0Gyz8Uo9Z1rjuoltxT2PtCYQeru0rQCrsVcA==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">6.018</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-43">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook with invalid or missing payload with invalid method type</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-44">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/sheet/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">6.018</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-45">
+          <a>http</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details  in ">
+        <pre>http call failed after 6019 milliseconds for url: https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+java.net.SocketTimeoutException: Read timed out
+classpath:Features/NegativeScenariosForiInsertWorkbook.feature:53</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>15:44:57.588 request:
+2 &gt; GET https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCVus5pP9NEoeqkRhGcJ8dT4/22s2on37TGY9kLSRXa/7yib7kWtqTvWCXgLmyAc9mVmPHl0OoSiufZGr/hjFU5srYkvxapSFoPn31xGzzzyLrmQ5vjJq5RPA+oq5ms/0URwbDK+BxxFZHBhHFZe1+MWVqGESYU+bR6DOlKhFnQt1Xktir6b0Gyz8Uo9Z1rjuoltxT2PtCYQeru0rQCrsVcA==
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+15:45:03.605 java.net.SocketTimeoutException: Read timed out, http call failed after 6019 milliseconds for url: https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+15:45:03.605 classpath:Features/NegativeScenariosForiInsertWorkbook.feature:53
+* method Get
+http call failed after 6019 milliseconds for url: https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+java.net.SocketTimeoutException: Read timed out
+classpath:Features/NegativeScenariosForiInsertWorkbook.feature:53
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print responseStatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.037</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-47">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-47" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-48">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-48" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details">
+        <pre>15:45:03.607 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>15:45:03.610 [print] 12 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>15:45:03.611 [print] Workbook12 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>15:45:03.611 [print] Willetta 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.035</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>15:45:03.612 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:45:03.645 response time in milliseconds: 32
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:14:59 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-M6OHfkelHaWRibjkrTPxK3pfkac&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCOmsaPdaU+SP5vSZY2tDweuFulqRRAyoiVe1vqGwJ0Xko3MFh/eNSjZ3VyvK9u6hjQ38afl97hJBWE4pKqjKHtNLzzekMlwCsgy3+Wy2PYKjOvvtIkyOpEP+ChVzt8X/4UTDy3rP/PWyjrpN82xlIwzRrmGpbSVHdsFmGPwJTWbidirArt48TEyCNMfEXsEFCGeo1GIX8W/SWRCWzE897eg==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details">
+        <pre>15:45:03.646 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCOmsaPdaU+SP5vSZY2tDweuFulqRRAyoiVe1vqGwJ0Xko3MFh/eNSjZ3VyvK9u6hjQ38afl97hJBWE4pKqjKHtNLzzekMlwCsgy3+Wy2PYKjOvvtIkyOpEP+ChVzt8X/4UTDy3rP/PWyjrpN82xlIwzRrmGpbSVHdsFmGPwJTWbidirArt48TEyCNMfEXsEFCGeo1GIX8W/SWRCWzE897eg==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">6.027</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-55">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook with invalid url</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-55" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-56">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-56" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/sheet/'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;#(random)&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">6.026</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-57">
+          <a>http</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details  in ">
+        <pre>http call failed after 6026 milliseconds for url: https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet
+java.net.SocketTimeoutException: Read timed out
+classpath:Features/NegativeScenariosForiInsertWorkbook.feature:62</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-58">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details">
+        <pre>15:45:03.648 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCOmsaPdaU+SP5vSZY2tDweuFulqRRAyoiVe1vqGwJ0Xko3MFh/eNSjZ3VyvK9u6hjQ38afl97hJBWE4pKqjKHtNLzzekMlwCsgy3+Wy2PYKjOvvtIkyOpEP+ChVzt8X/4UTDy3rP/PWyjrpN82xlIwzRrmGpbSVHdsFmGPwJTWbidirArt48TEyCNMfEXsEFCGeo1GIX8W/SWRCWzE897eg==
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 196
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;Workbook12&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}
+
+15:45:09.673 java.net.SocketTimeoutException: Read timed out, http call failed after 6026 milliseconds for url: https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet
+15:45:09.674 classpath:Features/NegativeScenariosForiInsertWorkbook.feature:62
+When method post
+http call failed after 6026 milliseconds for url: https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet
+java.net.SocketTimeoutException: Read timed out
+classpath:Features/NegativeScenariosForiInsertWorkbook.feature:62
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print responseStatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.059</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-59">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-59" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-60">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-60" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-61">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-61" class="collapse collapsable-details">
+        <pre>15:45:09.677 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-62">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-62" class="collapse collapsable-details">
+        <pre>15:45:09.679 [print] 35 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-63">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-63" class="collapse collapsable-details">
+        <pre>15:45:09.680 [print] Workbook35 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-64">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-64" class="collapse collapsable-details">
+        <pre>15:45:09.680 [print] Eric 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.056</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-65">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-65" class="collapse collapsable-details">
+        <pre>15:45:09.680 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:45:09.736 response time in milliseconds: 54
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:15:05 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-5YgqHdkesl6k94aSjgXjYxh7iJk&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCLzfIXMzZ2tZmwZ2AUIwi1FRr3rkuWLW9h3FjQXICm5I8YrhFUkY+XxlbiOQQ8hbMXUTCRmfrMwPkB0Hrit1ISeAsZPDD1O8A4So+yy5Uq9Qi0s03cibl1J+WtiF5zuWsJusGPclIu+qaP/LuMQCauiYkZtwl2Fu/LOU6fdokkUy3O7HXQgzBk34lctdwvjLCwm3o+nLWStrz3WjmlEaKnA==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-66">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-66" class="collapse collapsable-details">
+        <pre>15:45:09.737 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCLzfIXMzZ2tZmwZ2AUIwi1FRr3rkuWLW9h3FjQXICm5I8YrhFUkY+XxlbiOQQ8hbMXUTCRmfrMwPkB0Hrit1ISeAsZPDD1O8A4So+yy5Uq9Qi0s03cibl1J+WtiF5zuWsJusGPclIu+qaP/LuMQCauiYkZtwl2Fu/LOU6fdokkUy3O7HXQgzBk34lctdwvjLCwm3o+nLWStrz3WjmlEaKnA==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.046</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-67">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook with invalid method name</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-67" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-68">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-68" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/sheet/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;#(random)&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">1.045</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-69">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-69" class="collapse collapsable-details">
+        <pre>15:45:09.739 request:
+2 &gt; GET https://dev-xspaces.thedigitalgroup.com/elasticsearch/sheet/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCLzfIXMzZ2tZmwZ2AUIwi1FRr3rkuWLW9h3FjQXICm5I8YrhFUkY+XxlbiOQQ8hbMXUTCRmfrMwPkB0Hrit1ISeAsZPDD1O8A4So+yy5Uq9Qi0s03cibl1J+WtiF5zuWsJusGPclIu+qaP/LuMQCauiYkZtwl2Fu/LOU6fdokkUy3O7HXQgzBk34lctdwvjLCwm3o+nLWStrz3WjmlEaKnA==
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 196
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:&quot;Workbook35&quot;,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}
+
+15:45:10.783 response time in milliseconds: 1043
+2 &lt; 200
+2 &lt; Server: nginx
+2 &lt; Date: Fri, 08 Mar 2024 10:15:06 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 182
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+2 &lt; Cache-Control: public, must-revalidate
+2 &lt; ETag: W/&quot;b6-p5tQdkc7/EPIVXlPxhR0HD1g9wU&quot;
+2 &lt; Front-End-Https: on
+2 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+{&quot;_index&quot;:&quot;workbook&quot;,&quot;_id&quot;:&quot;175de59e-1894-45ef-9bb3-ee3fbc091e03&quot;,&quot;_version&quot;:1,&quot;result&quot;:&quot;created&quot;,&quot;_shards&quot;:{&quot;total&quot;:2,&quot;successful&quot;:1,&quot;failed&quot;:0},&quot;_seq_no&quot;:1072207,&quot;_primary_term&quot;:4}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match  responseStatus != 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.031</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-70">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-70" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-71">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-71" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-72">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-72" class="collapse collapsable-details">
+        <pre>15:45:10.787 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-73">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-73" class="collapse collapsable-details">
+        <pre>15:45:10.788 [print] 70 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-74">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-74" class="collapse collapsable-details">
+        <pre>15:45:10.789 [print] Workbook70 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-75">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-75" class="collapse collapsable-details">
+        <pre>15:45:10.789 [print] Issac 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.029</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-76">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-76" class="collapse collapsable-details">
+        <pre>15:45:10.789 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:45:10.818 response time in milliseconds: 29
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:15:06 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-i3H9sBLJqgbs6LNnjcIJyM0BGR4&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCLH7pWlHmI3Ad2OS8raQHL7IWlzORMbspzA+8jb4/Ef6NgQGTRK4q58702KDYMZM3cZcoyqzagcvPVLyBHipfo93tTKsVDknnJTVCi0OJY1PsaPFbIdTwNiPi6jyzOorJUiV+lvwWoZ3bitrIgf44SNY9spA9rSztkzOLcyGPZA4Fqw9JPGlMrzxXhHlEdwkN1J4RPA8nGoKMgGfa1j9jhA==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-77">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-77" class="collapse collapsable-details">
+        <pre>15:45:10.819 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCLH7pWlHmI3Ad2OS8raQHL7IWlzORMbspzA+8jb4/Ef6NgQGTRK4q58702KDYMZM3cZcoyqzagcvPVLyBHipfo93tTKsVDknnJTVCi0OJY1PsaPFbIdTwNiPi6jyzOorJUiV+lvwWoZ3bitrIgf44SNY9spA9rSztkzOLcyGPZA4Fqw9JPGlMrzxXhHlEdwkN1J4RPA8nGoKMgGfa1j9jhA==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.039</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-78">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook with incorrect status code</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-78" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-79">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-79" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:5,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-80">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-80" class="collapse collapsable-details">
+        <pre>15:45:10.820 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCLH7pWlHmI3Ad2OS8raQHL7IWlzORMbspzA+8jb4/Ef6NgQGTRK4q58702KDYMZM3cZcoyqzagcvPVLyBHipfo93tTKsVDknnJTVCi0OJY1PsaPFbIdTwNiPi6jyzOorJUiV+lvwWoZ3bitrIgf44SNY9spA9rSztkzOLcyGPZA4Fqw9JPGlMrzxXhHlEdwkN1J4RPA8nGoKMgGfa1j9jhA==
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 185
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:5,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}
+
+15:45:10.857 response time in milliseconds: 37
+2 &lt; 201
+2 &lt; Server: nginx
+2 &lt; Date: Fri, 08 Mar 2024 10:15:06 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 166
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+2 &lt; Cache-Control: public, must-revalidate
+2 &lt; ETag: W/&quot;a6-dOPGp2QGTEmtP3igmemDmd74BEM&quot;
+2 &lt; Front-End-Https: on
+2 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+{&quot;_index&quot;:&quot;workbook&quot;,&quot;_id&quot;:&quot;U4eQHY4B7szs8maWGKE4&quot;,&quot;_version&quot;:1,&quot;result&quot;:&quot;created&quot;,&quot;_shards&quot;:{&quot;total&quot;:2,&quot;successful&quot;:1,&quot;failed&quot;:0},&quot;_seq_no&quot;:1072208,&quot;_primary_term&quot;:4}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responsestatus = 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match  responseStatus != responsestatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.043</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-81">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-81" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-82">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-82" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-83">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-83" class="collapse collapsable-details">
+        <pre>15:45:10.861 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-84">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-84" class="collapse collapsable-details">
+        <pre>15:45:10.863 [print] 05 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-85">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-85" class="collapse collapsable-details">
+        <pre>15:45:10.864 [print] Workbook05 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-86">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-86" class="collapse collapsable-details">
+        <pre>15:45:10.864 [print] Jay 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-87">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-87" class="collapse collapsable-details">
+        <pre>15:45:10.864 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:45:10.904 response time in milliseconds: 39
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:15:06 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-SPrtlP7wL31XkwnuCrxs8crNsTQ&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBC2ZwSwrALuQyeTYZz0rGBAejD277n7qY1IMBkZpQJr0QSrcht6c1QkXeJVg9SOqxpDys9L4CuN5N6dhsyyWb9kWdCntfxOXpI0A2OUpJsmeOnQ1yWZjvX6sFQls0z0IC9HBmD9j72ezm9B/W0gphF3OR1Yh4NHyBIi987TwV5fa/I3NNSccZYucfimG5NCiIehZEwpY2mJ3dK4OYCmb0WQg==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-88">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-88" class="collapse collapsable-details">
+        <pre>15:45:10.905 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBC2ZwSwrALuQyeTYZz0rGBAejD277n7qY1IMBkZpQJr0QSrcht6c1QkXeJVg9SOqxpDys9L4CuN5N6dhsyyWb9kWdCntfxOXpI0A2OUpJsmeOnQ1yWZjvX6sFQls0z0IC9HBmD9j72ezm9B/W0gphF3OR1Yh4NHyBIi987TwV5fa/I3NNSccZYucfimG5NCiIehZEwpY2mJ3dK4OYCmb0WQg==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.067</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-89">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook by asserting incorrect response headers</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-89" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-90">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-90" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:5,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.065</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-91">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-91" class="collapse collapsable-details">
+        <pre>15:45:10.907 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBC2ZwSwrALuQyeTYZz0rGBAejD277n7qY1IMBkZpQJr0QSrcht6c1QkXeJVg9SOqxpDys9L4CuN5N6dhsyyWb9kWdCntfxOXpI0A2OUpJsmeOnQ1yWZjvX6sFQls0z0IC9HBmD9j72ezm9B/W0gphF3OR1Yh4NHyBIi987TwV5fa/I3NNSccZYucfimG5NCiIehZEwpY2mJ3dK4OYCmb0WQg==
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 185
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:5,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}
+
+15:45:10.970 response time in milliseconds: 63
+2 &lt; 201
+2 &lt; Server: nginx
+2 &lt; Date: Fri, 08 Mar 2024 10:15:06 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 166
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+2 &lt; Cache-Control: public, must-revalidate
+2 &lt; ETag: W/&quot;a6-dVURWV+zkbB7+fX0NpV+IHnN6n0&quot;
+2 &lt; Front-End-Https: on
+2 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+{&quot;_index&quot;:&quot;workbook&quot;,&quot;_id&quot;:&quot;VIeQHY4B7szs8maWGKGo&quot;,&quot;_version&quot;:1,&quot;result&quot;:&quot;created&quot;,&quot;_shards&quot;:{&quot;total&quot;:2,&quot;successful&quot;:1,&quot;failed&quot;:0},&quot;_seq_no&quot;:1067830,&quot;_primary_term&quot;:4}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responsestatus = 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match  responseStatus != responsestatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-92">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-92" class="collapse collapsable-details">
+        <pre>15:45:10.971 [print] {
+  &quot;_index&quot;: &quot;workbook&quot;,
+  &quot;_id&quot;: &quot;VIeQHY4B7szs8maWGKGo&quot;,
+  &quot;_version&quot;: 1,
+  &quot;result&quot;: &quot;created&quot;,
+  &quot;_shards&quot;: {
+    &quot;total&quot;: 2,
+    &quot;successful&quot;: 1,
+    &quot;failed&quot;: 0
+  },
+  &quot;_seq_no&quot;: 1067830,
+  &quot;_primary_term&quot;: 4
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match responseHeaders !contains</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-93">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-93" class="collapse collapsable-details">
+        <pre>{
+&quot;Server&quot;: [
+&quot;nginx&quot;
+],
+&quot;Date&quot;: [
+&quot;Fri, 01 Mar 2024 09:48:36 GMT&quot;
+],
+&quot;Content-Type&quot;: [
+&quot;application/jsonnn; charset=utf-8&quot;
+],
+&quot;Content-Length&quot;: [
+&quot;166&quot;
+],
+&quot;Connection&quot;: [
+&quot;keep-alive&quot;
+],
+&quot;X-Powered-By&quot;: [
+&quot;Express&quot;
+],
+&quot;Access-Control-Allow-Origin&quot;: [
+&quot;*&quot;
+],
+&quot;Cache-Control&quot;: [
+&quot;no-store, no-cache, must-revalidate, proxy-revalidate&quot;,
+&quot;public, must-revalidate&quot;
+],
+&quot;ETag&quot;: [
+&quot;W/\&quot;a6-ozL3udgmnxtAspuQjaBxv8I9uyU\&quot;&quot;
+],
+&quot;Front-End-Https&quot;: [
+&quot;on&quot;
+],
+&quot;Strict-Transport-Security&quot;: [
+&quot;max-age=2592000; includeSubdomain&quot;
+],
+&quot;Set-Cookie&quot;: [
+]
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.065</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-94">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-94" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-95">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-95" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-96">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-96" class="collapse collapsable-details">
+        <pre>15:45:10.976 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-97">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-97" class="collapse collapsable-details">
+        <pre>15:45:10.977 [print] 46 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-98">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-98" class="collapse collapsable-details">
+        <pre>15:45:10.978 [print] Workbook46 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-99">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-99" class="collapse collapsable-details">
+        <pre>15:45:10.978 [print] Chaya 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.063</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-100">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-100" class="collapse collapsable-details">
+        <pre>15:45:10.979 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:45:11.041 response time in milliseconds: 61
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:15:06 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-V0+4k0We2dgkrTnFDiBtl/NArkc&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCVdq7nSELT4VmVjdiwltKmTtz6vL5D+sx308tGBeW8P8fsfgL8ZPG6M/BSev2rKE7tZ2eeyqmdXsDS2oxLnRN9R2wBo3DSWUx92iE9zahGa95Ssi6mOV7km2we+0l80s6+0OSArxOzNj+19n7XUU7h9s+TALmJBLkuSBYuwqPAirrPSenrB3fkYky+Ds5EAyv8bPMXjQis4SEsei4zD+Y3Q==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-101">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-101" class="collapse collapsable-details">
+        <pre>15:45:11.041 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCVdq7nSELT4VmVjdiwltKmTtz6vL5D+sx308tGBeW8P8fsfgL8ZPG6M/BSev2rKE7tZ2eeyqmdXsDS2oxLnRN9R2wBo3DSWUx92iE9zahGa95Ssi6mOV7km2we+0l80s6+0OSArxOzNj+19n7XUU7h9s+TALmJBLkuSBYuwqPAirrPSenrB3fkYky+Ds5EAyv8bPMXjQis4SEsei4zD+Y3Q==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.046</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-102">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook with incorrect response type</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-102" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-103">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-103" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:5,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.044</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-104">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-104" class="collapse collapsable-details">
+        <pre>15:45:11.043 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCVdq7nSELT4VmVjdiwltKmTtz6vL5D+sx308tGBeW8P8fsfgL8ZPG6M/BSev2rKE7tZ2eeyqmdXsDS2oxLnRN9R2wBo3DSWUx92iE9zahGa95Ssi6mOV7km2we+0l80s6+0OSArxOzNj+19n7XUU7h9s+TALmJBLkuSBYuwqPAirrPSenrB3fkYky+Ds5EAyv8bPMXjQis4SEsei4zD+Y3Q==
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 185
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:5,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}
+
+15:45:11.086 response time in milliseconds: 42
+2 &lt; 201
+2 &lt; Server: nginx
+2 &lt; Date: Fri, 08 Mar 2024 10:15:06 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 166
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+2 &lt; Cache-Control: public, must-revalidate
+2 &lt; ETag: W/&quot;a6-rClqc32mkefGgqttqsyg1NnsbDM&quot;
+2 &lt; Front-End-Https: on
+2 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+{&quot;_index&quot;:&quot;workbook&quot;,&quot;_id&quot;:&quot;VYeQHY4B7szs8maWGaEZ&quot;,&quot;_version&quot;:1,&quot;result&quot;:&quot;created&quot;,&quot;_shards&quot;:{&quot;total&quot;:2,&quot;successful&quot;:1,&quot;failed&quot;:0},&quot;_seq_no&quot;:1072209,&quot;_primary_term&quot;:4}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responsestatus = 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match  responseStatus != responsestatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._id != '#notpresent'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._index != '#notpresent'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._version != '#notpresent'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.result != 'Created'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._seq_no != '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.045</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-105">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-105" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-106">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-106" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># * url 'https://dev-xtables.thedigitalgroup.com'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-107">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-107" class="collapse collapsable-details">
+        <pre>15:45:11.091 The value of env is :  null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = { &quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;, &quot;password&quot;:&quot;tdg@1234&quot; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def utility = Java.type('Utils.Internal.RandomDataUtility')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomName = utility.getRandomFirstName()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomNumber = utility.getRandomNumber(2)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomNumber</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-108">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-108" class="collapse collapsable-details">
+        <pre>15:45:11.094 [print] 77 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def random = &quot;Workbook&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def randomSheetName = &quot;Sheet&quot; + (randomNumber)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print random</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-109">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-109" class="collapse collapsable-details">
+        <pre>15:45:11.095 [print] Workbook77 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print randomName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-110">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-110" class="collapse collapsable-details">
+        <pre>15:45:11.095 [print] Harley 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path '/auth/getToken'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">request result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.042</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-111">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-111" class="collapse collapsable-details">
+        <pre>15:45:11.096 request:
+1 &gt; POST https://dev-xspaces.thedigitalgroup.com/auth/getToken
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: dev-xspaces.thedigitalgroup.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;password&quot;:&quot;tdg@1234&quot;}
+
+15:45:11.137 response time in milliseconds: 40
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 08 Mar 2024 10:15:06 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 351
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+1 &lt; Cache-Control: public, must-revalidate
+1 &lt; ETag: W/&quot;15f-k0KTBJOrebjBtRfhTRvRZQVL2BA&quot;
+1 &lt; Front-End-Https: on
+1 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+&quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCygHGlmPyen9/L9nd9H5HEmxUWwI18hXL8Ep1SIHlvAhT3axIJFTC7WjfRXvYtofnzOYcxtzXAayC41/tr9nUWFHDZd63K2PhXuYCgCLZywppPX8w5HxTmZC2Jmv7PJfSLzRx7cEd6zSfSAiTKcBUwM3H0HLtlfrZcqHvazBLxL0hFWa8XbwKbFxfQTqlz4lmIsBG7eVuRTjLtvynPzcjrQ==&quot;
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-112">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-112" class="collapse collapsable-details">
+        <pre>15:45:11.138 [print] &quot;idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCygHGlmPyen9/L9nd9H5HEmxUWwI18hXL8Ep1SIHlvAhT3axIJFTC7WjfRXvYtofnzOYcxtzXAayC41/tr9nUWFHDZd63K2PhXuYCgCLZywppPX8w5HxTmZC2Jmv7PJfSLzRx7cEd6zSfSAiTKcBUwM3H0HLtlfrZcqHvazBLxL0hFWa8XbwKbFxfQTqlz4lmIsBG7eVuRTjLtvynPzcjrQ==&quot; 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testCooke = response.replace('&quot;','').replace('&quot;','')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.040</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-113">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Insert WorkBook with incorrect response type</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-113" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-114">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-114" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/elasticsearch/insertDoc'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = 'application/json'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie =  testCooke</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:5,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-115">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-115" class="collapse collapsable-details">
+        <pre>15:45:11.139 request:
+2 &gt; POST https://dev-xspaces.thedigitalgroup.com/elasticsearch/insertDoc
+2 &gt; Accept: application/json
+2 &gt; Cookie: idfs=zUsK6A4/+RzcKmGN9ZoUx+6LJghbkTTKn+7U9d0Tl9MG2fKdrbihrQrV7PCJuPbSI9OjYAO4wea69hLNjyKUXl25LsZ9cjX1W9Rlx0skHbcnilu37zr0pwV2LjjqMzBCygHGlmPyen9/L9nd9H5HEmxUWwI18hXL8Ep1SIHlvAhT3axIJFTC7WjfRXvYtofnzOYcxtzXAayC41/tr9nUWFHDZd63K2PhXuYCgCLZywppPX8w5HxTmZC2Jmv7PJfSLzRx7cEd6zSfSAiTKcBUwM3H0HLtlfrZcqHvazBLxL0hFWa8XbwKbFxfQTqlz4lmIsBG7eVuRTjLtvynPzcjrQ==
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 185
+2 &gt; Host: dev-xspaces.thedigitalgroup.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;index&quot;:&quot;workbook&quot;,&quot;doc&quot;:{&quot;name&quot;:5,&quot;user_id&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;user_email&quot;:&quot;amandeep.chauhan@thedigitalgroup.com&quot;,&quot;shared_with&quot;:[],&quot;remote_datasource&quot;:&quot;Elastic&quot;}}
+
+15:45:11.178 response time in milliseconds: 38
+2 &lt; 201
+2 &lt; Server: nginx
+2 &lt; Date: Fri, 08 Mar 2024 10:15:06 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 166
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate
+2 &lt; Cache-Control: public, must-revalidate
+2 &lt; ETag: W/&quot;a6-K+VNLI7azbJaFD6oiH7JeAV0OfM&quot;
+2 &lt; Front-End-Https: on
+2 &lt; Strict-Transport-Security: max-age=2592000; includeSubdomain
+{&quot;_index&quot;:&quot;workbook&quot;,&quot;_id&quot;:&quot;VoeQHY4B7szs8maWGaF4&quot;,&quot;_version&quot;:1,&quot;result&quot;:&quot;created&quot;,&quot;_shards&quot;:{&quot;total&quot;:2,&quot;successful&quot;:1,&quot;failed&quot;:0},&quot;_seq_no&quot;:1072210,&quot;_primary_term&quot;:4}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responsestatus = 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match  responseStatus != responsestatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match  response != {_index:'#null ',_id:'#number? _ &gt; 0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

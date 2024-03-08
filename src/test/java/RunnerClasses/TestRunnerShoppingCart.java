@@ -10,4 +10,17 @@ public class TestRunnerShoppingCart
         return Karate.run("classpath:UIAutomation/AddToCart.feature").relativeTo(getClass());
     }
 
+
+    @Karate.Test
+    Karate Hrms() {
+        return Karate.run("classpath:UIAutomation/HRMS.feature").tags("@TrainingModule").relativeTo(getClass());
+    }
+
+    @Karate.Test
+    Karate HrmsModule() {
+        return Karate.run("classpath:UIAutomation/HRMS.feature").tags("@StaticReport").relativeTo(getClass());
+    }
+
 }
+
+

@@ -10,14 +10,17 @@
   {
     "lmsbutton": "//*[@id='sidemenu']/li[11]/a",
     "training": "//*[@id='sidemenu']/li[11]/ul/li[1]/a",
-    "alltraining": "//a[@id='trainingTabs-tab-2']"
+    "alltraining": "//a[@id='trainingTabs-tab-2']",
+    "piechartcategory": "//div[@class='col-md-6 border-left']//span[contains(text(),'Available Training Categories')]"
   },
   "Reports":{
     "reports": "//*[@id='sidemenu']/li[13]/a",
     "staticReport": "//*[@id='sidemenu']/li[13]/ul/li/a",
     "iframe3": "//iframe[@name='ifrmDashBoard']",
     "checkinreport": "//*[contains(text(),'Check in - out info.')]",
-    "gridview": "//*[@id='ctl00_MainContent_btnGo_input']"
+    "gridview": "//*[@id='ctl00_MainContent_btnGo_input']",
+    "dragtotable": "//table[@id='ctl00_MainContent_RadGridStaticReports_GroupPanel_TB']",
+    "empid": "//table[@class='rgMasterTable rgClipCells']/tbody/tr/td[contains(text(),'02642')]"
 
   }
 }

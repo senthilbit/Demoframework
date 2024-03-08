@@ -12,7 +12,7 @@ Feature: Xspace test
     * method POST
     * status 201
     * def testCooke = response.replace('"','').replace('"','')
-
+  @HomePage
   Scenario: HomePage
 
     Given path '/notification/getNotifications/'

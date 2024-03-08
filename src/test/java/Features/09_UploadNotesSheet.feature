@@ -17,7 +17,7 @@ Feature:
     * print random
     * print randomName
 
-
+  @UploadNotes
   Scenario:
    #insert Sheet
     Given path '/elasticsearch/sheet/insertDoc'

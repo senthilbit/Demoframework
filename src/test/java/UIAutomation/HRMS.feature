@@ -12,7 +12,7 @@ Feature:  HRMS LMS
 
 
 
-
+ @TrainingModule
   Scenario: HRMS all training view
     Given driver 'https://hrm.thedigitalgroup.com/'
     * driver.maximize()
@@ -31,7 +31,7 @@ Feature:  HRMS LMS
 
 
 
-
+  @StaticReport
   Scenario: HRMS Static Report view for current date
     Given driver 'https://hrm.thedigitalgroup.com/'
     * driver.maximize()
@@ -46,5 +46,6 @@ Feature:  HRMS LMS
     * scroll(Reports.gridview).click()
     * scroll(Reports.dragtotable)
     * match text(Reports.empid) == '02642'
+    * screenshot()
 
 

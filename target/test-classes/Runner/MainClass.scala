@@ -67,8 +67,19 @@ object MainClass extends Simulation {
       case "rampUsers" => rampUsers(user).during(duration minute)
       case "constantUsersPerSec" => constantUsersPerSec(user).during(duration minute)
       case "stressPeakUsers" => stressPeakUsers(user).during(duration minute)
-      case "atOnceUsers" => atOnceUsers(duration)
+      case "atOnceUsers" => atOnceUsers(user)
       case "nothingFor" => nothingFor(duration)
+    }
+    methods
+  }
+
+  def openModelwithNoDuration(user: Int,  LMethod1: String): OpenInjectionStep = {
+
+    // val LMethod1: String = ""
+    val methods = LMethod1 match {
+
+      case "atOnceUsers" => atOnceUsers(user)
+      case "nothingFor" => nothingFor(user)
     }
     methods
   }

@@ -18,7 +18,7 @@ Feature:
   * print random
   * print randomName
 
-
+  @DeleteColumn
   Scenario:
    #insert Sheet
     Given path '/elasticsearch/sheet/insertDoc'

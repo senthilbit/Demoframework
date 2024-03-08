@@ -15,7 +15,7 @@ Feature:
     * def random = "Workbook" + (randomNumber)
     * def randomSheetName = "Sheet" + (randomNumber)
 
-
+  @UpdateSheet
   Scenario:Update Sheet
 
     Given path '/elasticsearch/sheet/insertDoc'

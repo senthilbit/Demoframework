@@ -1,5 +1,6 @@
 package Runner
 
+import Runner.MainClass.{ReadData, openModel, openModelwithNoDuration}
 import com.intuit.karate.gatling.PreDef._
 import io.gatling.core.Predef.{constantUsersPerSec, _}
 
@@ -18,20 +19,34 @@ class TDG_UKAF_Feeder extends Simulation{
     println("Performance tests started")
   }
 
-  val csvFile =  feed(csv("./Data/DataCsv.csv")).exec(karateSet("username", session => session("username").as[String]))
+  val excelFilePath = "./src/test/java/Data/Load_config_v2.xlsx"
+  val sheetName = "Master"
+  var desiredClassName = this.getClass.getSimpleName
 
-  val FeederToKarate = scenario("FeederToKarate").feed(csv("./Data/DataCsv.csv").circular)
+  val matchingRows = ReadData(excelFilePath, sheetName, desiredClassName)
+  val scenarioname = matchingRows.apply(0)
+  val extractedclasspath = matchingRows.apply(1)
+  val ramp = matchingRows.apply(2)
+  val LConfig1 = matchingRows.apply(3)
+
+
+  val subst = s"$LConfig1".split(",")
+  val user: Int = subst(0).toInt
+  val duration: Int = subst(1).toInt
+  val open = openModel(user, duration, ramp)
+
+ // val csvFile =  feed(csv("./Data/DataCsv.csv")).exec(karateSet("username", session => session("username").as[String]))
+
+  val FeederToKarate = scenario(scenarioname).feed(csv("./Data/DataCsv.csv").circular)
     .exec(karateSet("username", session => session("username").as[String]))
     .exec(karateSet("password", session => session("password").as[String]))
-    .exec(karateFeature("classpath:Features/TDG_UKAF_Input_Data_From_Feeder.feature"))
+    .exec(karateFeature(extractedclasspath))
 
 
   setUp(
-    FeederToKarate.inject(
-     // constantUsersPerSec(5).during(5 minutes)
+    FeederToKarate.inject(open
 
-      atOnceUsers(5)
-  ))
+    ))
 
   after {
     println("Performance tests ended")

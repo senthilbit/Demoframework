@@ -19,7 +19,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_summary",{distinct_id:"482a91bf-2e9c-4e1f-8b3c-d00aeb5dec8c",karate_version:"1.4.0",karate_meta:"intellij:1.7.7.361-211"});
+    posthog.capture("report_summary",{distinct_id:"482a91bf-2e9c-4e1f-8b3c-d00aeb5dec8c",karate_version:"1.4.0",karate_meta:null});
   }
 });
 </script>
@@ -36,8 +36,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">9</div>
+      <div id="nav-fail" class="bg-danger">3</div>
     </div>
   </div>
   <div id="nav-env">
@@ -47,7 +47,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Features</div>
   </div>
   <div id="nav-date">
-    <div>2024-03-07 05:42:49 PM</div>
+    <div>2024-03-08 03:45:20 PM</div>
   </div>
 </div>
 
@@ -71,13 +71,123 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <tbody>
             <tr class="passed">
               <td>
-                <a href="src.test.java.UIAutomation.HRMS.html">src/test/java/UIAutomation/HRMS.feature</a>
+                <a href="Features.01_HomePage.html">Features/01_HomePage.feature</a>
               </td>
-              <td>HRMS LMS</td>
+              <td>Xspace test</td>
               <td class="num">1</td>
               <td class="num">0</td>
               <td class="num">1</td>
-              <td class="num">18648</td>
+              <td class="num">1254</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.02_InsertWorkbook.html">Features/02_InsertWorkbook.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">3338</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.03_UpdateWorkbook.html">Features/03_UpdateWorkbook.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">260</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.04_UpdateSheet.html">Features/04_UpdateSheet.feature</a>
+              </td>
+              <td></td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">2322</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="Features.05_DeleteSheet.html">Features/05_DeleteSheet.feature</a>
+              </td>
+              <td></td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">8401</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.06_DeleteWorkbook.html">Features/06_DeleteWorkbook.feature</a>
+              </td>
+              <td></td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1228</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.07_SheetApi.html">Features/07_SheetApi.feature</a>
+              </td>
+              <td></td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1516</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.08_DeleteColumn.html">Features/08_DeleteColumn.feature</a>
+              </td>
+              <td></td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">4570</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.09_UploadNotesSheet.html">Features/09_UploadNotesSheet.feature</a>
+              </td>
+              <td></td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1931</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="Features.InsertWorkbook.html">Features/InsertWorkbook.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">108</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="Features.NegativeScenariosForiInsertWorkbook.html">Features/NegativeScenariosForiInsertWorkbook.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">7</td>
+              <td class="num">3</td>
+              <td class="num">10</td>
+              <td class="num">19858</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="Features.NegativeScenariosForiUpdateWorkbook.html">Features/NegativeScenariosForiUpdateWorkbook.feature</a>
+              </td>
+              <td>Xspace test</td>
+              <td class="num">10</td>
+              <td class="num">1</td>
+              <td class="num">11</td>
+              <td class="num">7784</td>
             </tr>
           </tbody>
         </table>
