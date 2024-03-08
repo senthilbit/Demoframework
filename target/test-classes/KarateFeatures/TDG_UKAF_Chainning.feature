@@ -82,7 +82,7 @@ Feature: Xspace test
     Given path '/elasticsearch/sheet/delete'
     * header Accept = 'application/json'
     * header Cookie =  testCooke
-    * request {"id":"#(SheetiD)"}
+    * request {"id":"#(SheetID)"}
     When method POST
     Then status 201
     And print response

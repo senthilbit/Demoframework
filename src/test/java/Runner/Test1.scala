@@ -1,6 +1,6 @@
 package Runner
 
-import Runner.MainClass.{ReadData, openModel}
+import Runner.MainClass.{ClosedModel, ReadData, openModel}
 import com.intuit.karate.gatling.PreDef._
 import io.gatling.core.Predef._
 
@@ -28,7 +28,7 @@ class Test1 extends Simulation {
   val subst = s"$LConfig1".split(",")
   val user: Int = subst(0).toInt
   val duration: Int = subst(1).toInt
-  val open = openModel(user,duration,ramp)
+  val open = ClosedModel(user,duration,ramp)
 
 
   val serviceTest = scenario(scenarioname).exec(karateFeature(extractedclasspath))

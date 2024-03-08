@@ -98,5 +98,11 @@ public class SampleRunner {
 		return Karate.run("classpath:Features/04_UpdateSheet.feature").tags("@UpdateSheet").relativeTo(getClass());
 	}
 
+
+	@Karate.Test
+	Karate Hrms() {
+		return Karate.run("classpath:UIAutomation/HRMS.feature").tags("@TrainingModule").relativeTo(getClass());
+	}
+
 	}
 

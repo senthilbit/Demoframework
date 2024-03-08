@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
@@ -9,26 +9,12 @@
     <script type="text/javascript" src="res/jquery.min.js"></script>
     <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="res/bootstrap.min.js"></script>
-    <script type="text/javascript" src="res/karate-report.js"></script>
-    <script>
-!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
-  api_host:'https://app.posthog.com',
-  persistence:'localStorage',
-  autocapture:false,
-  capture_pageview:false,
-  api_transport:'sendBeacon',
-  loaded: function(posthog) { 
-    posthog.capture("report_summary",{distinct_id:"482a91bf-2e9c-4e1f-8b3c-d00aeb5dec8c",karate_version:"1.4.0",karate_meta:null});
-  }
-});
-</script>
-
+    <script type="text/javascript" src="res/karate-report.js"></script>    
     <title>Karate Summary Report</title>
-  </head>
-  <body>
-    <div id="root-container">
-      <div id="leftnav">
+</head>
+<body>
+<div id="root-container">
+    <div id="leftnav">
         
         <div>
   <div class="nav-logo">
@@ -36,8 +22,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">9</div>
-      <div id="nav-fail" class="bg-danger">3</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -47,152 +33,57 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Features</div>
   </div>
   <div id="nav-date">
-    <div>2024-03-08 03:45:20 PM</div>
+    <div>2024-03-08 06:10:59 PM</div>
   </div>
 </div>
 
-      </div>
-      <div id="content">
+    </div>
+    <div id="content">
         <div class="page-heading alert alert-primary">
-          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
-          <a href="karate-timeline.html">Timeline</a>
+            <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+            <a href="karate-timeline.html">Timeline</a>
         </div>
         <table class="features-table table table-sm">
-          <thead>
+            <thead>
             <tr>
-              <th>Feature</th>
-              <th>Title</th>
-              <th class="num">Passed</th>
-              <th class="num">Failed</th>
-              <th class="num">Scenarios</th>
-              <th class="num">Time (ms)</th>
+                <th>Feature</th>
+                <th>Title</th>
+                <th class="num">Passed</th>
+                <th class="num">Failed</th>
+                <th class="num">Skipped</th>
+                <th class="num">Scenarios</th>
+                <th class="num">Pass (%)</th>
+                <th class="num">Time (ms)</th>
             </tr>
-          </thead>
-          <tbody>
+            </thead>
+            <tbody>
             <tr class="passed">
-              <td>
-                <a href="Features.01_HomePage.html">Features/01_HomePage.feature</a>
-              </td>
-              <td>Xspace test</td>
-              <td class="num">1</td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">1254</td>
+                <td>
+                    <a href="UIAutomation.HRMS.html">UIAutomation/HRMS.feature</a>
+                </td>
+                <td>HRMS LMS</td>
+                <td class="num">1</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">1</td>
+                <td class="num">100</td>
+                <td class="num">16196</td>
             </tr>
-            <tr class="passed">
-              <td>
-                <a href="Features.02_InsertWorkbook.html">Features/02_InsertWorkbook.feature</a>
-              </td>
-              <td>Xspace test</td>
-              <td class="num">1</td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">3338</td>
+            <tr>
+                <td>
+                </td>
+                <td class="font-weight-bold">Totals:</td>
+                <td class="num font-weight-bold">1</td>
+                <td class="num font-weight-bold">0</td>
+                <td class="num font-weight-bold">0</td>
+                <td class="num font-weight-bold">1</td>
+                <td class="num font-weight-bold">100</td>
+                <td class="num font-weight-bold">16196</td>
             </tr>
-            <tr class="passed">
-              <td>
-                <a href="Features.03_UpdateWorkbook.html">Features/03_UpdateWorkbook.feature</a>
-              </td>
-              <td>Xspace test</td>
-              <td class="num">1</td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">260</td>
-            </tr>
-            <tr class="passed">
-              <td>
-                <a href="Features.04_UpdateSheet.html">Features/04_UpdateSheet.feature</a>
-              </td>
-              <td></td>
-              <td class="num">1</td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">2322</td>
-            </tr>
-            <tr class="failed">
-              <td>
-                <a href="Features.05_DeleteSheet.html">Features/05_DeleteSheet.feature</a>
-              </td>
-              <td></td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">1</td>
-              <td class="num">8401</td>
-            </tr>
-            <tr class="passed">
-              <td>
-                <a href="Features.06_DeleteWorkbook.html">Features/06_DeleteWorkbook.feature</a>
-              </td>
-              <td></td>
-              <td class="num">1</td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">1228</td>
-            </tr>
-            <tr class="passed">
-              <td>
-                <a href="Features.07_SheetApi.html">Features/07_SheetApi.feature</a>
-              </td>
-              <td></td>
-              <td class="num">1</td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">1516</td>
-            </tr>
-            <tr class="passed">
-              <td>
-                <a href="Features.08_DeleteColumn.html">Features/08_DeleteColumn.feature</a>
-              </td>
-              <td></td>
-              <td class="num">1</td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">4570</td>
-            </tr>
-            <tr class="passed">
-              <td>
-                <a href="Features.09_UploadNotesSheet.html">Features/09_UploadNotesSheet.feature</a>
-              </td>
-              <td></td>
-              <td class="num">1</td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">1931</td>
-            </tr>
-            <tr class="passed">
-              <td>
-                <a href="Features.InsertWorkbook.html">Features/InsertWorkbook.feature</a>
-              </td>
-              <td>Xspace test</td>
-              <td class="num">1</td>
-              <td class="num">0</td>
-              <td class="num">1</td>
-              <td class="num">108</td>
-            </tr>
-            <tr class="failed">
-              <td>
-                <a href="Features.NegativeScenariosForiInsertWorkbook.html">Features/NegativeScenariosForiInsertWorkbook.feature</a>
-              </td>
-              <td>Xspace test</td>
-              <td class="num">7</td>
-              <td class="num">3</td>
-              <td class="num">10</td>
-              <td class="num">19858</td>
-            </tr>
-            <tr class="failed">
-              <td>
-                <a href="Features.NegativeScenariosForiUpdateWorkbook.html">Features/NegativeScenariosForiUpdateWorkbook.feature</a>
-              </td>
-              <td>Xspace test</td>
-              <td class="num">10</td>
-              <td class="num">1</td>
-              <td class="num">11</td>
-              <td class="num">7784</td>
-            </tr>
-          </tbody>
+            </tbody>
         </table>
-      </div>
     </div>
-  </body>
+</div>
+</body>
 </html>
 

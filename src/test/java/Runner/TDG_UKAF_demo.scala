@@ -52,10 +52,11 @@ class TDG_UKAF_demo extends Simulation {
     var serviceTest = scenario(scenarioname).exec(karateFeature(classpath))
 
     val rampup = constantUsersPerSec(10).during(10)
+    val rampup1 = constantConcurrentUsers(5).during(1 minute)
 
 
     setUp(
-      serviceTest.inject(rampup)
+      serviceTest.inject(rampup1)
 
 
     )

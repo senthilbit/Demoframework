@@ -89,8 +89,8 @@ object MainClass extends Simulation {
 
     // val LMethod1: String = ""
     val methods = LMethod1 match {
-      case "constantConcurrentUsers" => constantConcurrentUsers(user).during(duration)
-      case "rampConcurrentUsers" => rampConcurrentUsers(user).to(user).during(duration)
+      case "constantConcurrentUsers" => constantConcurrentUsers(user).during(duration minute)
+      case "rampConcurrentUsers" => rampConcurrentUsers(user).to(user).during(duration minute)
 
     }
     methods

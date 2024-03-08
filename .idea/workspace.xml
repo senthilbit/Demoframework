@@ -7,42 +7,70 @@
     <list default="true" id="4a3acfea-9501-4bfe-9f07-224a759c60d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Data/Load_config.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Data/Load_config.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Data/Load_config_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Data/Load_config_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/01_HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/01_HomePage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/02_InsertWorkbook.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/02_InsertWorkbook.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/03_UpdateWorkbook.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/03_UpdateWorkbook.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/04_UpdateSheet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/04_UpdateSheet.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/05_DeleteSheet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/05_DeleteSheet.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/06_DeleteWorkbook.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/06_DeleteWorkbook.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/07_SheetApi.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/07_SheetApi.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/08_DeleteColumn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/08_DeleteColumn.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/09_UploadNotesSheet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/09_UploadNotesSheet.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/KarateFeatures/TDG_UKAF_Chainning.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/KarateFeatures/TDG_UKAF_Chainning.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runner/Engine.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/Engine.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runner/MainClass.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/MainClass.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Feeder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_Feeder.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TDG_UKAF_demo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/Test1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/Test1.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RunnerClasses/SampleRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunnerClasses/SampleRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunnerClasses/TestRunnerShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunnerClasses/TestRunnerShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UIAutomation/HRMS.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UIAutomation/HRMS.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_1_256146213.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_1_256146213.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_2_2026332180.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_2_2026332180.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_3730634497.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_3730634497.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_3_1234063924.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_3_1234063924.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_4_1193835027.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_4_1193835027.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_5_1729123731.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_5_1729123731.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_6_120207080.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_6_120207080.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_7_31231277.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_7_31231277.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_8_2120510186.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_8_2120510186.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_9_152921452.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_9_152921452.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.UIAutomation.HRMS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/src.test.java.UIAutomation.HRMS.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.01_HomePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.01_HomePage.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.01_HomePage.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.02_InsertWorkbook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.02_InsertWorkbook.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.02_InsertWorkbook.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.03_UpdateWorkbook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.03_UpdateWorkbook.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.03_UpdateWorkbook.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.04_UpdateSheet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.04_UpdateSheet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.04_UpdateSheet.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.05_DeleteSheet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.05_DeleteSheet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.05_DeleteSheet.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.06_DeleteWorkbook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.06_DeleteWorkbook.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.06_DeleteWorkbook.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.07_SheetApi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.07_SheetApi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.07_SheetApi.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.08_DeleteColumn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.08_DeleteColumn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.08_DeleteColumn.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.09_UploadNotesSheet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.09_UploadNotesSheet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.09_UploadNotesSheet.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.InsertWorkbook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.InsertWorkbook.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.InsertWorkbook.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.NegativeScenariosForiInsertWorkbook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.NegativeScenariosForiInsertWorkbook.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.NegativeScenariosForiInsertWorkbook.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.NegativeScenariosForiUpdateWorkbook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.NegativeScenariosForiUpdateWorkbook.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/Features.NegativeScenariosForiUpdateWorkbook.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-labs-logo-ring.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-progress-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/Resemble.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/karate-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/karate-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/vis.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/vis.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
     </list>
     <list id="113b9f4d-e287-4383-8a89-dd291cdb35ca" name="Changess" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +138,7 @@
       <recent name="Utils.Internal" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParallelFeatureRunner.testParallel">
+  <component name="RunManager" selected="JUnit.SampleRunner.Hrms">
     <configuration name="Engine" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Runner.Engine" />
       <module name="KarateDemo" />
@@ -124,23 +152,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParallelFeatureRunner.testParallel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KarateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RunnerClasses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RunnerClasses" />
-      <option name="MAIN_CLASS_NAME" value="RunnerClasses.ParallelFeatureRunner" />
-      <option name="METHOD_NAME" value="testParallel" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SampleRunner.DeleteSheet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SampleRunner.Hrms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KarateDemo" />
       <extension name="coverage">
         <pattern>
@@ -150,51 +162,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="RunnerClasses" />
       <option name="MAIN_CLASS_NAME" value="RunnerClasses.SampleRunner" />
-      <option name="METHOD_NAME" value="DeleteSheet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SampleRunner.HomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KarateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RunnerClasses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RunnerClasses" />
-      <option name="MAIN_CLASS_NAME" value="RunnerClasses.SampleRunner" />
-      <option name="METHOD_NAME" value="HomePage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunnerShoppingCart.Hrms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="KarateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RunnerClasses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RunnerClasses" />
-      <option name="MAIN_CLASS_NAME" value="RunnerClasses.TestRunnerShoppingCart" />
       <option name="METHOD_NAME" value="Hrms" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="05_DeleteSheet.feature: 05_DeleteSheet.feature" type="karate" temporary="true">
+      <option name="karateSearchPaths">
+        <list>
+          <option value="$PROJECT_DIR$/src/test/java/Features/05_DeleteSheet.feature" />
+        </list>
+      </option>
+      <module name="KarateDemo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assertions.feature: Assertions.feature" type="karate" temporary="true">
+      <option name="karateSearchPaths">
+        <list>
+          <option value="$PROJECT_DIR$/src/test/java/KarateFeatures/Assertions.feature" />
+        </list>
+      </option>
+      <module name="KarateDemo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HRMS.feature: HRMS all training view" type="karate" temporary="true">
+      <option name="karateSearchPaths">
+        <list>
+          <option value="$PROJECT_DIR$/src/test/java/UIAutomation/HRMS.feature:16" />
+        </list>
+      </option>
+      <module name="KarateDemo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParallelFeatureRunner.testParallel" />
+        <item itemvalue="JUnit.SampleRunner.Hrms" />
+        <item itemvalue="Karate Feature.Assertions.feature: Assertions.feature" />
         <item itemvalue="Application.Engine" />
-        <item itemvalue="JUnit.SampleRunner.DeleteSheet" />
-        <item itemvalue="JUnit.SampleRunner.HomePage" />
-        <item itemvalue="JUnit.TestRunnerShoppingCart.Hrms" />
+        <item itemvalue="Karate Feature.HRMS.feature: HRMS all training view" />
+        <item itemvalue="Karate Feature.05_DeleteSheet.feature: 05_DeleteSheet.feature" />
       </list>
     </recent_temporary>
   </component>
